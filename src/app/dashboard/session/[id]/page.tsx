@@ -26,9 +26,32 @@ type AttemptRow = {
   evaluation_error: string | null;
 };
 
+type Correction = {
+  original: string;
+  corrected: string;
+  category?: string;
+  explanationKo?: string | null;
+};
+
 function getNumber(value: unknown) { return typeof value === "number" && Number.isFinite(value) ? value : null; }
 function getString(value: unknown) { return typeof value === "string" ? value : null; }
 function getStringArray(value: unknown) { return Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : []; }
+function getCorrections(value: unknown): Correction[] {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((item) => {
+    if (!item || typeof item !== "object") return [];
+    const row = item as Record<string, unknown>;
+    const original = getString(row.original);
+    const corrected = getString(row.corrected);
+    if (!original || !corrected) return [];
+    return [{
+      original,
+      corrected,
+      category: getString(row.category) ?? undefined,
+      explanationKo: getString(row.explanationKo),
+    }];
+  });
+}
 function pct(value: number | null) { return value === null ? null : Math.round(value * 100); }
 
 function taskName(task: string) {
@@ -48,6 +71,26 @@ function coachLine(score: number | null, max: number) {
   if (ratio >= .65) return "생각보다 괜찮은데? 군더더기만 좀 줄이자.";
   if (ratio >= .45) return "핵심은 갔는데 중간에 좀 샜어. 아깝다.";
   return "일단 말은 했잖아. 그게 시작이야. 이제 답처럼 만들자.";
+}
+
+function sessionDimensions(scoreJson: Record<string, unknown> | null) {
+  const raw = scoreJson?.dimensions;
+  if (!raw || typeof raw !== "object") return [] as Array<{label:string;value:number}>;
+  const dimensions = raw as Record<string, unknown>;
+  const labels: Record<string, string> = {
+    delivery: "전달력",
+    grammar: "문법",
+    vocabulary: "어휘",
+    relevance: "관련성",
+    content: "내용",
+    pronunciation: "발음",
+  };
+  return Object.entries(dimensions).flatMap(([key, value]) => {
+    if (!value || typeof value !== "object") return [];
+    const normalized = getNumber((value as Record<string, unknown>).value);
+    if (normalized === null) return [];
+    return [{ label: labels[key] ?? key, value: normalized }];
+  });
 }
 
 export default function SessionResultPage() {
@@ -81,6 +124,7 @@ export default function SessionResultPage() {
   const total = useMemo(() => attempts.reduce((sum, attempt) => sum + (getNumber(attempt.score_json?.rawItemScore) ?? 0), 0), [attempts]);
   const maxTotal = useMemo(() => attempts.reduce((sum, attempt) => sum + (getNumber(attempt.score_json?.maxItemScore) ?? (attempt.question_number === 11 ? 5 : 3)), 0), [attempts]);
   const ratio = maxTotal > 0 ? Math.round((total / maxTotal) * 100) : 0;
+  const dimensions = useMemo(() => sessionDimensions(session?.score_json ?? null), [session]);
 
   if (loading) return <main className="result-page"><div className="dashboard-empty">결과 가져오는 중…</div></main>;
   if (error || !session) return <main className="result-page"><div className="dashboard-empty"><b>{error || "그런 기록이 없는데?"}</b><Link href="/dashboard">내 기록으로</Link></div></main>;
@@ -102,6 +146,10 @@ export default function SessionResultPage() {
       </div>
     </section>
 
+    {dimensions.length > 0 && <section className="result-metric-grid">
+      {dimensions.map((dimension) => <div key={dimension.label}><span>{dimension.label}</span><b>{pct(dimension.value)}%</b></div>)}
+    </section>}
+
     <section className="result-question-list redesigned-question-list">
       {attempts.map((attempt) => {
         const score = getNumber(attempt.score_json?.rawItemScore);
@@ -112,23 +160,46 @@ export default function SessionResultPage() {
         const strengths = getStringArray(evidence?.strengths);
         const improvements = getStringArray(evidence?.improvements);
         const missingFacts = getStringArray(evidence?.missingFacts);
+        const missingPoints = getStringArray(evidence?.missingPoints);
+        const supportedPoints = getStringArray(evidence?.supportedPoints);
+        const betterExpressions = getStringArray(evidence?.betterExpressions);
+        const grammarCorrections = getCorrections(evidence?.grammarCorrections);
+        const vocabularyIssues = getCorrections(evidence?.vocabularyIssues);
+        const pronunciationStatus = getString(evidence?.pronunciationStatus);
+
         const wpm = getNumber(features.wpm);
         const pauseRatio = getNumber(features.pauseRatio);
         const completeness = getNumber(features.responseCompleteness) ?? getNumber(features.completeness);
         const relevance = getNumber(features.relevance);
         const factAccuracy = getNumber(features.factAccuracy);
         const delivery = getNumber(features.delivery);
-        const development = getNumber(features.development);
+        const development = getNumber(features.taskDevelopment) ?? getNumber(features.development);
+        const grammar = getNumber(features.grammarAccuracy);
+        const vocabulary = getNumber(features.vocabularyQuality);
+        const clarity = getNumber(features.clarity);
+        const conceptCoverage = getNumber(features.conceptCoverage);
+        const pronunciation = getNumber(features.pronunciationTotal) ?? getNumber(features.pronunciationAccuracy);
 
         const metrics = [
           wpm === null ? null : { label: "속도", value: `${Math.round(wpm)} WPM` },
           pauseRatio === null ? null : { label: "쉼 비율", value: `${Math.round(pauseRatio * 100)}%` },
+          pronunciation === null ? null : { label: "발음", value: `${pct(pronunciation)}%` },
           delivery === null ? null : { label: "딜리버리", value: `${pct(delivery)}%` },
+          grammar === null ? null : { label: "문법", value: `${pct(grammar)}%` },
+          vocabulary === null ? null : { label: "어휘", value: `${pct(vocabulary)}%` },
+          clarity === null ? null : { label: "명확성", value: `${pct(clarity)}%` },
           relevance === null ? null : { label: "관련성", value: `${pct(relevance)}%` },
           completeness === null ? null : { label: "충실도", value: `${pct(completeness)}%` },
+          conceptCoverage === null ? null : { label: "사진 핵심", value: `${pct(conceptCoverage)}%` },
           factAccuracy === null ? null : { label: "사실 정확도", value: `${pct(factAccuracy)}%` },
           development === null ? null : { label: "전개", value: `${pct(development)}%` },
         ].filter(Boolean) as Array<{label:string;value:string}>;
+
+        const fixes = [
+          ...improvements,
+          ...missingFacts.map((x) => `놓친 정보: ${x}`),
+          ...missingPoints.map((x) => `보완할 내용: ${x}`),
+        ];
 
         return <article className="result-question-card redesigned-question-card" key={attempt.id}>
           <div className="question-result-head">
@@ -138,6 +209,8 @@ export default function SessionResultPage() {
 
           {metrics.length > 0 && <div className="result-metric-grid">{metrics.map((metric)=><div key={metric.label}><span>{metric.label}</span><b>{metric.value}</b></div>)}</div>}
 
+          {pronunciationStatus === "unavailable" && attempt.task_type === "read_aloud" && <p className="result-error">발음 전용 모델은 아직 연결되지 않았어. 현재 Q1–2 점수는 낭독 정확도 + 전달력 기반 실험값이야.</p>}
+
           <div className="result-feedback-grid">
             <section>
               <div className="result-section-title"><MessageSquareText size={17}/><b>AI 피드백</b></div>
@@ -146,12 +219,30 @@ export default function SessionResultPage() {
 
             <section>
               <div className="result-section-title"><RefreshCcw size={17}/><b>다음에 고칠 것</b></div>
-              {improvements.length + missingFacts.length > 0
-                ? <ul>{[...improvements, ...missingFacts.map((x)=>`놓친 정보: ${x}`)].map((item)=><li key={item}>{item}</li>)}</ul>
+              {fixes.length > 0
+                ? <ul>{fixes.map((item, index)=><li key={`${item}-${index}`}>{item}</li>)}</ul>
                 : <p>크게 잡힌 문제는 없어. 잘했다는 뜻이야. 그래도 답이 짧았다면 한 문장만 더 붙여 보자.</p>}
             </section>
           </div>
 
+          {grammarCorrections.length > 0 && <section className="result-transcript">
+            <div className="result-section-title"><b>문법 교정</b></div>
+            {grammarCorrections.map((item, index) => <div key={`${item.original}-${index}`}>
+              <p><s>{item.original}</s> → <b>{item.corrected}</b></p>
+              {item.explanationKo && <small>{item.explanationKo}</small>}
+            </div>)}
+          </section>}
+
+          {vocabularyIssues.length > 0 && <section className="result-transcript">
+            <div className="result-section-title"><b>어휘 / 표현</b></div>
+            {vocabularyIssues.map((item, index) => <div key={`${item.original}-${index}`}>
+              <p><s>{item.original}</s> → <b>{item.corrected}</b></p>
+              {item.explanationKo && <small>{item.explanationKo}</small>}
+            </div>)}
+          </section>}
+
+          {betterExpressions.length > 0 && <div className="result-strengths"><b>바로 써먹을 표현</b>{betterExpressions.map((item)=><span key={item}>→ {item}</span>)}</div>}
+          {supportedPoints.length > 0 && <div className="result-strengths"><b>잡은 핵심</b>{supportedPoints.map((item)=><span key={item}>✓ {item}</span>)}</div>}
           {strengths.length > 0 && <div className="result-strengths"><b>잘한 점</b>{strengths.map((item)=><span key={item}>✓ {item}</span>)}</div>}
 
           {attempt.transcript && <details className="result-transcript"><summary><Volume2 size={16}/> 내 답변 텍스트 보기</summary><p>{attempt.transcript}</p></details>}

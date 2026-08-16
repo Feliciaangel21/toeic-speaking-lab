@@ -121,10 +121,7 @@ class SupabaseEvaluationQueue:
             session_id = str(session.get("id") or "")
             if not session_id:
                 continue
-            result.append({
-                **session,
-                "pending_count": pending_by_session.get(session_id, 0),
-            })
+            result.append({**session, "pending_count": pending_by_session.get(session_id, 0)})
         return result
 
     def pending_attempts(self, limit: int = 100, session_id: str | None = None) -> list[dict[str, Any]]:
@@ -278,6 +275,71 @@ class SupabaseEvaluationQueue:
             payload["score_json"] = score_json
         self._rest_patch("mock_sessions", {"id": f"eq.{session_id}"}, payload)
 
+    @staticmethod
+    def _dimension_summary(completed: list[dict[str, Any]]) -> dict[str, dict[str, float | int]]:
+        """Aggregate diagnostic dimensions without inventing a TOEIC scaled score."""
+
+        selectors: dict[str, tuple[str, ...]] = {
+            "delivery": ("delivery",),
+            "grammar": ("grammarAccuracy",),
+            "vocabulary": ("vocabularyQuality",),
+            "relevance": ("relevance",),
+            "content": (
+                "factAccuracy",
+                "conceptCoverage",
+                "taskCompleteness",
+                "responseCompleteness",
+                "taskDevelopment",
+                "development",
+            ),
+            "pronunciation": ("pronunciationTotal", "pronunciationAccuracy"),
+        }
+        buckets: dict[str, list[float]] = {name: [] for name in selectors}
+        for row in completed:
+            score_json = row.get("score_json") or {}
+            if not isinstance(score_json, dict):
+                continue
+            features = score_json.get("features") or {}
+            if not isinstance(features, dict):
+                continue
+            for dimension, keys in selectors.items():
+                value: float | None = None
+                for key in keys:
+                    raw = features.get(key)
+                    if isinstance(raw, (int, float)):
+                        value = max(0.0, min(1.0, float(raw)))
+                        break
+                if value is not None:
+                    buckets[dimension].append(value)
+
+        result: dict[str, dict[str, float | int]] = {}
+        for dimension, values in buckets.items():
+            if values:
+                result[dimension] = {
+                    "value": round(sum(values) / len(values), 4),
+                    "items": len(values),
+                }
+        return result
+
+    @staticmethod
+    def _task_breakdown(completed: list[dict[str, Any]]) -> dict[str, dict[str, float | int]]:
+        grouped: dict[str, list[float]] = {}
+        for row in completed:
+            score_json = row.get("score_json") or {}
+            if not isinstance(score_json, dict):
+                continue
+            task = str(score_json.get("taskType") or "unknown")
+            raw = score_json.get("rawItemScore")
+            maximum = score_json.get("maxItemScore")
+            if not isinstance(raw, (int, float)) or not isinstance(maximum, (int, float)) or maximum <= 0:
+                continue
+            grouped.setdefault(task, []).append(float(raw) / float(maximum))
+        return {
+            task: {"ratio": round(sum(values) / len(values), 4), "items": len(values)}
+            for task, values in grouped.items()
+            if values
+        }
+
     def reconcile_session(self, session_id: str) -> None:
         rows = self._rest_get(
             "question_attempts",
@@ -293,19 +355,35 @@ class SupabaseEvaluationQueue:
 
         raw_total = 0
         max_total = 0
+        confidence_values: list[float] = []
         for row in completed:
             score = row.get("score_json") or {}
             if not isinstance(score, dict):
                 continue
             raw_total += int(score.get("rawItemScore") or 0)
             max_total += int(score.get("maxItemScore") or (5 if row.get("question_number") == 11 else 3))
+            raw_confidence = score.get("confidence")
+            if isinstance(raw_confidence, (int, float)):
+                confidence_values.append(max(0.0, min(1.0, float(raw_confidence))))
 
         summary = {
             "status": "experimental",
             "rawTotal": raw_total,
             "maxTotal": max_total,
+            "rawRatio": round(raw_total / max_total, 4) if max_total else None,
             "completedItems": len(completed),
             "totalEvaluableItems": len(evaluable),
+            "dimensions": self._dimension_summary(completed),
+            "taskBreakdown": self._task_breakdown(completed),
+            "meanItemConfidence": (
+                round(sum(confidence_values) / len(confidence_values), 4)
+                if confidence_values
+                else None
+            ),
+            # Keep this explicit: no 0-200 estimate is produced until a
+            # speaker-independent human-rated calibration set exists.
+            "estimatedToeicScore": None,
+            "calibrationStatus": "unvalidated-no-scaled-score",
             "pipeline": self.pipeline.pipeline_version,
             "updatedAt": utc_now(),
         }
@@ -321,7 +399,6 @@ class SupabaseEvaluationQueue:
         else:
             state = "pending"
         self._set_session_state(session_id, state, summary)
-
 
     def reconcile_incomplete_sessions(self) -> int:
         rows = self._rest_get(
@@ -364,7 +441,11 @@ class SupabaseEvaluationQueue:
                 self._download_audio(audio_path, source)
                 convert_to_wav(source, wav)
                 question = self.question_for_attempt(attempt)
-                result = self.pipeline.evaluate(question, wav, max(1, int(attempt.get("response_duration_ms") or 1)))
+                result = self.pipeline.evaluate(
+                    question,
+                    wav,
+                    max(1, int(attempt.get("response_duration_ms") or 1)),
+                )
 
             self._rest_patch(
                 "question_attempts",
@@ -379,7 +460,12 @@ class SupabaseEvaluationQueue:
                     "evaluation_model_version": self.pipeline.pipeline_version,
                 },
             )
-            return {"ok": True, "attemptId": attempt_id, "sessionId": session_id, "questionNumber": attempt.get("question_number")}
+            return {
+                "ok": True,
+                "attemptId": attempt_id,
+                "sessionId": session_id,
+                "questionNumber": attempt.get("question_number"),
+            }
         except Exception as exc:
             self._rest_patch(
                 "question_attempts",
@@ -391,7 +477,13 @@ class SupabaseEvaluationQueue:
                     "evaluation_model_version": self.pipeline.pipeline_version,
                 },
             )
-            return {"ok": False, "attemptId": attempt_id, "sessionId": session_id, "questionNumber": attempt.get("question_number"), "error": str(exc)[:500]}
+            return {
+                "ok": False,
+                "attemptId": attempt_id,
+                "sessionId": session_id,
+                "questionNumber": attempt.get("question_number"),
+                "error": str(exc)[:500],
+            }
         finally:
             try:
                 self.reconcile_session(session_id)

@@ -1,9 +1,17 @@
 from __future__ import annotations
 
+import math
 import re
 from collections import Counter
 
 FILLERS = {"um", "uh", "erm", "hmm", "like", "you know"}
+FUNCTION_WORDS = {
+    "a", "an", "the", "and", "or", "but", "if", "then", "than", "to", "of", "in", "on", "at",
+    "for", "from", "with", "as", "by", "is", "am", "are", "was", "were", "be", "been", "being",
+    "do", "does", "did", "have", "has", "had", "i", "you", "he", "she", "it", "we", "they",
+    "this", "that", "these", "those", "my", "your", "his", "her", "our", "their", "me", "him",
+    "them", "so", "because", "very", "really", "can", "could", "would", "should", "will", "just",
+}
 
 
 def tokens(text: str) -> list[str]:
@@ -20,11 +28,25 @@ def basic_features(transcript: str, speech_ms: int) -> dict[str, float | int]:
     minutes = max(speech_ms, 1) / 60000
     filler_count = sum(1 for token in ts if token in FILLERS)
     adjacent_repeats = sum(1 for i in range(1, len(ts)) if ts[i] == ts[i - 1])
+    unique_count = len(set(ts))
+    content = [token for token in ts if token not in FUNCTION_WORDS and len(token) > 1]
+    content_unique = len(set(content))
+    lexical_diversity = safe_ratio(unique_count, word_count)
+    # Root TTR is less length-sensitive than plain TTR. Normalize it to a
+    # bounded diagnostic value; it is not used as an official score.
+    root_ttr = safe_ratio(unique_count, math.sqrt(max(word_count, 1)))
+    normalized_root_ttr = min(1.0, root_ttr / 6.0)
     return {
         "wordCount": word_count,
         "wpm": round(word_count / minutes, 2),
+        "fillerCount": filler_count,
         "fillerRatio": safe_ratio(filler_count, word_count),
         "repetitionRatio": safe_ratio(adjacent_repeats, word_count),
+        "uniqueWordCount": unique_count,
+        "lexicalDiversity": lexical_diversity,
+        "rootTtr": normalized_root_ttr,
+        "contentWordRatio": safe_ratio(len(content), word_count),
+        "contentLexicalDiversity": safe_ratio(content_unique, len(content)),
     }
 
 
@@ -39,9 +61,35 @@ def lexical_recall(reference: str, transcript: str) -> float:
 
 def argument_features(transcript: str) -> dict[str, int | bool | float]:
     lower = transcript.lower()
-    reasons = len(re.findall(r"\b(?:because|since|one reason|another reason|first(?:ly)?|second(?:ly)?)\b", lower))
-    examples = len(re.findall(r"\b(?:for example|for instance|such as|in my experience)\b", lower))
-    position = bool(re.search(r"\b(?:i think|i believe|in my opinion|i prefer|i agree|i disagree|the best|more important)\b", lower))
+    reasons = len(
+        re.findall(
+            r"\b(?:because|since|one reason|another reason|first(?:ly)?|second(?:ly)?)\b",
+            lower,
+        )
+    )
+    examples = len(
+        re.findall(
+            r"\b(?:for example|for instance|such as|in my experience)\b",
+            lower,
+        )
+    )
+    position = bool(
+        re.search(
+            r"\b(?:i think|i believe|in my opinion|i prefer|i agree|i disagree|the best|more important)\b",
+            lower,
+        )
+    )
     wc = len(tokens(transcript))
-    development = min(1.0, (0.25 if position else 0.0) + min(reasons, 2) * 0.22 + min(examples, 2) * 0.18 + min(wc / 120, 1) * 0.17)
-    return {"positionPresent": position, "reasonCount": reasons, "exampleCount": examples, "development": development}
+    development = min(
+        1.0,
+        (0.25 if position else 0.0)
+        + min(reasons, 2) * 0.22
+        + min(examples, 2) * 0.18
+        + min(wc / 120, 1) * 0.17,
+    )
+    return {
+        "positionPresent": position,
+        "reasonCount": reasons,
+        "exampleCount": examples,
+        "development": development,
+    }
