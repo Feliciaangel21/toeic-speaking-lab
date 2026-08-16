@@ -3,4 +3,6 @@ silero-vad>=6.0.0
 onnxruntime>=1.22
 sentence-transformers>=5.0
 transformers>=4.51.0
-torch>=2.6
+# providers/qwen.py imports torch directly. It only arrived transitively via
+# sentence-transformers, so pinning it here keeps Qwen working if that changes.
+torch>=2.2

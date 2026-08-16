@@ -34,6 +34,16 @@ No GPU server has to stay online. If your laptop is off, answers simply remain p
 
 For Q8–10, Qwen is never allowed to choose the numeric score. Deterministic fact matching and Qwen's structured `supported / missing / contradicted / ambiguous` evidence are combined by the separate calibrator.
 
+## Running the tests
+
+The model weights are not needed. `torch` and `transformers` are imported lazily
+behind the `ENABLE_*` flags, so the suite runs against the base install:
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest tests -q
+```
+
 ## 1. Apply the Supabase migration
 
 Run this file once in the Supabase SQL editor:

@@ -1,0 +1,5 @@
+# Test-only dependencies. The suite in tests/ needs nothing from
+# requirements-models.txt: torch and transformers are imported lazily behind
+# the ENABLE_* flags, so the tests run against the base install alone.
+-r requirements.txt
+pytest>=8,<9
