@@ -43,7 +43,7 @@ export default function DashboardPage() {
       }
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
-        if (active) { setMessage("아직 서버에 저장된 결과가 없습니다. 연습 기록은 이 기기에 저장됩니다."); setLoading(false); }
+        if (active) { setMessage("저장된 결과를 보려면 로그인해 주세요."); setLoading(false); }
         return;
       }
       const { data, error } = await supabase
@@ -81,7 +81,7 @@ export default function DashboardPage() {
       </div>
 
       {loading && <div className="dashboard-empty">기록을 불러오는 중…</div>}
-      {!loading && message && <div className="dashboard-empty"><b>{message}</b><Link href="/practice?set=1">연습 시작하기</Link></div>}
+      {!loading && message && <div className="dashboard-empty"><b>{message}</b><Link href="/">홈에서 로그인하기</Link></div>}
       {!loading && !message && sessions.length === 0 && <div className="dashboard-empty"><b>아직 저장된 기록이 없어요.</b><span>첫 모의고사를 완료하면 여기에 표시됩니다.</span><Link href="/test?set=1">모의고사 시작</Link></div>}
 
       {!loading && !message && sessions.map((session, index) => {

@@ -5,6 +5,7 @@ import { buildMockTest } from "@/lib/build-test";
 import { buildPracticeTest } from "@/lib/build-practice";
 import type { Question, RecordedAttempt } from "@/lib/types";
 import { saveMockSession } from "@/lib/save-attempt";
+import { getSupabase, hasSupabase } from "@/lib/supabase";
 import PracticeCoach from "@/components/PracticeCoach";
 import { Mic, Volume2, CheckCircle2, ArrowRight, RotateCcw, SkipForward } from "lucide-react";
 
@@ -92,6 +93,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
   const [started,setStarted]=useState(false);
   const [attempts,setAttempts]=useState<RecordedAttempt[]>([]);
   const [saveStatus,setSaveStatus]=useState("");
+  const [signedIn,setSignedIn]=useState(false);
   const recorderRef=useRef<MediaRecorder|null>(null);
   const streamRef=useRef<MediaStream|null>(null);
   const chunksRef=useRef<Blob[]>([]);
@@ -198,12 +200,31 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
 
   async function saveAndFinish(rows:RecordedAttempt[]){
     setPhase("done");
+    setSaveStatus("");
     const result=await saveMockSession(rows, mode, setNumber);
     setSaveStatus(
       result.mode === "supabase"
         ? "답변이 저장되었습니다. 평가가 완료되면 대시보드에서 결과를 확인할 수 있어요."
-        : "연습 기록을 이 기기에 저장했습니다."
+        : result.error
+          ? "서버에 저장하지 못해 이 기기에만 기록했습니다. 네트워크 상태를 확인해 주세요."
+          : "연습 기록을 이 기기에 저장했습니다. 로그인하면 기록과 평가 결과를 이어서 확인할 수 있어요."
     );
+  }
+
+  // The completion screen used to link back to the URL the learner was already
+  // on, which Next treats as a no-op, so a finished set was a dead end.
+  // Reset in place instead; the mic stream stays open for an immediate retry.
+  function restartSet(){
+    runRef.current += 1;
+    window.speechSynthesis?.cancel();
+    stopAndDiscardRecording();
+    setAudioUrls(prev=>{ Object.values(prev).forEach(URL.revokeObjectURL); return {}; });
+    setAttempts([]);
+    setSaveStatus("");
+    setIndex(0);
+    setRemaining(0);
+    setPhase("prep");
+    setStarted(false);
   }
 
   async function finishResponse(row:RecordedAttempt){
@@ -273,6 +294,25 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
 
   useEffect(()=>{ if(started) beginQuestion(current); /* eslint-disable-next-line react-hooks/exhaustive-deps */ },[index,started]);
 
+  // Switching sets only changes a search param, so this client component is
+  // re-rendered rather than remounted and would otherwise keep the old run's
+  // phase, index and attempts.
+  const loadedSetRef=useRef(setNumber);
+  useEffect(()=>{
+    if(loadedSetRef.current===setNumber) return;
+    loadedSetRef.current=setNumber;
+    restartSet();
+  /* eslint-disable-next-line react-hooks/exhaustive-deps */ },[setNumber]);
+
+  // Saving happens only after the last question, so surface the sign-in state
+  // up front rather than letting a full set finish before the fallback message.
+  useEffect(()=>{
+    const sb=getSupabase(); if(!sb) return;
+    sb.auth.getSession().then(({data})=>setSignedIn(Boolean(data.session)));
+    const {data:sub}=sb.auth.onAuthStateChange((_event,session)=>setSignedIn(Boolean(session)));
+    return ()=>sub.subscription.unsubscribe();
+  },[]);
+
   useEffect(()=>{
     if(!started || phase==="narrating" || phase==="review" || phase==="done") return;
     if(remaining<=0){
@@ -307,13 +347,28 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
           <button type="button" className={`capture-option ${practiceCaptureMode==="no_record"?"selected":""}`} onClick={()=>setPracticeCaptureMode("no_record")}><Volume2 size={20}/><span><b>녹음 없이 연습</b><small>타이머에 맞춰 말한 뒤 바로 해설을 확인합니다.</small></span></button>
         </div>}
         {(!isPractice || practiceCaptureMode==="record") && <div className="check-line"><Mic/><div><b>마이크</b><span>{micReady?"준비 완료":"사용 권한이 필요합니다"}</span></div><button className="button secondary" onClick={prepareMic}>{micReady?"완료":"마이크 확인"}</button></div>}
+        {(!isPractice || practiceCaptureMode==="record") && hasSupabase() && !signedIn && <div className="notice"><span>로그인하지 않으면 녹음이 이 기기에만 남고 평가를 받을 수 없어요. <Link href="/" className="text-button">홈에서 로그인하기</Link></span></div>}
         <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>setStarted(true)}>{isPractice?`세트 ${setNumber} 연습 시작`:"시험 시작"}</button>
         <Link href="/" className="text-button center">돌아가기</Link>
       </div>
     </main>
   </div>;
 
-  if(phase==="done") return <div className="test-shell"><header className="exam-header"><b>{isPractice?`Practice ${setNumber}`:"Speaking Test"}</b><span>Saved</span></header><main className="complete-screen"><CheckCircle2 size={54}/><h1>{isPractice?"연습 저장 완료":"답변 저장 완료"}</h1><p>{saveStatus || "저장 중…"}</p><div className="complete-actions"><Link className="button primary" href={isPractice?`/practice?set=${setNumber}`:"/dashboard"}>{isPractice?"같은 세트 다시 연습":"대시보드 보기"}</Link><Link className="text-button center" href={isPractice?"/practice?set=1":"/"}>{isPractice?"다른 세트 선택":"홈으로"}</Link></div></main></div>;
+  if(phase==="done") return <div className="test-shell">
+    <header className="exam-header"><b>{isPractice?`Practice ${setNumber}`:"Speaking Test"}</b><span>Saved</span></header>
+    <main className="complete-screen">
+      <CheckCircle2 size={54}/>
+      <h1>{isPractice?"연습 저장 완료":"답변 저장 완료"}</h1>
+      <p>{saveStatus || "저장 중…"}</p>
+      <div className="complete-actions">
+        {/* restartSet returns to this runner's setup screen, which is where the
+            practice set picker lives, so it covers "redo" and "pick another". */}
+        <button className="button primary" onClick={restartSet}>{isPractice?`세트 ${setNumber} 다시 연습`:`세트 ${setNumber} 다시 응시`}</button>
+        <Link className="button secondary" href="/dashboard">{isPractice?"내 기록 보기":"대시보드 보기"}</Link>
+        <Link className="text-button center" href="/">홈으로</Link>
+      </div>
+    </main>
+  </div>;
 
   const phaseText=phase==="study"?"Read the information":phase==="prep"?"Preparation time":phase==="recording"?"Response time":phase==="review"?"Review":"Listen to the question";
   return <div className="test-shell">

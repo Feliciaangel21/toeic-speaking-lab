@@ -77,6 +77,25 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
 
 The elevated Supabase secret/service credential belongs **only** in the local model runner environment and must never be committed or exposed to browser code.
 
+### Setup for recording upload
+
+Recordings only reach Supabase once all three of these are done. Without them the
+app silently falls back to local-only mode, and the audio is discarded on reload.
+
+1. Put the URL and publishable key in `.env.local`, then verify with `npm run check:supabase`.
+2. Run `supabase/schema.sql` in the SQL editor. This creates the tables *and* the
+   private `speaking-recordings` bucket with its owner-scoped policies.
+3. Make sure **Authentication → Sign In / Providers → Email** is enabled.
+
+Learners sign in from the 로그인 panel in the landing-page header. Every RLS policy
+is `to authenticated` and scoped to `auth.uid()`, so a signed-out learner still
+gets the full practice experience but their recordings stay on the device only.
+
+Email confirmation is on by default for new Supabase projects, so `계정 만들기`
+sends a verification mail and the account cannot sign in until the link is
+clicked. Turn confirmation off under **Authentication → Sign In / Providers →
+Email** if you want instant sign-up.
+
 The repo contains:
 
 - session/attempt persistence
