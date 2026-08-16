@@ -4,12 +4,39 @@ import { getSupabase, hasSupabase } from "@/lib/supabase";
 
 // Supabase returns these in English; the rest of the app is Korean-first.
 function errorCopy(message: string) {
-  if (/invalid login credentials/i.test(message)) return "이메일 또는 비밀번호가 올바르지 않습니다.";
-  if (/email not confirmed/i.test(message)) return "이메일 인증이 아직 완료되지 않았습니다. 받은 메일의 링크를 눌러 주세요.";
-  if (/already registered/i.test(message)) return "이미 가입된 이메일입니다. 로그인해 주세요.";
-  if (/at least 6 characters/i.test(message)) return "비밀번호는 6자 이상이어야 합니다.";
-  if (/rate limit|too many/i.test(message)) return "요청이 많습니다. 잠시 후 다시 시도해 주세요.";
-  return "처리하지 못했습니다. 잠시 후 다시 시도해 주세요.";
+  if (/invalid login credentials/i.test(message)) return "이메일 또는 비밀번호가 올바르지 않아.";
+  if (/email not confirmed/i.test(message)) return "아직 이메일 인증이 안 끝났어. 받은 메일의 링크를 먼저 눌러 줘.";
+  if (/already registered/i.test(message)) return "이미 가입된 이메일이야. 로그인해 줘.";
+  if (/at least 6 characters|password should be/i.test(message)) return "비밀번호는 6자 이상이어야 해.";
+  // The 429 body reads "For security purposes, you can only request this after
+  // N seconds." — no "rate limit" substring, so match the shape it actually has.
+  if (/rate limit|too many|only request this after|security purposes/i.test(message)) {
+    const seconds = message.match(/after (\d+) seconds?/i)?.[1];
+    return seconds ? `잠깐, ${seconds}초 뒤에 다시 시도해 줘.` : "요청이 좀 많아. 잠시 후 다시 시도해 줘.";
+  }
+  return "처리하지 못했어. 잠시 후 다시 시도해 줘.";
+}
+
+// Returns a Korean message on failure, or null when the account now exists.
+async function createAccount(email: string, password: string) {
+  let response: Response;
+  try {
+    response = await fetch("/api/auth/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+  } catch {
+    return "지금 서버에 연결할 수 없어. 잠시 후 다시 시도해 줘.";
+  }
+  if (response.ok) return null;
+  const code = await response.json().then((body) => body?.error).catch(() => null);
+  if (code === "email_exists") return "이미 가입된 이메일이야. 그냥 로그인하면 돼.";
+  if (code === "weak_password") return "비밀번호는 6자 이상이어야 해.";
+  if (code === "invalid_email") return "이메일 주소를 다시 확인해 줘.";
+  if (code === "rate_limited") return "요청이 좀 많아. 잠시 후 다시 시도해 줘.";
+  if (code === "not_configured") return "계정 기능이 아직 연결이 안 됐어. 이건 내 문제야.";
+  return "계정을 만들지 못했어. 잠시 후 다시 시도해 줘.";
 }
 
 export default function AuthPanel() {
@@ -44,22 +71,30 @@ export default function AuthPanel() {
 
   async function submit(kind: "signin" | "signup") {
     const sb = getSupabase();
-    if (!sb || busy || !email || !password) return;
+    if (!sb || busy) return;
+    // "계정 만들기" is type="button" so the browser's required-field check never
+    // runs for it. Without this the click was a silent no-op on an empty form.
+    if (!email || !password) {
+      setFailed(true);
+      setMessage("이메일이랑 비밀번호를 먼저 채워 줘.");
+      return;
+    }
     setBusy(true);
     setMessage("");
     setFailed(false);
-    const result = kind === "signin"
-      ? await sb.auth.signInWithPassword({ email, password })
-      : await sb.auth.signUp({ email, password });
-    setBusy(false);
 
-    if (result.error) { setFailed(true); setMessage(errorCopy(result.error.message)); return; }
-    setPassword("");
-    // signUp returns no session when email confirmation is required.
-    if (kind === "signup" && !result.data.session) {
-      setMessage("확인 메일을 보냈습니다. 메일의 링크로 인증한 뒤 로그인해 주세요.");
-      return;
+    // Sign-up goes through our own route, which creates the account already
+    // confirmed. Calling sb.auth.signUp here instead would leave the learner
+    // waiting on a confirmation mail the project cannot actually deliver.
+    if (kind === "signup") {
+      const created = await createAccount(email, password);
+      if (created) { setBusy(false); setFailed(true); setMessage(created); return; }
     }
+
+    const { error } = await sb.auth.signInWithPassword({ email, password });
+    setBusy(false);
+    if (error) { setFailed(true); setMessage(errorCopy(error.message)); return; }
+    setPassword("");
     close();
   }
 
