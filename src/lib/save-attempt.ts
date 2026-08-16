@@ -33,25 +33,55 @@ function extensionForMime(mime?: string | null) {
   return "webm";
 }
 
-export async function saveMockSession(attempts: RecordedAttempt[], mode:"mock"|"practice"="mock") {
+export async function saveMockSession(attempts: RecordedAttempt[], mode:"mock"|"practice"="mock", mockSetNumber?: number) {
   const supabase = getSupabase();
   if (!supabase) return saveLocal(attempts, mode);
 
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return saveLocal(attempts, mode);
 
+  const hasAnyAudio = attempts.some((attempt) => Boolean(attempt.audioBlob && attempt.audioBlob.size > 0));
   const { data: session, error: sessionError } = await supabase
     .from("mock_sessions")
-    .insert({ user_id: user.id, mode, status: "completed" })
+    .insert({
+      user_id: user.id,
+      mode,
+      status: "completed",
+      mock_set_number: mode === "mock" ? mockSetNumber ?? null : null,
+      evaluation_status: hasAnyAudio ? "pending" : "not_requested",
+    })
     .select("id")
     .single();
   if (sessionError) throw sessionError;
 
   for (const a of attempts) {
     const hasAudio = Boolean(a.audioBlob && a.audioBlob.size > 0);
-    const { data: attempt, error: attemptError } = await supabase
+    const attemptId = crypto.randomUUID();
+    const ext = extensionForMime(a.audioMimeType);
+    const path = hasAudio ? `${user.id}/${session.id}/q${String(a.questionNumber).padStart(2,"0")}-${attemptId}.${ext}` : null;
+
+    let uploadStatus = hasAudio ? "uploaded" : "not_recorded";
+    let evaluationStatus = hasAudio ? "pending" : "not_requested";
+    let evaluationError: string | null = null;
+
+    // Upload first, then insert the final DB row once. This keeps browser RLS
+    // insert-only and avoids granting users UPDATE access to score columns.
+    if (hasAudio && a.audioBlob && path) {
+      const { error: uploadError } = await supabase.storage
+        .from(BUCKET)
+        .upload(path, a.audioBlob, { contentType: a.audioMimeType ?? "audio/webm", upsert: false });
+
+      if (uploadError) {
+        uploadStatus = "failed";
+        evaluationStatus = "failed";
+        evaluationError = `Audio upload failed: ${uploadError.message}`;
+      }
+    }
+
+    const { error: attemptError } = await supabase
       .from("question_attempts")
       .insert({
+        id: attemptId,
         session_id: session.id,
         user_id: user.id,
         question_id: a.questionId,
@@ -61,31 +91,20 @@ export async function saveMockSession(attempts: RecordedAttempt[], mode:"mock"|"
         audio_duration_ms: a.durationMs,
         audio_mime_type: a.audioMimeType ?? null,
         audio_size_bytes: a.audioBlob?.size ?? null,
-        upload_status: hasAudio ? "pending" : "not_recorded",
+        audio_path: uploadStatus === "uploaded" ? path : null,
+        upload_status: uploadStatus,
+        evaluation_status: evaluationStatus,
+        evaluation_error: evaluationError,
         transcript: a.transcript ?? null,
         feature_json: a.featureJson ?? null,
         score_json: a.scoreJson ?? null,
-      })
-      .select("id")
-      .single();
-    if (attemptError) throw attemptError;
-
-    if (!hasAudio || !a.audioBlob) continue;
-
-    const ext = extensionForMime(a.audioMimeType);
-    const path = `${user.id}/${session.id}/q${String(a.questionNumber).padStart(2,"0")}-${attempt.id}.${ext}`;
-    await supabase.from("question_attempts").update({ upload_status: "uploading" }).eq("id", attempt.id);
-
-    const { error: uploadError } = await supabase.storage
-      .from(BUCKET)
-      .upload(path, a.audioBlob, { contentType: a.audioMimeType ?? "audio/webm", upsert: false });
-
-    if (uploadError) {
-      await supabase.from("question_attempts").update({ upload_status: "failed" }).eq("id", attempt.id);
-      continue;
+      });
+    if (attemptError) {
+      if (uploadStatus === "uploaded" && path) {
+        await supabase.storage.from(BUCKET).remove([path]).catch(() => undefined);
+      }
+      throw attemptError;
     }
-
-    await supabase.from("question_attempts").update({ audio_path: path, upload_status: "uploaded" }).eq("id", attempt.id);
   }
 
   return { mode: "supabase" as const, sessionId: session.id };

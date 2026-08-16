@@ -120,5 +120,8 @@ The bank contains 15 fixed full mock tests. Across these 15 mocks, all 165 quest
 
 ## Evaluation implementation handoff
 
+The approved hybrid V1 is now prepared in `model-service/` and connected through the server-only route `POST /api/evaluate`. Q8–10 combines deterministic expected-fact matching with a constrained Qwen semantic verifier; Qwen does not assign the 0–3 item score. See `docs/EVALUATION_V1.md` for rollout gates and deployment variables.
+
+
 The model-independent evaluation scaffold lives in `src/evaluation/`.
 See `docs/MODEL_PIPELINE.md`, `docs/MODEL_DECISIONS.md`, and `docs/GIT_HANDOFF.md` before integrating model runtimes. Numeric scores produced without a human-trained calibrator must remain labeled experimental.

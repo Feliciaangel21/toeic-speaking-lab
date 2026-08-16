@@ -1,27 +1,98 @@
 import Link from "next/link";
 import AuthPanel from "@/components/AuthPanel";
-import { Headphones, Mic2, TimerReset, Database, ShieldCheck } from "lucide-react";
+
+const mockSets = Array.from({ length: 15 }, (_, index) => index + 1);
 
 export default function Home() {
-  return <main className="home-shell">
-    <header className="topbar"><div className="brand-mark">SL</div><div><b>Speaking Lab</b><span>Exam-style English speaking practice</span></div></header>
-    <section className="hero">
-      <div className="eyebrow">FULL SPEAKING SIMULATION</div>
-      <h1>Practice the pressure, not just the English.</h1>
-      <p>A strict 11-question TOEIC-style speaking simulator with official-format timings, automatic recording, and a pre-generated bank that does not spend LLM tokens while you practice.</p>
-      <div className="hero-actions"><Link className="button primary large" href="/test?set=1">Start mock test 1</Link><Link className="button practice large" href="/practice">연습 모드 · 한국어 가이드</Link><a className="button ghost large" href="#bank">See question bank</a></div>
-      <p className="legal-note">Independent practice simulator. Not affiliated with or endorsed by ETS. TOEIC is a registered trademark of ETS.</p>
-    </section>
-    <section className="stats-grid" id="bank">
-      <div className="stat"><b>11</b><span>questions per mock</span></div><div className="stat"><b>~20</b><span>minutes</span></div><div className="stat"><b>170</b><span>question opportunities</span></div><div className="stat"><b>$0</b><span>runtime AI required</span></div>
-    </section>
-    <section className="feature-grid">
-      <article><TimerReset/><h3>Exact task timing</h3><p>Preparation and response clocks follow the current speaking-task format.</p></article>
-      <article><Mic2/><h3>Automatic recording</h3><p>Mock mode uses timed recording. Practice mode also supports a microphone-free timed speaking drill.</p></article>
-      <article><Headphones/><h3>Browser narration</h3><p>Questions can be read with local speech synthesis, including a repeated Question 10.</p></article>
-      <article><Database/><h3>Supabase ready</h3><p>Schema, RLS and attempt persistence are included. Without credentials it automatically falls back to local storage.</p></article>
-      <article><ShieldCheck/><h3>No score pretending</h3><p>The scoring boundary is included but returns no fake score until you connect a validated model.</p></article>
-    </section>
-    <section className="setup-card"><h2>15 non-repeating mock tests</h2><p>Each set has its own 11 question IDs with no cross-set reuse.</p><div className="mock-set-grid">{Array.from({length:15},(_,i)=><Link key={i} className="button ghost" href={`/test?set=${i+1}`}>Mock {i+1}</Link>)}</div></section><section className="setup-card"><h2>Data sync</h2><AuthPanel/></section>
-  </main>;
+  return (
+    <main className="study-home">
+      <header className="study-nav">
+        <Link href="/" className="study-brand" aria-label="Speaking Lab 홈">
+          <span className="study-brand-mark">S</span>
+          <span>
+            <b>Speaking Lab</b>
+            <small>TOEIC Speaking Practice</small>
+          </span>
+        </Link>
+
+        <div className="study-nav-actions">
+          <Link href="/dashboard" className="study-history-link">내 기록</Link>
+          <details className="home-auth">
+            <summary>로그인</summary>
+            <div className="home-auth-panel">
+              <AuthPanel />
+            </div>
+          </details>
+        </div>
+      </header>
+
+      <section className="study-hero">
+        <div className="study-hero-copy">
+          <p className="study-kicker">오늘의 스피킹 연습</p>
+          <h1>
+            토익 스피킹,
+            <br />
+            시험처럼 연습해요.
+          </h1>
+          <p className="study-intro">
+            실전 모의고사와 문항별 연습을 내 페이스대로 준비해 보세요.
+          </p>
+        </div>
+
+        <div className="study-mode-grid" aria-label="연습 모드 선택">
+          <article className="study-mode-card mock-card">
+            <div className="study-mode-topline">
+              <span>MOCK TEST</span>
+              <span>약 20분</span>
+            </div>
+            <div>
+              <h2>실전 모의고사</h2>
+              <p>11문항을 실제 시험 흐름과 시간에 맞춰 한 번에 연습해요.</p>
+            </div>
+            <Link className="study-card-action primary" href="/test?set=1">
+              모의고사 시작 <span aria-hidden="true">→</span>
+            </Link>
+          </article>
+
+          <article className="study-mode-card practice-card">
+            <div className="study-mode-topline">
+              <span>PRACTICE</span>
+              <span>내 페이스대로</span>
+            </div>
+            <div>
+              <h2>문항별 연습</h2>
+              <p>답변 후 힌트, 표현, 해설과 모범 답변을 확인하며 천천히 연습해요.</p>
+            </div>
+            <Link className="study-card-action secondary" href="/practice">
+              연습하기 <span aria-hidden="true">→</span>
+            </Link>
+          </article>
+        </div>
+
+        <div className="study-meta-row" aria-label="시험 구성 요약">
+          <span>11문항</span>
+          <i />
+          <span>약 20분</span>
+          <i />
+          <span>5개 유형</span>
+        </div>
+
+        <details className="mock-picker">
+          <summary>다른 모의고사 세트 선택</summary>
+          <div className="mock-picker-grid">
+            {mockSets.map((set) => (
+              <Link key={set} href={`/test?set=${set}`}>
+                {String(set).padStart(2, "0")}
+              </Link>
+            ))}
+          </div>
+        </details>
+      </section>
+
+      <footer className="study-footer">
+        <span>Independent TOEIC-style speaking practice.</span>
+        <span>TOEIC is a registered trademark of ETS.</span>
+      </footer>
+    </main>
+  );
 }

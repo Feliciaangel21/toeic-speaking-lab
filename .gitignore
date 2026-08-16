@@ -1,0 +1,20 @@
+.next
+node_modules
+.env.local
+.env
+.DS_Store
+
+tsconfig.tsbuildinfo
+tmp_*.sql
+
+# Local evaluation/model artifacts
+models/
+.model-cache/
+*.ggml
+*.gguf
+*.onnx.data
+model-service/.cache/
+model-service/models/
+model-service/.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,14 @@
+services:
+  evaluation:
+    build:
+      context: .
+      args:
+        WHISPER_CPP_REF: v1.9.1
+        INSTALL_MODEL_DEPS: "1"
+    ports:
+      - "127.0.0.1:8100:8100"
+    env_file:
+      - .env
+    volumes:
+      - ./models:/models
+    restart: unless-stopped

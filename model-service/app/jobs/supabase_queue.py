@@ -1,0 +1,350 @@
+from __future__ import annotations
+
+import tempfile
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+from urllib.parse import quote
+
+import httpx
+
+from app.audio import convert_to_wav
+from app.config import settings
+from app.schemas import QuestionPayload
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+class SupabaseEvaluationQueue:
+    def __init__(self, pipeline) -> None:
+        self.pipeline = pipeline
+        self.base_url = settings.supabase_url.rstrip("/")
+        self.key = settings.supabase_server_key
+        self.bucket = settings.supabase_storage_bucket
+        self._question_cache: dict[str, dict[str, Any]] | None = None
+
+    @property
+    def configured(self) -> bool:
+        return bool(self.base_url and self.key and self.bucket)
+
+    def _headers(self, *, json_body: bool = False) -> dict[str, str]:
+        headers = {"apikey": self.key}
+        # New sb_secret_* keys are API keys, not JWTs, so they must not be
+        # sent as Authorization: Bearer. Legacy service_role JWTs still can.
+        if not self.key.startswith("sb_secret_"):
+            headers["authorization"] = f"Bearer {self.key}"
+        if json_body:
+            headers["content-type"] = "application/json"
+            headers["prefer"] = "return=minimal"
+        return headers
+
+    def _rest_get(self, table: str, params: dict[str, str]) -> list[dict[str, Any]]:
+        response = httpx.get(
+            f"{self.base_url}/rest/v1/{table}",
+            headers=self._headers(),
+            params=params,
+            timeout=30,
+        )
+        response.raise_for_status()
+        data = response.json()
+        if not isinstance(data, list):
+            raise RuntimeError(f"Unexpected Supabase response for {table}")
+        return data
+
+    def _rest_patch(self, table: str, filters: dict[str, str], payload: dict[str, Any]) -> None:
+        response = httpx.patch(
+            f"{self.base_url}/rest/v1/{table}",
+            headers=self._headers(json_body=True),
+            params=filters,
+            json=payload,
+            timeout=30,
+        )
+        response.raise_for_status()
+
+    def counts(self) -> dict[str, int]:
+        if not self.configured:
+            return {"pending": 0, "processing": 0, "completed": 0, "failed": 0}
+        rows = self._rest_get(
+            "question_attempts",
+            {
+                "select": "evaluation_status",
+                "evaluation_status": "in.(pending,processing,completed,failed)",
+                "order": "created_at.desc",
+                "limit": "1000",
+            },
+        )
+        result = {"pending": 0, "processing": 0, "completed": 0, "failed": 0}
+        for row in rows:
+            state = str(row.get("evaluation_status", ""))
+            if state in result:
+                result[state] += 1
+        return result
+
+    def pending_attempts(self, limit: int = 100) -> list[dict[str, Any]]:
+        if not self.configured:
+            raise RuntimeError("Supabase queue is not configured in model-service/.env")
+        return self._rest_get(
+            "question_attempts",
+            {
+                "select": "id,session_id,user_id,question_id,question_number,task_type,response_duration_ms,audio_path,audio_mime_type,created_at",
+                "evaluation_status": "eq.pending",
+                "upload_status": "eq.uploaded",
+                "audio_path": "not.is.null",
+                "order": "created_at.asc",
+                "limit": str(max(1, min(limit, 500))),
+            },
+        )
+
+    def _download_audio(self, audio_path: str, destination: Path) -> None:
+        encoded = quote(audio_path, safe="/")
+        response = httpx.get(
+            f"{self.base_url}/storage/v1/object/authenticated/{quote(self.bucket, safe='')}/{encoded}",
+            headers=self._headers(),
+            timeout=120,
+        )
+        response.raise_for_status()
+        destination.write_bytes(response.content)
+
+    def _build_question_cache(self, bank: dict[str, Any]) -> dict[str, dict[str, Any]]:
+        cache: dict[str, dict[str, Any]] = {}
+        for payload in bank.get("readAloud", []):
+            if not isinstance(payload, dict) or not payload.get("id"):
+                continue
+            qid = str(payload["id"])
+            cache[qid] = {
+                "id": qid,
+                "taskType": "read_aloud",
+                "prompt": "Read the text aloud.",
+                "passage": payload.get("text"),
+                "metadata": {"referenceText": payload.get("text", "")},
+            }
+        for payload in bank.get("pictures", []):
+            if not isinstance(payload, dict) or not payload.get("id"):
+                continue
+            qid = str(payload["id"])
+            cache[qid] = {
+                "id": qid,
+                "taskType": "describe_picture",
+                "prompt": "Describe the picture in as much detail as you can.",
+                "imageAlt": payload.get("alt"),
+                "metadata": {"scene": payload.get("scene", ""), "concepts": payload.get("concepts", [])},
+            }
+        for payload in bank.get("interviewGroups", []):
+            if not isinstance(payload, dict):
+                continue
+            for child in payload.get("questions", []):
+                if not isinstance(child, dict) or not child.get("id"):
+                    continue
+                qid = str(child["id"])
+                cache[qid] = {
+                    "id": qid,
+                    "taskType": "respond_questions",
+                    "prompt": str(child.get("prompt", "")),
+                    "metadata": {"slots": child.get("slots", []), "topic": payload.get("topic", "")},
+                }
+        for payload in bank.get("infoGroups", []):
+            if not isinstance(payload, dict):
+                continue
+            for child in payload.get("questions", []):
+                if not isinstance(child, dict) or not child.get("id"):
+                    continue
+                qid = str(child["id"])
+                cache[qid] = {
+                    "id": qid,
+                    "taskType": "info_response",
+                    "prompt": str(child.get("prompt", "")),
+                    "information": payload.get("information"),
+                    "metadata": {"expectedFacts": child.get("expectedFacts", [])},
+                }
+        for payload in bank.get("opinions", []):
+            if not isinstance(payload, dict) or not payload.get("id"):
+                continue
+            qid = str(payload["id"])
+            cache[qid] = {
+                "id": qid,
+                "taskType": "opinion",
+                "prompt": str(payload.get("prompt", "")),
+                "metadata": {},
+            }
+        return cache
+
+    def _load_question_cache(self) -> dict[str, dict[str, Any]]:
+        if self._question_cache is not None:
+            return self._question_cache
+
+        # Git-tracked bank is the scoring reference. This avoids coupling local
+        # evaluation to a possibly stale optional Supabase question_bank copy.
+        local_bank = Path(__file__).resolve().parents[2] / "data" / "question-bank.json"
+        if local_bank.exists():
+            import json
+
+            payload = json.loads(local_bank.read_text(encoding="utf-8"))
+            if isinstance(payload, dict):
+                cache = self._build_question_cache(payload)
+                if cache:
+                    self._question_cache = cache
+                    return cache
+
+        # Backward-compatible fallback for older checkouts that do not include
+        # model-service/data/question-bank.json.
+        rows = self._rest_get(
+            "question_bank",
+            {"select": "id,kind,payload", "active": "eq.true", "limit": "500"},
+        )
+        legacy_bank: dict[str, Any] = {
+            "readAloud": [],
+            "pictures": [],
+            "interviewGroups": [],
+            "infoGroups": [],
+            "opinions": [],
+        }
+        kind_to_section = {
+            "read_aloud": "readAloud",
+            "describe_picture": "pictures",
+            "respond_questions_group": "interviewGroups",
+            "info_response_group": "infoGroups",
+            "opinion": "opinions",
+        }
+        for row in rows:
+            section = kind_to_section.get(str(row.get("kind", "")))
+            payload = row.get("payload")
+            if section and isinstance(payload, dict):
+                legacy_bank[section].append(payload)
+        self._question_cache = self._build_question_cache(legacy_bank)
+        return self._question_cache
+
+    def question_for_attempt(self, attempt: dict[str, Any]) -> QuestionPayload:
+        qid = str(attempt["question_id"])
+        raw = self._load_question_cache().get(qid)
+        if not raw:
+            raise RuntimeError(f"Question {qid} was not found in the local evaluation question bank")
+        payload = {**raw, "number": int(attempt.get("question_number") or 0) or None}
+        return QuestionPayload.model_validate(payload)
+
+    def _set_session_state(self, session_id: str, state: str, score_json: dict[str, Any] | None = None) -> None:
+        payload: dict[str, Any] = {"evaluation_status": state}
+        if score_json is not None:
+            payload["score_json"] = score_json
+        self._rest_patch("mock_sessions", {"id": f"eq.{session_id}"}, payload)
+
+    def reconcile_session(self, session_id: str) -> None:
+        rows = self._rest_get(
+            "question_attempts",
+            {
+                "select": "question_number,evaluation_status,score_json,upload_status",
+                "session_id": f"eq.{session_id}",
+                "order": "question_number.asc",
+            },
+        )
+        evaluable = [r for r in rows if r.get("evaluation_status") != "not_requested"]
+        states = [str(r.get("evaluation_status", "")) for r in evaluable]
+        completed = [r for r in evaluable if r.get("evaluation_status") == "completed"]
+
+        raw_total = 0
+        max_total = 0
+        for row in completed:
+            score = row.get("score_json") or {}
+            if not isinstance(score, dict):
+                continue
+            raw_total += int(score.get("rawItemScore") or 0)
+            max_total += int(score.get("maxItemScore") or (5 if row.get("question_number") == 11 else 3))
+
+        summary = {
+            "status": "experimental",
+            "rawTotal": raw_total,
+            "maxTotal": max_total,
+            "completedItems": len(completed),
+            "totalEvaluableItems": len(evaluable),
+            "pipeline": self.pipeline.pipeline_version,
+            "updatedAt": utc_now(),
+        }
+
+        if not evaluable:
+            state = "not_requested"
+        elif any(s in {"pending", "processing", "waiting_for_audio"} for s in states):
+            state = "processing"
+        elif any(s == "failed" for s in states):
+            state = "failed"
+        elif all(s == "completed" for s in states):
+            state = "evaluated"
+        else:
+            state = "pending"
+        self._set_session_state(session_id, state, summary)
+
+
+    def reconcile_incomplete_sessions(self) -> int:
+        rows = self._rest_get(
+            "mock_sessions",
+            {
+                "select": "id,evaluation_status",
+                "evaluation_status": "in.(pending,processing,failed)",
+                "order": "created_at.asc",
+                "limit": "500",
+            },
+        )
+        count = 0
+        for row in rows:
+            session_id = str(row.get("id") or "")
+            if not session_id:
+                continue
+            self.reconcile_session(session_id)
+            count += 1
+        return count
+
+    def process_attempt(self, attempt: dict[str, Any]) -> dict[str, Any]:
+        attempt_id = str(attempt["id"])
+        session_id = str(attempt["session_id"])
+        audio_path = str(attempt.get("audio_path") or "")
+        if not audio_path:
+            raise RuntimeError("Attempt has no audio_path")
+
+        self._rest_patch(
+            "question_attempts",
+            {"id": f"eq.{attempt_id}"},
+            {"evaluation_status": "processing", "evaluation_error": None},
+        )
+        self._set_session_state(session_id, "processing")
+
+        suffix = Path(audio_path).suffix or ".webm"
+        try:
+            with tempfile.TemporaryDirectory(prefix="speaking-queue-") as tmp:
+                source = Path(tmp) / f"input{suffix}"
+                wav = Path(tmp) / "input.wav"
+                self._download_audio(audio_path, source)
+                convert_to_wav(source, wav)
+                question = self.question_for_attempt(attempt)
+                result = self.pipeline.evaluate(question, wav, max(1, int(attempt.get("response_duration_ms") or 1)))
+
+            self._rest_patch(
+                "question_attempts",
+                {"id": f"eq.{attempt_id}"},
+                {
+                    "transcript": result.get("transcript"),
+                    "feature_json": result.get("features"),
+                    "score_json": result,
+                    "evaluation_status": "completed",
+                    "evaluated_at": utc_now(),
+                    "evaluation_error": None,
+                    "evaluation_model_version": self.pipeline.pipeline_version,
+                },
+            )
+            return {"ok": True, "attemptId": attempt_id, "sessionId": session_id, "questionNumber": attempt.get("question_number")}
+        except Exception as exc:
+            self._rest_patch(
+                "question_attempts",
+                {"id": f"eq.{attempt_id}"},
+                {
+                    "evaluation_status": "failed",
+                    "evaluated_at": utc_now(),
+                    "evaluation_error": str(exc)[:1000],
+                    "evaluation_model_version": self.pipeline.pipeline_version,
+                },
+            )
+            return {"ok": False, "attemptId": attempt_id, "sessionId": session_id, "questionNumber": attempt.get("question_number"), "error": str(exc)[:500]}
+        finally:
+            try:
+                self.reconcile_session(session_id)
+            except Exception:
+                pass

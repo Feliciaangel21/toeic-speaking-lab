@@ -43,3 +43,12 @@ export function buildMockTest(setNumber = 1): Question[] {
 
   return q.map((item, index) => ({ ...item, number: index + 1 }));
 }
+
+
+export function findMockQuestionById(questionId: string): Question | null {
+  for (let setNumber = 1; setNumber <= 15; setNumber += 1) {
+    const found = buildMockTest(setNumber).find((question) => question.id === questionId);
+    if (found) return found;
+  }
+  return null;
+}

@@ -108,6 +108,17 @@ export type ItemEvaluation = {
     missingFacts?: string[];
     strengths: string[];
     improvements: string[];
+    factDetails?: Array<{ fact: string; matched: boolean; confidence: number }>;
+    llmVerification?: {
+      supported: string[];
+      missing: string[];
+      contradicted: string[];
+      ambiguous: string[];
+      answer_complete: boolean;
+      confidence: number;
+      korean_feedback?: string | null;
+    } | null;
+    koreanFeedback?: string;
   };
   modelVersions: ModelVersions;
 };

@@ -169,8 +169,12 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
 
   async function saveAndFinish(rows:RecordedAttempt[]){
     setPhase("done");
-    const result=await saveMockSession(rows, mode);
-    setSaveStatus(result.mode==="supabase"?"저장 완료":"연습 기록 저장 완료");
+    const result=await saveMockSession(rows, mode, setNumber);
+    setSaveStatus(
+      result.mode === "supabase"
+        ? "답변이 저장되었습니다. 평가가 완료되면 대시보드에서 결과를 확인할 수 있어요."
+        : "연습 기록을 이 기기에 저장했습니다. 로그인하면 기록과 평가 결과를 이어서 확인할 수 있어요."
+    );
   }
 
   async function finishResponse(row:RecordedAttempt){
@@ -211,7 +215,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
   {(!isPractice || practiceCaptureMode==="record") && <div className="check-line"><Mic/><div><b>마이크</b><span>{micReady?"준비 완료":"사용 권한이 필요합니다"}</span></div><button className="button secondary" onClick={prepareMic}>{micReady?"완료":"마이크 확인"}</button></div>}
   <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>setStarted(true)}>{isPractice?"연습 시작":"시험 시작"}</button><Link href="/" className="text-button center">돌아가기</Link></div></main></div>;
 
-  if(phase==="done") return <div className="test-shell"><header className="exam-header"><b>{isPractice?"Practice":"Speaking Test"}</b><span>Completed</span></header><main className="complete-screen"><CheckCircle2 size={54}/><h1>{isPractice?"연습 완료":"Test complete"}</h1><p>{saveStatus || "저장 중…"}</p><Link className="button primary" href="/">완료</Link></main></div>;
+  if(phase==="done") return <div className="test-shell"><header className="exam-header"><b>{isPractice?"Practice":"Speaking Test"}</b><span>Saved</span></header><main className="complete-screen"><CheckCircle2 size={54}/><h1>{isPractice?"연습 저장 완료":"답변 저장 완료"}</h1><p>{saveStatus || "저장 중…"}</p><div className="complete-actions"><Link className="button primary" href={isPractice?"/practice":"/dashboard"}>{isPractice?"다른 연습 계속하기":"대시보드 보기"}</Link><Link className="text-button center" href={isPractice?"/dashboard":"/"}>{isPractice?"저장된 결과 보기":"홈으로"}</Link></div></main></div>;
 
   const phaseText=phase==="study"?"Read the information":phase==="prep"?"Preparation time":phase==="recording"?"Response time":phase==="review"?"Review":"Listen to the question";
   return <div className="test-shell">
