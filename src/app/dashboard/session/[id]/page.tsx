@@ -66,7 +66,7 @@ export default function SessionResultPage() {
   return <main className="result-page">
     <header className="result-topbar"><Link href="/dashboard">← 내 학습 기록</Link><span>SPEAKING REVIEW</span></header>
     <section className="result-hero">
-      <div><span>MOCK TEST</span><h1>{session.mode === "mock" ? `모의고사 ${session.mock_set_number ?? ""}` : "연습 결과"}</h1><p>{new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric" }).format(new Date(session.created_at))}</p></div>
+      <div><span>{session.mode === "mock" ? "MOCK TEST" : "PRACTICE"}</span><h1>{session.mode === "mock" ? `모의고사 ${session.mock_set_number ?? ""}` : `연습 세트 ${session.mock_set_number ?? ""}`}</h1><p>{new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric" }).format(new Date(session.created_at))}</p></div>
       <div className="raw-score"><span>말하기 평가</span><strong>{total}<small> / {maxTotal}</small></strong><p>학습을 위한 참고용 평가입니다.</p></div>
     </section>
 

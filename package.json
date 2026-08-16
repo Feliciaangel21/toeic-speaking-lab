@@ -10,7 +10,8 @@
     "seed:supabase": "node --env-file=.env.local scripts/seed-supabase.mjs",
     "check:supabase": "node --env-file=.env.local scripts/check-supabase.mjs",
     "seed:guides": "node --env-file=.env.local scripts/seed-guides-supabase.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:practice": "node scripts/check-practice-bank.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "latest",

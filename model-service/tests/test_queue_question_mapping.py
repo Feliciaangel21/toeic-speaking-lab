@@ -8,29 +8,26 @@ class FakePipeline:
 
 
 class QueueQuestionMappingTest(unittest.TestCase):
-    def test_nested_info_question_maps_to_payload(self):
+    def test_mock_nested_info_question_maps_to_payload(self):
         queue = SupabaseEvaluationQueue(FakePipeline())
-        queue._rest_get = lambda table, params: [
-            {
-                "id": "ig01",
-                "kind": "info_response_group",
-                "payload": {
-                    "id": "ig01",
-                    "information": {"title": "Schedule", "rows": []},
-                    "questions": [
-                        {
-                            "id": "ig01-q1",
-                            "prompt": "What time does it begin?",
-                            "expectedFacts": ["9:30 A.M.", "Hall A"],
-                        }
-                    ],
-                },
-            }
-        ]
         payload = queue.question_for_attempt({"question_id": "ig01-q1", "question_number": 8})
         self.assertEqual(payload.task_type, "info_response")
         self.assertEqual(payload.number, 8)
-        self.assertEqual(payload.metadata["expectedFacts"], ["9:30 A.M.", "Hall A"])
+        self.assertTrue(payload.metadata["expectedFacts"])
+
+    def test_practice_question_maps_to_payload(self):
+        queue = SupabaseEvaluationQueue(FakePipeline())
+        payload = queue.question_for_attempt({"question_id": "prinfo03-q3", "question_number": 10})
+        self.assertEqual(payload.task_type, "info_response")
+        self.assertEqual(payload.number, 10)
+        self.assertIn("Planetarium Talk", payload.metadata["expectedFacts"])
+
+    def test_practice_opinion_maps_to_payload(self):
+        queue = SupabaseEvaluationQueue(FakePipeline())
+        payload = queue.question_for_attempt({"question_id": "prop15", "question_number": 11})
+        self.assertEqual(payload.task_type, "opinion")
+        self.assertEqual(payload.number, 11)
+        self.assertIn("volunteer", payload.prompt.lower())
 
 
 if __name__ == "__main__":

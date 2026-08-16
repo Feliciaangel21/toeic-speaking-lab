@@ -2,10 +2,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { buildMockTest } from "@/lib/build-test";
+import { buildPracticeTest } from "@/lib/build-practice";
 import type { Question, RecordedAttempt } from "@/lib/types";
 import { saveMockSession } from "@/lib/save-attempt";
 import PracticeCoach from "@/components/PracticeCoach";
-import { Mic, Volume2, CheckCircle2, AlertCircle, ArrowRight, SkipForward } from "lucide-react";
+import { Mic, Volume2, CheckCircle2, ArrowRight, RotateCcw, SkipForward } from "lucide-react";
 
 type Phase = "study" | "narrating" | "prep" | "recording" | "review" | "done";
 type RunnerMode = "mock" | "practice";
@@ -23,16 +24,21 @@ function infoTableSpec(title:string){
   if(t.includes("meeting room")) return ["Room", "Availability", "Capacity", "Rate"];
   if(t.includes("cooking school") || t.includes("culinary school")) return ["Time", "Class", "Instructor / Kitchen", "Fee"];
   if(t.includes("fitness")) return ["Time", "Class", "Location", "Instructor"];
-  if(t.includes("science museum")) return ["Time", "Tour", "Duration", "Location"];
+  if(t.includes("science museum")) return ["Time", "Program", "Duration", "Location"];
   if(t.includes("museum")) return ["Time", "Program", "Location", "Duration"];
   if(t.includes("airport shuttle")) return ["Departure", "Terminal", "Seats"];
   if(t.includes("employee shuttle")) return ["Departure", "Route", "Arrival"];
   if(t.includes("training day")) return ["Time", "Program", "Location", "Speaker"];
   if(t.includes("development day")) return ["Time", "Program", "Location"];
   if(t.includes("networking")) return ["Time", "Program", "Location"];
-  if(t.includes("language program")) return ["Time", "Program", "Location"];
-  if(t.includes("film festival")) return ["Time", "Program", "Location"];
-  if(t.includes("farm")) return ["Time", "Activity"];
+  if(t.includes("language program")) return ["Time", "Class", "Room", "Instructor"];
+  if(t.includes("film festival")) return ["Time", "Program", "Location", "Duration"];
+  if(t.includes("train schedule")) return ["Departure", "Service", "Arrival", "Fare"];
+  if(t.includes("farm")) return ["Time", "Activity", "Location"];
+  if(t.includes("conference packages")) return ["Package", "Time", "Includes", "Price"];
+  if(t.includes("lecture series")) return ["Date / Time", "Lecture", "Speaker", "Location"];
+  if(t.includes("orientation schedule")) return ["Time", "Role", "Location", "Duration"];
+  if(t.includes("arts weekend")) return ["Time", "Program", "Location"];
   return ["Time / Item", "Details"];
 }
 
@@ -77,7 +83,7 @@ function InfoSheetView({info}:{info:NonNullable<Question["information"]>}){
 
 export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode; setNumber?:number}){
   const isPractice=mode==="practice";
-  const questions = useMemo(()=>buildMockTest(setNumber),[setNumber]);
+  const questions = useMemo(()=>isPractice ? buildPracticeTest(setNumber) : buildMockTest(setNumber),[isPractice,setNumber]);
   const [index,setIndex]=useState(0);
   const [phase,setPhase]=useState<Phase>("prep");
   const [remaining,setRemaining]=useState(0);
@@ -90,9 +96,8 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
   const streamRef=useRef<MediaStream|null>(null);
   const chunksRef=useRef<Blob[]>([]);
   const startRef=useRef(0);
-  // Bumped whenever we move off a question. Async narration resumed after an
-  // await checks this so a skipped question cannot set phase for the new one.
   const runRef=useRef(0);
+  const discardStopRef=useRef(false);
   const [audioUrls,setAudioUrls]=useState<Record<string,string>>({});
   const current=questions[index];
 
@@ -119,13 +124,26 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     return `${intro}${q.prompt}`;
   }
 
+  async function narrateThenPrep(q:Question){
+    const runId=++runRef.current;
+    setPhase("narrating");
+    setRemaining(0);
+    await speak(narrationText(q), q.repeatPrompt ?? 1);
+    if(runId!==runRef.current) return;
+    setPhase("prep");
+    setRemaining(q.prepSeconds);
+  }
+
   async function beginQuestion(q:Question){
-    const run=++runRef.current;
+    runRef.current += 1;
+    window.speechSynthesis?.cancel();
     if(q.studySeconds){ setPhase("study"); setRemaining(q.studySeconds); return; }
     if(q.taskType==="respond_questions" || q.taskType==="info_response" || q.taskType==="opinion"){
-      setPhase("narrating"); setRemaining(0); await speak(narrationText(q), q.repeatPrompt ?? 1); if(runRef.current!==run) return; setPhase("prep"); setRemaining(q.prepSeconds); return;
+      await narrateThenPrep(q);
+      return;
     }
-    setPhase("prep"); setRemaining(q.prepSeconds);
+    setPhase("prep");
+    setRemaining(q.prepSeconds);
   }
 
   async function startRecording(){
@@ -144,10 +162,17 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     startRef.current=Date.now();
     rec.ondataavailable=(event)=>{ if(event.data.size>0) chunksRef.current.push(event.data); };
     rec.onstop=()=>{
+      if(discardStopRef.current){
+        discardStopRef.current=false;
+        chunksRef.current=[];
+        recorderRef.current=null;
+        return;
+      }
       const duration=Math.max(0,Date.now()-startRef.current);
       const mime=rec.mimeType || preferred || "audio/webm";
       const blob=new Blob(chunksRef.current,{type:mime});
       chunksRef.current=[];
+      recorderRef.current=null;
       if(isPractice){
         const url=URL.createObjectURL(blob);
         setAudioUrls(prev=>{ const old=prev[current.id]; if(old) URL.revokeObjectURL(old); return {...prev,[current.id]:url}; });
@@ -194,20 +219,55 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     setIndex(i=>i+1);
   }
 
-  // Practice only: leave the current question without saving an attempt.
-  async function skipQuestion(){
-    runRef.current++;
+  function clearCurrentPracticeAnswer(){
+    setAttempts(prev=>prev.filter((attempt)=>attempt.questionId!==current.id));
+    setAudioUrls(prev=>{
+      const old=prev[current.id];
+      if(old) URL.revokeObjectURL(old);
+      const next={...prev};
+      delete next[current.id];
+      return next;
+    });
+  }
+
+  function stopAndDiscardRecording(){
     const rec=recorderRef.current;
-    // Drop onstop first so the discarded take is not saved as an attempt.
-    if(rec && rec.state!=="inactive"){ rec.onstop=null; rec.stop(); }
-    recorderRef.current=null;
-    chunksRef.current=[];
-    if("speechSynthesis" in window) window.speechSynthesis.cancel();
-    if(index>=questions.length-1){ await saveAndFinish(attempts); return; }
-    // "narrating" is inert for the countdown effect, so the old question's
-    // timer cannot fire startRecording() before beginQuestion() takes over.
-    setPhase("narrating");
+    if(rec && rec.state!=="inactive"){
+      discardStopRef.current=true;
+      rec.stop();
+    } else {
+      chunksRef.current=[];
+    }
+  }
+
+  async function redoPracticeQuestion(){
+    if(!isPractice) return;
+    runRef.current += 1;
+    window.speechSynthesis?.cancel();
+    stopAndDiscardRecording();
+    clearCurrentPracticeAnswer();
     setRemaining(0);
+    await beginQuestion(current);
+  }
+
+  async function skipPracticeQuestion(){
+    if(!isPractice || phase==="done") return;
+    runRef.current += 1;
+    window.speechSynthesis?.cancel();
+    stopAndDiscardRecording();
+    const cleaned=attempts.filter((attempt)=>attempt.questionId!==current.id);
+    setAttempts(cleaned);
+    setAudioUrls(prev=>{
+      const old=prev[current.id];
+      if(old) URL.revokeObjectURL(old);
+      const next={...prev};
+      delete next[current.id];
+      return next;
+    });
+    if(index>=questions.length-1){
+      await saveAndFinish(cleaned);
+      return;
+    }
     setIndex(i=>i+1);
   }
 
@@ -217,7 +277,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     if(!started || phase==="narrating" || phase==="review" || phase==="done") return;
     if(remaining<=0){
       if(phase==="study"){
-        (async()=>{ const run=++runRef.current; setPhase("narrating"); await speak(narrationText(current), current.repeatPrompt ?? 1); if(runRef.current!==run) return; setPhase("prep"); setRemaining(current.prepSeconds); })();
+        narrateThenPrep(current);
       } else if(phase==="prep") startRecording();
       else if(phase==="recording"){
         if(isPractice && practiceCaptureMode==="no_record") finishNoRecordingResponse();
@@ -228,19 +288,36 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     const t=setTimeout(()=>setRemaining(v=>v-1),1000); return()=>clearTimeout(t);
   },[remaining,phase,started,current]);
 
-  if(!started) return <div className="test-shell"><header className="exam-header"><b>Speaking Test</b><span>{isPractice?"Practice":`Mock ${setNumber}`}</span></header><main className="system-check"><div className="check-card compact-check"><h1>{isPractice?"연습 방식":"마이크 확인"}</h1>
-  {isPractice && <div className="capture-choice" role="group" aria-label="연습 녹음 방식">
-    <button type="button" className={`capture-option ${practiceCaptureMode==="record"?"selected":""}`} onClick={()=>setPracticeCaptureMode("record")}><Mic size={20}/><span><b>녹음하면서 연습</b><small>답변을 저장하고 다시 들을 수 있습니다.</small></span></button>
-    <button type="button" className={`capture-option ${practiceCaptureMode==="no_record"?"selected":""}`} onClick={()=>setPracticeCaptureMode("no_record")}><Volume2 size={20}/><span><b>녹음 없이 연습</b><small>타이머에 맞춰 말한 뒤 바로 해설을 확인합니다.</small></span></button>
-  </div>}
-  {(!isPractice || practiceCaptureMode==="record") && <div className="check-line"><Mic/><div><b>마이크</b><span>{micReady?"준비 완료":"사용 권한이 필요합니다"}</span></div><button className="button secondary" onClick={prepareMic}>{micReady?"완료":"마이크 확인"}</button></div>}
-  <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>setStarted(true)}>{isPractice?"연습 시작":"시험 시작"}</button><Link href="/" className="text-button center">돌아가기</Link></div></main></div>;
+  if(!started) return <div className="test-shell">
+    <header className="exam-header"><b>Speaking Test</b><span>{isPractice?`Practice ${setNumber}`:`Mock ${setNumber}`}</span></header>
+    <main className="system-check">
+      <div className="check-card compact-check">
+        <h1>{isPractice?`연습 세트 ${setNumber}`:"마이크 확인"}</h1>
+        {isPractice && <>
+          <p className="practice-set-note">11문항을 실제 시험 순서와 동일한 시간으로 연습합니다. 답변 후 해설을 확인하거나 같은 문제를 다시 풀 수 있어요.</p>
+          <details className="practice-set-picker">
+            <summary>다른 연습 세트 선택</summary>
+            <div className="practice-set-grid">
+              {Array.from({length:15},(_,i)=>i+1).map((n)=><Link key={n} className={n===setNumber?"current":""} href={`/practice?set=${n}`}>{String(n).padStart(2,"0")}</Link>)}
+            </div>
+          </details>
+        </>}
+        {isPractice && <div className="capture-choice" role="group" aria-label="연습 녹음 방식">
+          <button type="button" className={`capture-option ${practiceCaptureMode==="record"?"selected":""}`} onClick={()=>setPracticeCaptureMode("record")}><Mic size={20}/><span><b>녹음하면서 연습</b><small>답변을 저장하고 다시 들을 수 있습니다.</small></span></button>
+          <button type="button" className={`capture-option ${practiceCaptureMode==="no_record"?"selected":""}`} onClick={()=>setPracticeCaptureMode("no_record")}><Volume2 size={20}/><span><b>녹음 없이 연습</b><small>타이머에 맞춰 말한 뒤 바로 해설을 확인합니다.</small></span></button>
+        </div>}
+        {(!isPractice || practiceCaptureMode==="record") && <div className="check-line"><Mic/><div><b>마이크</b><span>{micReady?"준비 완료":"사용 권한이 필요합니다"}</span></div><button className="button secondary" onClick={prepareMic}>{micReady?"완료":"마이크 확인"}</button></div>}
+        <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>setStarted(true)}>{isPractice?`세트 ${setNumber} 연습 시작`:"시험 시작"}</button>
+        <Link href="/" className="text-button center">돌아가기</Link>
+      </div>
+    </main>
+  </div>;
 
-  if(phase==="done") return <div className="test-shell"><header className="exam-header"><b>{isPractice?"Practice":"Speaking Test"}</b><span>Saved</span></header><main className="complete-screen"><CheckCircle2 size={54}/><h1>{isPractice?"연습 저장 완료":"답변 저장 완료"}</h1><p>{saveStatus || "저장 중…"}</p><div className="complete-actions"><Link className="button primary" href={isPractice?"/practice":"/dashboard"}>{isPractice?"다른 연습 계속하기":"대시보드 보기"}</Link><Link className="text-button center" href={isPractice?"/dashboard":"/"}>{isPractice?"저장된 결과 보기":"홈으로"}</Link></div></main></div>;
+  if(phase==="done") return <div className="test-shell"><header className="exam-header"><b>{isPractice?`Practice ${setNumber}`:"Speaking Test"}</b><span>Saved</span></header><main className="complete-screen"><CheckCircle2 size={54}/><h1>{isPractice?"연습 저장 완료":"답변 저장 완료"}</h1><p>{saveStatus || "저장 중…"}</p><div className="complete-actions"><Link className="button primary" href={isPractice?`/practice?set=${setNumber}`:"/dashboard"}>{isPractice?"같은 세트 다시 연습":"대시보드 보기"}</Link><Link className="text-button center" href={isPractice?"/practice?set=1":"/"}>{isPractice?"다른 세트 선택":"홈으로"}</Link></div></main></div>;
 
   const phaseText=phase==="study"?"Read the information":phase==="prep"?"Preparation time":phase==="recording"?"Response time":phase==="review"?"Review":"Listen to the question";
   return <div className="test-shell">
-    <header className="exam-header"><div><b>Speaking Test</b><span>Question {current.number} of 11 {isPractice?"· 연습 모드":""}</span></div><div className="progress"><i style={{width:`${(current.number!/11)*100}%`}}/></div></header>
+    <header className="exam-header"><div><b>Speaking Test</b><span>Question {current.number} of 11 {isPractice?`· 연습 세트 ${setNumber}`:""}</span></div><div className="progress"><i style={{width:`${(current.number!/11)*100}%`}}/></div></header>
     <main className={`exam-layout ${isPractice?"practice-layout":""}`}>
       <aside className="exam-sidebar"><div className="question-badge">Question <strong>{current.number}</strong></div><div className={`timer-card ${phase==="recording"?"live":""} ${phase==="review"?"review":""}`}><span>{phaseText}</span><strong>{phase==="narrating"?"LISTEN":phase==="review"?"DONE":formatTime(remaining)}</strong>{phase==="recording"&&<small><i/> {isPractice&&practiceCaptureMode==="no_record"?"Speaking":"Recording"}</small>}</div><div className="task-name">{taskLabel(current)}</div></aside>
       <section className="exam-content">
@@ -258,7 +335,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
         {isPractice && phase==="review" && practiceCaptureMode==="record" && audioUrls[current.id] && <div className="answer-playback"><span>내 답변</span><audio controls src={audioUrls[current.id]} preload="metadata"/></div>}
         {isPractice && <PracticeCoach question={current} allowSample={phase==="review"} onListen={(text)=>speak(text,1)}/>}
 
-        {phase==="review" ? <div className="review-actions"><div><b>답변 완료</b><span>해설을 확인하거나 다음 문제로 이동하세요.</span></div><button className="button primary" onClick={nextPracticeQuestion}>{index>=questions.length-1?"연습 완료":"다음 문제"}<ArrowRight size={17}/></button></div> : <div className="status-strip"><span className={`status-dot ${phase}`}/><b>{phaseText}</b>{isPractice && <button type="button" className="skip-button" onClick={skipQuestion}>{index>=questions.length-1?"건너뛰고 연습 완료":"건너뛰기"}<SkipForward size={15}/></button>}</div>}
+        {phase==="review" ? <div className="review-actions practice-review-actions"><div><b>답변 완료</b><span>해설을 확인한 뒤 다시 풀거나 다음 문제로 이동하세요.</span></div><div className="review-button-row"><button className="button secondary" onClick={redoPracticeQuestion}><RotateCcw size={17}/> 다시 풀기</button><button className="button primary" onClick={nextPracticeQuestion}>{index>=questions.length-1?"연습 완료":"다음 문제"}<ArrowRight size={17}/></button></div></div> : <div className="status-strip"><span className={`status-dot ${phase}`}/><b>{phaseText}</b>{isPractice && <div className="practice-live-actions"><button type="button" className="practice-restart-button" onClick={redoPracticeQuestion}><RotateCcw size={15}/> 다시 시작</button><button type="button" className="practice-skip-button" onClick={skipPracticeQuestion}><SkipForward size={15}/> 건너뛰기</button></div>}</div>}
       </section>
     </main>
   </div>;

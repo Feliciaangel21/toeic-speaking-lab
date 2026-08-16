@@ -130,3 +130,7 @@ When every recorded item in a session is complete, the corresponding `mock_sessi
 ## Session-selectable local runner
 
 For the exact owner workflow, see `../docs/LOCAL_INFERENCE_EXACT.md`. The runner at `http://127.0.0.1:8100/runner` lists pending sessions and evaluates only the session you select.
+
+## Mock + Practice bank lookup
+
+The local queue resolves question metadata from both `data/question-bank.json` and `data/practice-question-bank.json`. This allows the same session-selectable runner to evaluate Mock and Practice sessions without depending on a live question-bank fetch during inference.

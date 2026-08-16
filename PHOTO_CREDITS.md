@@ -11,3 +11,7 @@ The picture-description seed URLs point to free Unsplash photos found during pro
 - Adrian Pranata — train platform — Unsplash
 - Neon Wang — reception/lobby — Unsplash
 - Scott Blake — construction workers — Unsplash
+
+## Practice sets
+
+Practice Sets 1–15 use the same curated, stable photo asset pool under separate `prpic01`–`prpic30` practice item IDs. The practice assignment is rotated so the corresponding Practice and Mock set do not present the same picture pair. Each practice item has its own scene metadata, coaching, and model answer. This avoids introducing unverified or unstable image URLs simply to inflate the bank.

@@ -219,18 +219,22 @@ class SupabaseEvaluationQueue:
         if self._question_cache is not None:
             return self._question_cache
 
-        # Git-tracked bank is the scoring reference. This avoids coupling local
+        # Git-tracked banks are the scoring reference. This avoids coupling local
         # evaluation to a possibly stale optional Supabase question_bank copy.
-        local_bank = Path(__file__).resolve().parents[2] / "data" / "question-bank.json"
-        if local_bank.exists():
-            import json
+        import json
 
+        data_dir = Path(__file__).resolve().parents[2] / "data"
+        combined_cache: dict[str, dict[str, Any]] = {}
+        for filename in ("question-bank.json", "practice-question-bank.json"):
+            local_bank = data_dir / filename
+            if not local_bank.exists():
+                continue
             payload = json.loads(local_bank.read_text(encoding="utf-8"))
             if isinstance(payload, dict):
-                cache = self._build_question_cache(payload)
-                if cache:
-                    self._question_cache = cache
-                    return cache
+                combined_cache.update(self._build_question_cache(payload))
+        if combined_cache:
+            self._question_cache = combined_cache
+            return combined_cache
 
         # Backward-compatible fallback for older checkouts that do not include
         # model-service/data/question-bank.json.

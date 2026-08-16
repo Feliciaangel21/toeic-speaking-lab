@@ -47,7 +47,7 @@ export async function saveMockSession(attempts: RecordedAttempt[], mode:"mock"|"
       user_id: user.id,
       mode,
       status: "completed",
-      mock_set_number: mode === "mock" ? mockSetNumber ?? null : null,
+      mock_set_number: mockSetNumber ?? null,
       evaluation_status: hasAnyAudio ? "pending" : "not_requested",
     })
     .select("id")

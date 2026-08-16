@@ -161,7 +161,7 @@ function pictureHelp(q: Question): PracticeHelp {
     hint:"사진의 모든 것을 나열하려고 하지 마세요. 먼저 장소와 전체 장면을 한 문장으로 말한 뒤, 눈에 잘 보이는 사람 → 행동 → 사물/배경 순서로 4~6문장을 연결하면 안정적입니다.",
     guideWords:["This picture was taken…","In the foreground…","I can see…","appears to be ~ing","In the background…","Overall…"],
     structure:["1) 장소/전체 장면","2) 가장 눈에 띄는 사람과 행동","3) 주변 사람·사물","4) 배경/위치 표현","5) 전체 분위기 한 문장"],
-    sampleAnswer:pictureAnswers[q.id] ?? buildPictureSample(q),
+    sampleAnswer:(typeof q.metadata.sampleAnswer === "string" ? q.metadata.sampleAnswer : undefined) ?? pictureAnswers[q.id] ?? buildPictureSample(q),
     why:"ETS의 최고점 설명은 사진의 주요 특징을 묘사하면서 전반적으로 이해 가능하고, 어휘와 문장 구조를 사용해 아이디어를 일관되게 표현하는 답변을 요구합니다. 그래서 단어만 나열하는 것보다 위치 표현과 동작 문장을 연결해 ‘장면’을 만들어 주는 방식이 유리합니다.",
     officialFocus:["주요 특징을 사진과 관련 있게 묘사","전반적인 이해 가능성","문법·어휘","Cohesion · 문장 간 연결"],
   };
@@ -174,7 +174,7 @@ function interviewHelp(q: Question): PracticeHelp {
     hint:`질문이 요구한 요소를 빠뜨리지 않는 것이 먼저입니다${slotText ? `: 이 문제는 ${slotText}를 모두 포함해 보세요` : ""}. 15초 문제는 결론부터 2~3문장, 30초 문제는 결론 + 이유/예시까지 확장하세요.`,
     guideWords:q.responseSeconds >= 30 ? ["I think…","The main reason is…","For example…","Also…","That’s why…"] : ["Usually…","About…","I prefer… because…","Most often…"],
     structure:q.responseSeconds >= 30 ? ["1) 질문에 바로 답하기","2) 이유 설명","3) 구체적 예시/세부사항","4) 짧게 마무리"] : ["1) 질문에 바로 답하기","2) 필요한 세부정보 한 가지 추가"],
-    sampleAnswer:interviewAnswers[q.id] ?? "I would answer the question directly first and then add one specific reason or detail.",
+    sampleAnswer:(typeof q.metadata.sampleAnswer === "string" ? q.metadata.sampleAnswer : undefined) ?? interviewAnswers[q.id] ?? "I would answer the question directly first and then add one specific reason or detail.",
     why:"ETS는 Q5–10에서 ‘full, relevant, socially appropriate reply’를 높은 점수의 핵심으로 설명합니다. 즉 어려운 표현보다 질문에 정확히 답하고 필요한 정보를 완성하는 것이 우선입니다. 그 위에 자연스러운 전달, 적절한 어휘와 문장 구조가 더해집니다.",
     officialFocus:["Relevance · 질문과 직접 관련된 내용","Completeness · 요구 요소를 빠짐없이 답변","Delivery · 듣기 쉬운 전달","Vocabulary / structures · 적절한 어휘와 문장 구조"]
   };
@@ -207,7 +207,7 @@ function infoHelp(q: Question): PracticeHelp {
     hint:`표 전체를 다시 읽지 말고 질문의 키워드를 먼저 잡으세요. 현재 답변에서 찾아야 할 핵심 정보는 ${facts.length ? facts.map(()=>"●").join(" ") : "표의 관련 항목"} ${facts.length}개입니다. 시간·장소·가격·이름을 말할 때는 표의 정보를 정확하게 전달하세요.`,
     guideWords:["According to the schedule…","It starts at…","It will be held…","Yes, there is…","No, that’s not correct…","There are two…"],
     structure:facts.length > 1 ? ["1) 질문의 조건 확인","2) 조건에 맞는 항목 전부 찾기","3) 시간/장소/가격 등 필요한 정보 함께 말하기","4) 목록을 자연스러운 문장으로 변환"] : ["1) 질문 키워드 확인","2) 정확한 항목 찾기","3) 한 문장으로 자연스럽게 전달"],
-    sampleAnswer:buildInfoSample(q, facts, infoAnswers[q.id]),
+    sampleAnswer:(typeof q.metadata.sampleAnswer === "string" ? q.metadata.sampleAnswer : undefined) ?? buildInfoSample(q, facts, infoAnswers[q.id]),
     why:"ETS 공개 채점표는 이 유형에서 제공 자료의 정보가 ‘accurate’해야 한다고 명시합니다. 또한 표의 문구를 그대로 읽는 것만으로는 부족할 수 있고, 듣는 사람이 이해하기 쉬운 말로 바꾸어 전달해야 합니다. 특히 Q10처럼 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 말하는 것이 중요합니다.",
     officialFocus:["제공 정보의 정확성","질문에 대한 완전한 답변","관련/불필요 정보 구분","표의 문구를 자연스러운 구어 문장으로 변환","전달력·어휘·문장 구조"]
   };
@@ -218,7 +218,7 @@ function opinionHelp(q: Question): PracticeHelp {
     hint:"45초 준비 시간에 완성 문장을 쓰려 하지 말고 ‘내 입장 / 이유 1 / 예시 / 이유 2’ 네 개의 키워드만 정하세요. 60초 답변에서는 입장을 첫 문장에 분명히 밝히는 것이 가장 안전합니다.",
     guideWords:["In my opinion…","First…","The main reason is…","For example…","In addition…","For these reasons…"],
     structure:["1) 입장 명확히 제시","2) 이유 1 설명","3) 구체적 예시/경험","4) 이유 2 또는 추가 설명","5) 입장 재확인"],
-    sampleAnswer:opinionAnswers[q.id] ?? "In my opinion, I would choose one side clearly. First, I would explain my main reason and give a specific example. I would then add a second supporting point and finish by restating my position.",
+    sampleAnswer:(typeof q.metadata.sampleAnswer === "string" ? q.metadata.sampleAnswer : undefined) ?? opinionAnswers[q.id] ?? "In my opinion, I would choose one side clearly. First, I would explain my main reason and give a specific example. I would then add a second supporting point and finish by restating my position.",
     why:"ETS의 Q11 최고점 기준은 선택/의견이 분명하고, 이유·세부사항·논거 또는 예시로 충분히 뒷받침되며, 아이디어 사이의 관계가 명확한 답변을 요구합니다. 전달은 대체로 자연스럽고 명료해야 하며, 기본·복합 문장 구조와 효과적인 어휘 사용도 평가됩니다. 그래서 ‘의견만 길게 반복’하는 것보다 이유와 구체적 예시로 발전시키는 것이 중요합니다.",
     officialFocus:["명확한 choice/opinion","Reasons, details, arguments, examples","아이디어 간 명확한 연결","명료하고 적절한 속도의 전달","문법 통제","효과적인 어휘"]
   };

@@ -2,6 +2,7 @@ import Link from "next/link";
 import AuthPanel from "@/components/AuthPanel";
 
 const mockSets = Array.from({ length: 15 }, (_, index) => index + 1);
+const practiceSets = Array.from({ length: 15 }, (_, index) => index + 1);
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
             시험처럼 연습해요.
           </h1>
           <p className="study-intro">
-            실전 모의고사와 문항별 연습을 내 페이스대로 준비해 보세요.
+            15개 실전 모의고사와 15개 연습 세트를 내 페이스대로 준비해 보세요.
           </p>
         </div>
 
@@ -60,11 +61,11 @@ export default function Home() {
               <span>내 페이스대로</span>
             </div>
             <div>
-              <h2>문항별 연습</h2>
-              <p>답변 후 힌트, 표현, 해설과 모범 답변을 확인하며 천천히 연습해요.</p>
+              <h2>연습 세트</h2>
+              <p>15개 연습 세트에서 답변 후 힌트, 표현, 해설과 모범 답변을 확인하며 천천히 연습해요.</p>
             </div>
-            <Link className="study-card-action secondary" href="/practice">
-              연습하기 <span aria-hidden="true">→</span>
+            <Link className="study-card-action secondary" href="/practice?set=1">
+              연습 세트 선택 <span aria-hidden="true">→</span>
             </Link>
           </article>
         </div>
@@ -82,6 +83,17 @@ export default function Home() {
           <div className="mock-picker-grid">
             {mockSets.map((set) => (
               <Link key={set} href={`/test?set=${set}`}>
+                {String(set).padStart(2, "0")}
+              </Link>
+            ))}
+          </div>
+        </details>
+
+        <details className="mock-picker practice-home-picker">
+          <summary>연습 세트 선택</summary>
+          <div className="mock-picker-grid">
+            {practiceSets.map((set) => (
+              <Link key={set} href={`/practice?set=${set}`}>
                 {String(set).padStart(2, "0")}
               </Link>
             ))}

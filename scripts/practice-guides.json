@@ -4347,5 +4347,4190 @@
       "문법 통제",
       "효과적인 어휘"
     ]
+  },
+  {
+    "question_id": "pra01",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Oakridge Community Center will reopen its swimming pool on Monday after two weeks of maintenance. Morning lap swimming will begin at six thirty, and family swim hours will start at four in the afternoon. Members should bring their own towels because towel service will not be available until next month. Lockers near the pool have also been replaced and now require a one-dollar coin that is returned after use. Anyone registered for swimming lessons will receive an updated schedule by email. Please contact the front desk if you do not receive your schedule by Friday."
+  },
+  {
+    "question_id": "pra02",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Thank you for visiting Pine Street Pharmacy. Prescription pickup is available from eight in the morning until nine at night on weekdays and from nine until six on weekends. Customers who receive a text message saying their order is ready may use the express counter near the entrance. Please bring photo identification when picking up certain medications. The pharmacy also offers free blood pressure checks every Tuesday afternoon. If you have questions about a new prescription, ask to speak with a pharmacist before leaving the store. We are happy to explain dosage instructions and possible side effects."
+  },
+  {
+    "question_id": "pra03",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Midtown Office Building will conduct a fire safety drill next Thursday at ten thirty in the morning. When the alarm sounds, employees should stop working and use the nearest marked stairway to leave the building. Elevators must not be used during the drill. After exiting, each department should meet at its assigned location in Central Plaza. Supervisors will take attendance before anyone returns inside. The exercise is expected to last about twenty minutes. Visitors who are in the building at the time of the drill should remain with the employee or department they are visiting."
+  },
+  {
+    "question_id": "pra04",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Beginning this month, Brookfield Library is offering free technology help sessions for adults every Wednesday evening. Volunteers can assist with basic smartphone settings, video calls, online forms, and common computer programs. Sessions are held from six to eight and do not require an appointment. Participants should bring the device they want help with, along with any necessary chargers or passwords. For privacy reasons, volunteers cannot access banking information or make purchases for participants. The library also offers longer individual computer lessons on Saturday mornings. Those appointments can be reserved at the information desk."
+  },
+  {
+    "question_id": "pra05",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Welcome to Silver Coast Bicycle Rentals. Bicycles may be rented by the hour or for the entire day, and every rental includes a helmet and lock. Customers must present a valid identification card before receiving a bicycle. Please return equipment to this location at least fifteen minutes before closing time. If you experience a mechanical problem during your ride, call the service number printed on your rental receipt. Our staff can arrange assistance or provide directions to the nearest repair point. For safety, riders should use designated bicycle lanes whenever possible and follow all local traffic rules."
+  },
+  {
+    "question_id": "pra06",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Employees are reminded that enrollment for next year's health insurance plan closes on Friday at five p.m. Anyone who wants to change medical, dental, or family coverage must submit the online form before the deadline. Employees who are satisfied with their current plan do not need to take action unless their family information has changed. Human Resources will hold two question-and-answer sessions this week in Meeting Room 2C. A benefits specialist will also be available by phone each afternoon from one until four. Updated plan descriptions and monthly costs are posted on the employee website."
+  },
+  {
+    "question_id": "pra07",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Lakeside Farmers Market will celebrate its tenth anniversary this Sunday with additional food stands and live entertainment. The market opens at eight a.m., and a cooking demonstration will begin near the main entrance at eleven. Local musicians will perform during the afternoon, and children can join free craft activities until three o'clock. Visitors are encouraged to bring reusable bags and water bottles. Parking near the market is limited, so a free shuttle will operate every twenty minutes from the community college parking lot. Most vendors accept cards, but carrying some cash is recommended."
+  },
+  {
+    "question_id": "pra08",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Thank you for calling Weston Medical Clinic. Patients with scheduled appointments should arrive ten minutes early and check in at the reception desk on the third floor. If you have cold or flu symptoms, please wear a mask while you are in the waiting area. Same-day appointments may be available for urgent problems, but patients should call before coming to the clinic. Laboratory services are open from seven thirty until four without an appointment. Test results are normally posted in the patient portal within three business days. For emergencies, please contact your local emergency service instead of the clinic."
+  },
+  {
+    "question_id": "pra09",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Northpoint Hotel will begin renovating its ground-floor restaurant next Monday. During construction, breakfast will be served in the second-floor ballroom from six thirty until ten each morning. Dinner service will be available through room service and at several nearby partner restaurants. Guests may ask the front desk for a list of participating locations and discount offers. Construction work will take place only between nine a.m. and five p.m. to reduce noise during early morning and evening hours. The restaurant is expected to reopen in six weeks with additional seating and a redesigned menu."
+  },
+  {
+    "question_id": "pra10",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "City residents can now register for spring gardening classes at the Botanical Learning Center. Classes cover topics such as balcony gardening, vegetable planting, and caring for indoor plants. Most sessions last ninety minutes and include a short demonstration followed by hands-on practice. Tools and materials are provided, but participants may bring gardening gloves if they prefer. Registration costs fifteen dollars per class, and space is limited to eighteen people. A discounted package is available for anyone who registers for three or more sessions. Complete schedules and instructor information can be found on the center's website."
+  },
+  {
+    "question_id": "pra11",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Starting on September first, Horizon Bank will extend customer service hours at its downtown branch. The branch will open at eight thirty on weekdays and remain open until seven on Thursdays. Saturday hours will continue from nine until one. Customers can meet with financial advisers by appointment for questions about savings, loans, or small-business accounts. Most routine services, including transfers and bill payments, are also available through online banking. The drive-through window will close thirty minutes before the lobby each day. Please check the bank website for holiday schedules before planning your visit."
+  },
+  {
+    "question_id": "pra12",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Westfield Museum has introduced a new reservation system for weekend visitors. Guests may choose an arrival time online and enter the museum within thirty minutes of that time. Reservations are recommended but are not required when space is available. The permanent galleries remain free, while special exhibitions may require a separate ticket. Large bags must be checked at the coat room near the main entrance. Photography is permitted in most galleries unless a sign says otherwise. Families can borrow free activity kits from the education desk, and guided tours are offered twice each Saturday afternoon."
+  },
+  {
+    "question_id": "pra13",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Our company will replace the printers on the fourth and fifth floors this weekend. The new machines will support color printing, scanning, and secure document release using employee identification cards. Beginning Monday, employees must select the new printer name from their computer settings before sending a document. Instructions will be available beside each machine and on the technology support website. Old printer access will remain active for one week in case of technical problems. Employees who regularly print confidential documents should use the secure release feature and collect papers immediately after printing."
+  },
+  {
+    "question_id": "pra14",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Harborview Restaurant is now accepting reservations for its annual winter dinner series. Each Friday evening in January, the chef will prepare a four-course menu featuring seasonal ingredients from local farms. Dinner begins at seven, and guests should plan to arrive at least fifteen minutes early. Vegetarian meals are available when requested during booking. Because the menu changes each week, food allergies should also be reported in advance. Reservations require a small deposit that will be applied to the final bill. Cancellations made at least forty-eight hours before dinner will receive a full refund."
+  },
+  {
+    "question_id": "pra15",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Passengers using Central Station should allow extra travel time this weekend because two platforms will be closed for repairs. Trains on the Green Line will depart from Platform 6 instead of Platform 3 from Saturday morning through Sunday evening. Station employees will be available near the ticket machines to answer questions and direct passengers. Electronic signs will display updated platform information throughout the station. Travelers with bicycles should use the north entrance, where the elevators will remain open. Normal platform assignments are expected to resume before the first train on Monday morning."
+  },
+  {
+    "question_id": "pra16",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The university's Career Development Office will hold resume review appointments throughout the month of October. Students may bring a printed resume or upload a digital copy before their appointment. Advisers will provide feedback on organization, wording, and how clearly experience is presented. Each appointment lasts twenty-five minutes and can be held in person or by video call. Students applying for internships are encouraged to schedule early because appointments fill quickly near application deadlines. The office also offers a free online resume checklist and sample documents for students who want to make improvements before meeting with an adviser."
+  },
+  {
+    "question_id": "pra17",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Thank you for shopping at Cedar Home Furnishings. Furniture deliveries are scheduled within a two-hour arrival window, and customers will receive a confirmation message the evening before delivery. Please make sure hallways and entry areas are clear before the delivery team arrives. Standard delivery includes bringing items into the requested room, but assembly may require an additional service fee. If no adult is present at the scheduled time, the delivery may need to be rescheduled. Customers should inspect each item before the team leaves and report visible damage immediately to the delivery supervisor."
+  },
+  {
+    "question_id": "pra18",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Riverside Theater is looking for volunteers for its summer outdoor performance series. Volunteers help check tickets, guide audience members to seating areas, and answer basic visitor questions. Each volunteer works one four-hour shift and receives a free ticket for a future performance. A short orientation session is required before the first shift. Volunteers must be at least sixteen years old, and anyone under eighteen needs written permission from a parent or guardian. Applications are available online until May fifteenth. Selected volunteers will receive their schedules and orientation details by email at the end of May."
+  },
+  {
+    "question_id": "pra19",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Beginning next week, the Greenway Office Cafeteria will offer mobile ordering during the lunch period. Employees can place an order through the company app between ten thirty and one thirty and choose a pickup time. Orders will be prepared at a separate counter beside the main entrance. The regular cafeteria line will remain open for employees who prefer to order in person. Mobile orders can be changed until fifteen minutes before pickup. To reduce waste, disposable utensils will only be included when requested. The cafeteria plans to add breakfast ordering later this year if the lunch service works well."
+  },
+  {
+    "question_id": "pra20",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Hilltop Community College bookstore will buy back selected textbooks during final exam week. Students should bring their books and student identification to the buyback desk on the first floor. The amount offered depends on the book's condition and whether it will be used in courses next semester. Books with missing pages or serious water damage cannot be accepted. The bookstore will also accept rental-book returns at the same desk. Students are encouraged to come earlier in the week to avoid long lines. Buyback payments can be issued in cash or added to a campus payment card."
+  },
+  {
+    "question_id": "pra21",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Visitors to Maplewood Park should note that the east parking lot will be closed this Saturday for resurfacing. The west lot and street parking near the recreation center will remain available. Because fewer parking spaces will be open, visitors are encouraged to walk, cycle, or use the city bus if possible. All playgrounds, walking paths, and sports fields will remain open during normal hours. Work is expected to finish by Sunday evening, but the schedule may change if it rains. Updated parking information will be posted at each park entrance and on the city's recreation website."
+  },
+  {
+    "question_id": "pra22",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Brightline Customer Support team will introduce a new online appointment option next Monday. Customers who need help with complex account issues can reserve a fifteen-minute video call with a support specialist instead of waiting on the telephone. Appointment times will be available from nine a.m. to six p.m. on weekdays. Before the call, customers will receive a secure link and a short form asking for basic information about the problem. Simple questions can still be handled through live chat. The company will review customer feedback after three months before deciding whether to expand evening appointment hours."
+  },
+  {
+    "question_id": "pra23",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Stonebridge Conference Center has added three small meeting rooms for groups of up to twelve people. Each room includes a large screen, video-conference equipment, and a whiteboard. Reservations can be made by the hour or for a full day. Coffee and bottled water are included with full-day reservations, while other refreshments can be ordered separately. Groups that need technical assistance should request support at least one business day in advance. The new rooms are located on the second floor near the elevators. Current rates and available dates are listed on the conference center's reservation page."
+  },
+  {
+    "question_id": "pra24",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "This month, the City Animal Shelter is offering reduced adoption fees for adult cats and dogs. Every adopted animal receives a basic health examination, required vaccinations, and a microchip before leaving the shelter. Potential adopters should bring identification and be prepared to answer questions about their home and daily schedule. Families who already have pets may speak with staff about arranging a safe introduction. The shelter is open from noon until six Tuesday through Sunday. Visitors can view available animals online, but adoption decisions must be completed in person with a staff member."
+  },
+  {
+    "question_id": "pra25",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Employees who travel for business should use the updated expense form beginning July first. Receipts must be attached for hotel stays, transportation, and individual purchases over twenty-five dollars. Meal expenses should be entered by date rather than combined into one total. Completed reports must be submitted within ten business days after returning from a trip. Managers will receive an email when a report is ready for approval. A short video explaining the new form is available on the finance department website. Questions about unusual expenses should be discussed with Finance before the report is submitted."
+  },
+  {
+    "question_id": "pra26",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Downtown Arts Center will offer evening photography classes for beginners starting next month. The six-week course meets every Tuesday from seven to eight thirty and covers basic camera settings, lighting, composition, and simple photo editing. Students may use a digital camera or a smartphone. The instructor will provide weekly practice assignments and review selected photographs during class. Registration includes access to the center's computer lab on class evenings. Space is limited to sixteen students, and early registration is recommended. A complete materials list will be sent by email one week before the first class."
+  },
+  {
+    "question_id": "pra27",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "A new recycling station has been installed beside the employee entrance of the Westgate Factory. Separate containers are available for paper, plastic bottles, metal cans, batteries, and small electronic devices. Employees should remove food and liquids before placing items in the containers. Larger electronics, such as computer monitors, must still be taken to the technology department for proper disposal. Signs above the containers explain which materials are accepted. The company will monitor the program for several months and may add recycling stations in other buildings if participation is high. Thank you for helping us reduce waste."
+  },
+  {
+    "question_id": "pra28",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The Seaside Visitor Center offers free walking maps and information about local attractions every day from nine until five. Staff can recommend restaurants, hiking routes, museums, and activities for children. Visitors who want to join the historic district walking tour should register at least thirty minutes before departure. Tours leave at ten in the morning and two in the afternoon and last about one hour. Comfortable shoes are recommended because several streets are made of stone. During severe weather, tours may be canceled, so visitors should confirm the schedule by phone before traveling to the center."
+  },
+  {
+    "question_id": "pra29",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "Next Wednesday, the company cafeteria will host a nutrition information event during lunchtime. A registered dietitian will answer questions about healthy meal choices and explain how to read nutrition labels. Employees can also receive a short printed guide with examples of balanced meals and snacks. The event will take place near the cafeteria entrance from eleven thirty until one thirty, and no registration is required. Several new lunch items will be available for tasting in small portions. Employees with food allergies should check ingredient cards before trying any samples. Everyone is welcome to stop by."
+  },
+  {
+    "question_id": "pra30",
+    "hint": "내용을 바꾸거나 요약하지 말고 화면의 지문을 그대로 읽으세요. 준비 시간에는 긴 문장을 의미 단위로 나누고 숫자·고유명사·복합어를 먼저 확인하세요.",
+    "guideWords": [
+      "의미 단위로 끊기",
+      "내용어에 강세",
+      "쉼표에서 짧게 멈추기",
+      "문장 끝 억양",
+      "또렷한 자음"
+    ],
+    "structure": [
+      "1) 어려운 단어와 숫자 확인",
+      "2) 의미 단위로 끊을 위치 정하기",
+      "3) 핵심 내용어에 자연스러운 강세",
+      "4) 너무 빠르지 않게 끝까지 읽기"
+    ],
+    "why": "이 유형은 아이디어의 질보다 발음의 이해 가능성과 자연스러운 억양·강세를 중심으로 연습합니다. 원문을 정확히 전달하면서 의미 단위가 들리도록 읽는 것이 핵심입니다.",
+    "officialFocus": [
+      "Pronunciation · 발음/이해 가능성",
+      "Intonation & stress · 억양과 강세"
+    ],
+    "coachNote": "모범 답변은 별도 문장을 만드는 것이 아니라 화면의 지문 그 자체입니다.",
+    "sampleAnswer": "The North County Transit Office has launched a mobile ticket option for local buses. Riders can purchase single trips or day passes through the transit app and activate a ticket shortly before boarding. Once activated, the ticket must be shown to the driver on the phone screen. Paper tickets and transit cards will continue to be accepted. Riders should make sure their phones have enough battery power for the entire trip because drivers cannot accept screenshots of expired tickets. Instructions for downloading the app and setting up payment are available on buses and at major transit stations."
+  },
+  {
+    "question_id": "prpic01",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in an office meeting room. Several coworkers are sitting around a table, and they seem to be discussing a project. A laptop and some documents are on the table. One person appears to be speaking while the others are listening. The room looks bright and professional. Overall, it seems like a typical business meeting."
+  },
+  {
+    "question_id": "prpic02",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows two people shopping in a supermarket. They are standing beside a shopping cart and looking at products on the shelves. One shopper appears to be choosing an item while the other is waiting nearby. The aisle is well stocked with groceries. Overall, the store looks clean and organized, and the shoppers seem to be doing regular household shopping."
+  },
+  {
+    "question_id": "prpic03",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken inside a busy café. Several customers are sitting at tables, and some of them seem to be talking or having drinks. A counter is visible in the background under bright lights. The café looks comfortable and fairly crowded. Overall, it seems like a popular place where people can meet friends, work, or relax with coffee."
+  },
+  {
+    "question_id": "prpic04",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a business presentation. A presenter is standing near a screen and speaking to a group of colleagues. Several people are seated at a table with laptops in front of them. They appear to be watching the presentation carefully. The conference room looks modern and well lit. Overall, the group seems to be discussing a work project."
+  },
+  {
+    "question_id": "prpic05",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in a large indoor market. Many shoppers are moving through the area with carts, and different products are displayed around them. Some people appear to be looking at fresh produce while others are walking between the stalls. Signs are hanging above the shopping area. Overall, the market looks lively, crowded, and full of activity."
+  },
+  {
+    "question_id": "prpic06",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a public park on a pleasant day. Several people are sitting or relaxing on the grass, while others are walking nearby. There are many green trees around the area, so the park looks peaceful. Some people may be spending time with friends or family. Overall, it seems like a comfortable place to enjoy the outdoors."
+  },
+  {
+    "question_id": "prpic07",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at a train station. Several commuters are standing on a platform and waiting. Some people are looking at their phones, while others are facing the tracks. A few passengers are carrying bags. The platform appears fairly busy but orderly. Overall, it looks like a typical commuting scene during a busy part of the day."
+  },
+  {
+    "question_id": "prpic08",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a modern reception area. A long counter is in the center, and a staff member appears to be working behind it. The lobby is spacious and brightly lit, with plenty of open space in front of the desk. Overall, it seems like the entrance to a hotel or office building where visitors can check in or ask for help."
+  },
+  {
+    "question_id": "prpic09",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at a construction site. Several workers are wearing hard hats and safety equipment while working near a large building. Construction materials and equipment are visible around them. The workers appear focused on their tasks. Overall, the site looks busy and organized, and safety seems to be an important part of the work."
+  },
+  {
+    "question_id": "prpic10",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows an airport terminal. Several travelers are waiting near rows of seats, and some of them have luggage beside them. A departure board is visible in the area, so people may be checking flight information. The terminal looks spacious and busy. Overall, it seems like passengers are waiting for their flights or preparing to board."
+  },
+  {
+    "question_id": "prpic11",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at an outdoor restaurant patio. Several customers are sitting at tables and eating a meal. A server appears to be moving between the tables, and plates and drinks are visible. The seating area is outside, so the atmosphere looks casual and pleasant. Overall, it seems like people are enjoying lunch or dinner together."
+  },
+  {
+    "question_id": "prpic12",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a busy city crosswalk. Several pedestrians are crossing the street while cars are waiting nearby. Tall buildings can be seen in the background, and a traffic light is controlling the intersection. Some people are carrying bags as they walk. Overall, it looks like a normal downtown scene with both pedestrians and vehicles moving through the area."
+  },
+  {
+    "question_id": "prpic13",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in a library study area. Several students are sitting around tables with books and laptops in front of them. Some appear to be reading, while others may be working on assignments. The area looks quiet and well organized. Overall, it seems like a comfortable place for students to study individually or work on school projects."
+  },
+  {
+    "question_id": "prpic14",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a hotel reception desk. A few guests are standing near the counter with their luggage, and a staff member appears to be helping them. The lobby looks clean and professional. One guest may be checking in or asking a question. Overall, it seems like a typical hotel arrival scene where travelers are receiving assistance from the front desk."
+  },
+  {
+    "question_id": "prpic15",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken inside a bakery. Several customers are standing near a display counter filled with bread or other baked goods. A cashier is working behind the counter and appears to be helping someone place an order. The shop looks bright and inviting. Overall, it seems like customers are choosing food and waiting to pay for their purchases."
+  },
+  {
+    "question_id": "prpic16",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a warehouse. Several workers are moving boxes near tall shelves filled with products. A cart is being used to transport some of the packages. The workers seem focused and may be preparing orders for delivery. Overall, the warehouse looks busy and organized, with employees handling inventory and moving goods from one area to another."
+  },
+  {
+    "question_id": "prpic17",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at a city bus stop. Several commuters are waiting beside the street, and some are carrying bags. A bench and a bus stop sign are visible nearby. A few people appear to be looking down the road for the bus. Overall, it looks like a typical public transportation scene during a regular commuting period."
+  },
+  {
+    "question_id": "prpic18",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a classroom lesson. Several students are sitting at desks while a teacher stands near the front of the room. A whiteboard is visible behind the teacher. The students appear to be paying attention or taking notes. Overall, the classroom looks organized, and it seems like the teacher is explaining something to the group."
+  },
+  {
+    "question_id": "prpic19",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in an office break room. Several coworkers are standing near a kitchen counter with cups in their hands. They appear to be talking during a short break. Cabinets and other kitchen items are visible in the background. Overall, the atmosphere looks relaxed, and the employees seem to be spending a few minutes socializing away from their desks."
+  },
+  {
+    "question_id": "prpic20",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows an outdoor market. Vendors are standing behind stalls while shoppers look at fresh produce and other items. Some customers are carrying bags, and several tables are filled with products. The market looks busy and colorful. Overall, it seems like a lively place where local sellers are serving customers in an open-air shopping area."
+  },
+  {
+    "question_id": "prpic21",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in a fitness center. Several people are exercising near different pieces of equipment. Some may be lifting weights while others are using machines. The gym looks clean and well equipped. Everyone appears focused on training. Overall, it seems like a normal workout session with people exercising independently in the same space."
+  },
+  {
+    "question_id": "prpic22",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a museum gallery. Several visitors are standing near paintings and looking at the artwork on the walls. The room is open and quiet, with plenty of space between the displays. Some people appear to be discussing what they see. Overall, it looks like visitors are taking their time and enjoying an art exhibition."
+  },
+  {
+    "question_id": "prpic23",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at a conference registration area. Several attendees are standing near a desk, and staff members appear to be checking names or handing out badges. Signs are visible around the counter. Some people are waiting in line. Overall, it seems like participants are arriving for a professional event and completing the check-in process."
+  },
+  {
+    "question_id": "prpic24",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows the inside of a commuter train. Several passengers are sitting in rows of seats, and some have bags beside them. A few people may be looking at phones or out the windows. The train looks clean and fairly quiet. Overall, it seems like a normal trip with passengers traveling to work or another destination."
+  },
+  {
+    "question_id": "prpic25",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in a public plaza. Several people are walking through the area, while others are sitting on benches. Large buildings surround the open space, and there is plenty of room for pedestrians. The plaza looks active but not crowded. Overall, it seems like a common downtown area where people can meet, rest, or pass through."
+  },
+  {
+    "question_id": "prpic26",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a flower shop. A customer and a clerk are standing near a counter surrounded by colorful flowers. They appear to be arranging or choosing a bouquet together. Different kinds of flowers are displayed around the shop. Overall, the scene looks bright and pleasant, and the clerk seems to be helping the customer prepare a purchase."
+  },
+  {
+    "question_id": "prpic27",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken at a bicycle rental station. Several people are standing near rows of bicycles, and some are holding helmets. They appear to be choosing bikes or preparing to ride. The station is located beside a street. Overall, it looks like a convenient place for visitors or residents to rent bicycles for transportation or recreation."
+  },
+  {
+    "question_id": "prpic28",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a medical waiting room. Several patients are sitting in chairs, and a reception desk is visible nearby. Some people appear to be waiting quietly, while others may be looking at their phones. The area looks clean and organized. Overall, it seems like patients are waiting for appointments at a clinic or medical office."
+  },
+  {
+    "question_id": "prpic29",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture was taken in a food court. Many people are sitting at tables with trays and meals, while others are ordering food at counters in the background. The seating area looks busy, and several groups seem to be eating together. Overall, it appears to be a popular place where shoppers or workers can have a quick meal."
+  },
+  {
+    "question_id": "prpic30",
+    "hint": "장소와 전체 장면을 먼저 말한 뒤, 눈에 띄는 사람과 행동, 주변 사물, 배경 순서로 4~6문장을 연결해 보세요.",
+    "guideWords": [
+      "This picture was taken…",
+      "In the foreground…",
+      "I can see…",
+      "appears to be ~ing",
+      "In the background…",
+      "Overall…"
+    ],
+    "structure": [
+      "1) 장소/전체 장면",
+      "2) 가장 눈에 띄는 사람과 행동",
+      "3) 주변 사람·사물",
+      "4) 배경/위치 표현",
+      "5) 전체 분위기"
+    ],
+    "why": "사진의 주요 특징을 관련 있게 설명하고, 어휘와 문장 구조를 사용해 장면을 일관되게 전달하는 연습이 중요합니다. 단어 나열보다 사람·행동·위치를 문장으로 연결하세요.",
+    "officialFocus": [
+      "사진과 관련된 주요 특징",
+      "전반적인 이해 가능성",
+      "문법·어휘",
+      "Cohesion · 문장 간 연결"
+    ],
+    "sampleAnswer": "This picture shows a delivery loading area. Several workers are moving packages near a van, and one person appears to be using a cart. Boxes are stacked close to the vehicle. The workers seem busy loading or unloading items. Overall, it looks like a normal delivery operation where packages are being prepared for transportation."
+  },
+  {
+    "question_id": "priq01-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I visit a library about twice a week. I usually go in the late afternoon after class because it is quiet and I can study there for a few hours."
+  },
+  {
+    "question_id": "priq01-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually study, borrow books, and use the quiet reading area. Sometimes I also reserve a small room when I need to work on a group project."
+  },
+  {
+    "question_id": "priq01-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I would like my local library to offer more evening study rooms. Many students and office workers cannot visit until after dinner, but most reservable rooms close early. For example, during exam season I often need a quiet place after eight o'clock. Longer room hours would make the library much more useful for people with busy daytime schedules."
+  },
+  {
+    "question_id": "priq02-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I order food for delivery about once a week, usually on Friday evening when I am tired and do not feel like cooking."
+  },
+  {
+    "question_id": "priq02-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I most often order Korean food because it travels well and there are many choices near my apartment. It is also easy to share with friends."
+  },
+  {
+    "question_id": "priq02-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I think accurate delivery times are the most important. Customers plan their meals around the time shown in the app, so long unexpected delays are frustrating. For example, if an order is going to be thirty minutes late, the service should update the customer immediately. Reliable timing and clear communication would make me much more likely to use the service again."
+  },
+  {
+    "question_id": "priq03-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I visit a public park two or three times a week. I usually go after dinner to walk for about thirty minutes and get some fresh air."
+  },
+  {
+    "question_id": "priq03-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I enjoy walking the most because it is simple and relaxing. I can exercise lightly while listening to music or talking with a friend."
+  },
+  {
+    "question_id": "priq03-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I would add more covered seating areas. The parks near my home have many benches, but most of them are completely exposed to the sun and rain. For example, families often leave quickly when the weather changes. Small covered areas would let people rest, eat, or wait comfortably and would make the parks useful during more kinds of weather."
+  },
+  {
+    "question_id": "priq04-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I use online learning materials several times a week. I usually watch short lessons in the evening when I want to review something from class."
+  },
+  {
+    "question_id": "priq04-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I prefer using a laptop because the screen is larger and I can take notes more easily. It is also more convenient when I need several browser windows open."
+  },
+  {
+    "question_id": "priq04-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "For me, an effective online class needs short lessons and frequent practice activities. If a video is too long, it is easy to lose concentration. For example, I learn vocabulary better when a ten-minute explanation is followed by a quick quiz. That format helps me check whether I understood the lesson before moving on to the next topic."
+  },
+  {
+    "question_id": "priq05-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I attend a local event every couple of months, especially in spring and fall when there are outdoor festivals and the weather is comfortable."
+  },
+  {
+    "question_id": "priq05-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually go with two or three friends because it is more fun to try food, watch performances, and explore different booths together."
+  },
+  {
+    "question_id": "priq05-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I think organizers should include short hands-on activities. People enjoy doing something themselves instead of only watching. For example, a food festival could offer a simple cooking demonstration where visitors prepare one small dish. Activities like that give people something memorable to do and also make it easier for families or groups of friends to participate together."
+  },
+  {
+    "question_id": "priq06-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I ride a bicycle about once or twice a week. I usually use it on weekends when I have time to exercise or visit a nearby park."
+  },
+  {
+    "question_id": "priq06-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually ride along the river because there is a long bicycle path separated from cars. It feels safer and the scenery is much nicer than downtown streets."
+  },
+  {
+    "question_id": "priq06-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "The city should build more protected bicycle lanes. Many people are interested in cycling, but they feel uncomfortable riding next to fast traffic. For example, I avoid several shopping areas because there is no safe lane connecting them to the river path. A connected network of protected lanes would make cycling safer and more practical for everyday transportation."
+  },
+  {
+    "question_id": "priq07-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I attend meetings or group discussions about three times a week. Most of them are for class projects, and they usually last thirty to forty minutes."
+  },
+  {
+    "question_id": "priq07-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I prefer in-person meetings because it is easier to see everyone's reactions and have a natural discussion. I also get distracted less than I do during online meetings."
+  },
+  {
+    "question_id": "priq07-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I think every meeting should have a short agenda shared in advance. When people know the topics and decisions that need to be made, they can prepare and stay focused. For example, my project group started listing three discussion points before each meeting, and our meetings became much shorter because we stopped spending time on unrelated issues."
+  },
+  {
+    "question_id": "priq08-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I buy new clothes every two or three months. I usually shop when the season changes or when I need something specific for work or school."
+  },
+  {
+    "question_id": "priq08-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I prefer shopping in a store because I can try things on and check the material. That helps me avoid buying clothes that do not fit well."
+  },
+  {
+    "question_id": "priq08-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "The most important factor for me is whether I can wear the item often. I would rather buy one simple jacket that works with many outfits than something fashionable that I can only wear once or twice. For example, I usually choose neutral colors because they are easy to match. That makes the purchase more useful and worth the price."
+  },
+  {
+    "question_id": "priq09-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I use my electric kettle most often because I make coffee or tea several times a day. It is quick, simple, and easy to clean."
+  },
+  {
+    "question_id": "priq09-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually compare products online and read customer reviews. I also watch short review videos when I want to see how the appliance works in real use."
+  },
+  {
+    "question_id": "priq09-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "Yes, I would pay somewhat more for an energy-efficient appliance because I would use it for several years. A higher purchase price can be reasonable if it reduces electricity costs every month. For example, when my family replaced an old air conditioner with an efficient model, our summer electricity bill became noticeably lower. The long-term savings can make the extra cost worthwhile."
+  },
+  {
+    "question_id": "priq10-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I stay at a hotel a few times a year, usually during vacations or short weekend trips to another city."
+  },
+  {
+    "question_id": "priq10-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "A convenient location is most important to me because I do not want to spend a lot of time traveling between the hotel and the places I want to visit."
+  },
+  {
+    "question_id": "priq10-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "A hotel shuttle made one of my trips much easier. The hotel offered free transportation between the airport and the lobby every hour. I arrived late at night, so I did not have to search for a taxi or figure out public transportation with my luggage. The service saved time, reduced stress, and made the first day of the trip much smoother."
+  },
+  {
+    "question_id": "priq11-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "Yes. Last year I took a beginner cooking class at a community center. It met once a week and focused on simple meals that could be prepared quickly."
+  },
+  {
+    "question_id": "priq11-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I would like to take a photography class because I travel often and want to take better pictures. I especially want to learn about lighting and composition."
+  },
+  {
+    "question_id": "priq11-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I think a class is worth paying for when students get personal feedback and enough time to practice. Information alone is easy to find online. For example, in a cooking class an instructor can watch how I prepare something and correct a mistake immediately. That kind of direct help is difficult to get from a video, so it makes the class more valuable."
+  },
+  {
+    "question_id": "priq12-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I listen to music every day, mostly while commuting or exercising. I probably spend at least an hour a day listening to different playlists."
+  },
+  {
+    "question_id": "priq12-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I listen to pop music most often because it is energetic and easy to listen to while I am doing other things like walking or cleaning."
+  },
+  {
+    "question_id": "priq12-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I prefer live concerts because the atmosphere makes the music feel much more exciting. Hearing a favorite song with a large audience creates an experience that headphones cannot copy. For example, I attended a small concert last year, and even songs I already knew sounded different because the musicians changed parts of the performance and interacted with the audience."
+  },
+  {
+    "question_id": "priq13-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually pay by card or with a mobile payment app. I rarely carry much cash because electronic payment is faster and works at most stores I visit."
+  },
+  {
+    "question_id": "priq13-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I am most likely to use cash at a small street market. Some vendors do not accept cards, and paying a small amount in cash is simple."
+  },
+  {
+    "question_id": "priq13-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I would like a mobile payment service to organize spending automatically by category. It would be useful if every purchase were labeled as food, transportation, shopping, or another category. For example, at the end of the month I could quickly see where most of my money went. That would make the payment app useful for budgeting as well as for paying."
+  },
+  {
+    "question_id": "priq14-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I cook at home four or five times a week. I usually prepare dinner because it is cheaper than eating out and I can make enough for the next day."
+  },
+  {
+    "question_id": "priq14-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I usually find meal ideas on cooking websites and short videos. I like recipes that show the ingredients clearly and take less than thirty minutes."
+  },
+  {
+    "question_id": "priq14-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I think planning a few meals before shopping is the best method. If the ingredients are already at home, cooking feels much easier after a busy day. For example, I choose three simple dinners on Sunday and buy everything at once. I can also prepare vegetables in advance. This saves time during the week and prevents me from ordering delivery just because I am tired."
+  },
+  {
+    "question_id": "priq15-q1",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "Yes. I have volunteered at a neighborhood clean-up event several times. We collected trash, separated recyclable items, and cleaned walking paths in a local park."
+  },
+  {
+    "question_id": "priq15-q2",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "Usually…",
+      "I prefer… because…",
+      "The main reason is…",
+      "For example…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "I would rather volunteer with people I know because we can encourage each other and the work feels more enjoyable when we can talk while doing it."
+  },
+  {
+    "question_id": "priq15-q3",
+    "hint": "질문에 바로 답한 뒤 필요한 세부 정보를 추가하세요. 15초 문제는 2~3문장, 30초 문제는 이유와 구체적 예시까지 확장하면 안정적입니다.",
+    "guideWords": [
+      "I think…",
+      "The main reason is…",
+      "For example…",
+      "Also…",
+      "That’s why…"
+    ],
+    "structure": [
+      "1) 질문에 바로 답하기",
+      "2) 요구된 세부 정보 포함",
+      "3) 30초 문제라면 이유/예시 추가",
+      "4) 짧게 마무리"
+    ],
+    "why": "이 유형은 질문에 관련 있고 완전하게 답하는 것이 우선입니다. 어려운 표현보다 질문이 요구한 요소를 빠짐없이 말하고, 자연스럽게 세부 정보를 덧붙이는 연습에 집중하세요.",
+    "officialFocus": [
+      "Relevance · 질문과 직접 관련된 내용",
+      "Completeness · 요구 요소",
+      "Delivery · 듣기 쉬운 전달",
+      "Vocabulary / structures"
+    ],
+    "sampleAnswer": "Organizations should offer short, flexible volunteer opportunities that clearly explain the impact of the work. Young people may want to help but cannot commit every weekend. For example, a two-hour event with online sign-up is much easier to join than a long program. Showing photos or results afterward can also help volunteers see that their time made a real difference."
+  },
+  {
+    "question_id": "prinfo01-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "It begins at 9:00 A.M. at the Brighton Business Center."
+  },
+  {
+    "question_id": "prinfo01-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The registration fee for company partners is sixty-five dollars."
+  },
+  {
+    "question_id": "prinfo01-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "You should attend Managing Priorities at 11:30 A.M. in Room 305. Then at 2:00 P.M., there is a session called Working Across Teams, also in Room 305."
+  },
+  {
+    "question_id": "prinfo02-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The ride to the Central Hotel takes approximately forty-five minutes."
+  },
+  {
+    "question_id": "prinfo02-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "A round-trip ticket costs twenty-four dollars."
+  },
+  {
+    "question_id": "prinfo02-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The next Terminal 1 shuttle leaves at 11:00 A.M., so that would be your best option. If you miss it, another Terminal 1 shuttle leaves at 3:00 P.M."
+  },
+  {
+    "question_id": "prinfo03-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "General admission is eighteen dollars."
+  },
+  {
+    "question_id": "prinfo03-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Family Fossil Tour begins at 1:00 P.M., and you should meet at the East Lobby."
+  },
+  {
+    "question_id": "prinfo03-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "After two, you can attend the Planetarium Talk at 2:30 P.M. in Theater 2. There is also a Space Gallery Tour at 4:00 P.M., which meets in the North Lobby."
+  },
+  {
+    "question_id": "prinfo04-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Maple Room is available at ten in the morning and has space for twelve people."
+  },
+  {
+    "question_id": "prinfo04-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Harbor Room costs sixty dollars per hour."
+  },
+  {
+    "question_id": "prinfo04-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Maple Room could work because it is available until 4:00 P.M., holds twelve people, and has video-conference equipment. The Harbor Room is another option after 1:00 P.M.; it holds eighteen people and also has video-conference equipment."
+  },
+  {
+    "question_id": "prinfo05-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Fresh Pasta Basics class costs forty-five dollars."
+  },
+  {
+    "question_id": "prinfo05-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Chef Asha Mehta teaches Vegetarian Lunches, and the class is held in Kitchen A."
+  },
+  {
+    "question_id": "prinfo05-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Laura Kim teaches two classes. Quick Breakfasts starts at 9:00 A.M. in Kitchen A, and Simple Desserts starts at 3:30 P.M. in Kitchen C."
+  },
+  {
+    "question_id": "prinfo06-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "A day pass costs thirty-two dollars."
+  },
+  {
+    "question_id": "prinfo06-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "No. Behind the Camera is a director interview, not a film screening."
+  },
+  {
+    "question_id": "prinfo06-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "You can see the Short Film Collection at 12:45 P.M., Behind the Camera at 2:30 P.M., and Ocean Road at 4:15 P.M. The last one runs for 110 minutes."
+  },
+  {
+    "question_id": "prinfo07-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The first train leaves Lake City at 7:20 A.M."
+  },
+  {
+    "question_id": "prinfo07-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The 9:10 Regional train costs thirty-one dollars."
+  },
+  {
+    "question_id": "prinfo07-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "You have two choices. Express 118 leaves at 12:40 P.M. and arrives at 2:25 P.M. Regional 226 leaves at 3:30 P.M. and arrives at 5:50 P.M., so both arrive before six."
+  },
+  {
+    "question_id": "prinfo08-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "For a nonmember, each class costs twelve dollars."
+  },
+  {
+    "question_id": "prinfo08-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Strength Basics starts at 6:30 P.M., and Eric Stone teaches it."
+  },
+  {
+    "question_id": "prinfo08-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Nina Brooks teaches Beginner Yoga at 5:00 P.M. and Intermediate Yoga at 7:00 P.M. Both classes are held in Studio A."
+  },
+  {
+    "question_id": "prinfo09-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Adult admission costs sixteen dollars."
+  },
+  {
+    "question_id": "prinfo09-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Bread-Making Demonstration is at 11:00 A.M. in the Farm Kitchen."
+  },
+  {
+    "question_id": "prinfo09-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "After noon, there is a Picnic Lunch at 1:00 P.M. in the Orchard Area. Then Fruit Picking begins at 2:30 P.M. in the East Field, and it costs six dollars per basket."
+  },
+  {
+    "question_id": "prinfo10-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The first shuttle leaves Central Station at 7:10 A.M."
+  },
+  {
+    "question_id": "prinfo10-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "You should take Route B because it stops at Building 4."
+  },
+  {
+    "question_id": "prinfo10-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Since Building 3 is on Route A, you can take the 7:10 A.M. shuttle, which arrives at 7:40, or the 8:10 A.M. shuttle, which arrives at 8:40. Both get you there before nine."
+  },
+  {
+    "question_id": "prinfo11-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "An eight-week course costs one hundred twenty dollars."
+  },
+  {
+    "question_id": "prinfo11-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Mika Tan teaches Beginner Japanese, and it starts at 6:30 P.M."
+  },
+  {
+    "question_id": "prinfo11-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "There are two English classes. Business English begins at 6:00 P.M., and Presentation English begins at 8:00 P.M. Both classes are taught by Robert Hale in Room 210."
+  },
+  {
+    "question_id": "prinfo12-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Afternoon Package costs four hundred sixty dollars."
+  },
+  {
+    "question_id": "prinfo12-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Yes. Parking for up to twenty cars is included with every package, including the Evening Package."
+  },
+  {
+    "question_id": "prinfo12-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "You should choose the Full-Day Package. It runs from 8:00 A.M. to 5:00 P.M., includes lunch, and costs seven hundred ninety dollars."
+  },
+  {
+    "question_id": "prinfo13-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "There is no admission charge. All of the lectures are free."
+  },
+  {
+    "question_id": "prinfo13-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Science of Sleep is on April 10 at 6:00 P.M."
+  },
+  {
+    "question_id": "prinfo13-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Designing Better Parks requires advance registration. It is on April 17 at 7:00 P.M., the speaker is Professor Claire Wong, and it will be held in Room 210."
+  },
+  {
+    "question_id": "prinfo14-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Water Stations orientation lasts forty-five minutes."
+  },
+  {
+    "question_id": "prinfo14-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Your orientation is Wednesday at 5:30 P.M. in Room C."
+  },
+  {
+    "question_id": "prinfo14-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "Yes. You can attend the General Make-Up Session on Thursday at 6:00 P.M. It is in the Main Hall and lasts seventy-five minutes."
+  },
+  {
+    "question_id": "prinfo15-q1",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "The Local Artist Talk begins at 1:00 P.M. in Gallery Hall."
+  },
+  {
+    "question_id": "prinfo15-q2",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "No. The Dance Performance is free, just like the other performances."
+  },
+  {
+    "question_id": "prinfo15-q3",
+    "hint": "질문의 키워드를 먼저 잡고 표에서 필요한 시간·장소·가격·이름만 찾아 정확하게 말하세요. 여러 항목을 묻는 문제는 조건에 맞는 정보를 빠짐없이 묶어 답하세요.",
+    "guideWords": [
+      "According to the schedule…",
+      "It starts at…",
+      "It will be held…",
+      "The fee is…",
+      "There are two…"
+    ],
+    "structure": [
+      "1) 질문 조건 확인",
+      "2) 표에서 관련 항목 찾기",
+      "3) 필요한 사실을 정확히 말하기",
+      "4) 자연스러운 구어 문장으로 전달"
+    ],
+    "why": "제공 자료를 사용하는 문제에서는 정보의 정확성과 완전성이 핵심입니다. 표를 그대로 읽기보다 질문에 필요한 사실만 선택해 듣기 쉬운 문장으로 바꾸어 말하세요.",
+    "officialFocus": [
+      "제공 정보의 정확성",
+      "질문에 대한 완전한 답변",
+      "관련 정보 선택",
+      "전달력·어휘·문장 구조"
+    ],
+    "sampleAnswer": "After two, there is a Street Photography Workshop at 2:30 P.M., a Dance Performance at 4:00, and an Evening Concert at 6:00. The photography workshop costs twenty dollars and requires advance registration."
+  },
+  {
+    "question_id": "prop01",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "Yes, I think flexible work hours are a good idea when the job allows them. First, people have different responsibilities and commuting situations, so a flexible schedule can reduce unnecessary stress. For example, a parent may need to take a child to school before coming to work, while another employee may prefer to start early and avoid rush-hour traffic. Second, employees can often work better during the hours when they are most focused. Of course, teams still need common times for meetings and customer service. However, if a company sets clear rules about availability, flexibility can improve both productivity and employee satisfaction. For those reasons, I would support flexible working hours."
+  },
+  {
+    "question_id": "prop02",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think companies should spend more money training current employees. Existing employees already understand the company, its customers, and the way the team works, so helping them develop new skills can be efficient. For example, if a company needs workers who understand a new software system, it may be faster to train experienced staff than to hire many new people who also need time to learn the organization. Training can also improve motivation because employees see that the company is willing to invest in their growth. Hiring is still necessary when a company lacks specialized knowledge. However, for skills that can reasonably be taught, developing current employees is usually the better long-term investment."
+  },
+  {
+    "question_id": "prop03",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think cities should invest more in public transportation. Good buses and trains can move many people efficiently without requiring every traveler to use a separate car. This can reduce traffic and make commuting more predictable. For example, when a subway line connects residential areas with major business districts, thousands of people can avoid driving during rush hour. Public transportation is also important for students, older residents, and people who cannot afford a car. Roads still need maintenance, and some areas depend on cars. However, continuously adding roads often creates more traffic over time. A reliable transportation network gives residents more choices and can make a city easier and less expensive to travel around."
+  },
+  {
+    "question_id": "prop04",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "For an important project, I prefer working as part of a small team. Different people can contribute different strengths, so the final result is often better than one person's work. For example, on a presentation project, one person may be good at research, another at visual design, and another at speaking. A team can also notice mistakes that an individual might overlook. Of course, teamwork requires communication, and too many people can make decisions slower. That is why I prefer a small group with clear responsibilities. If everyone understands what they need to do and shares progress regularly, a team can work efficiently while still benefiting from several perspectives. For me, that is the best balance."
+  },
+  {
+    "question_id": "prop05",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I prefer shopping at small local businesses when the price and quality are reasonable. One reason is that local stores often provide more personal service. Employees may know their products well and can recommend something based on what a customer actually needs. I also like knowing that some of the money I spend stays in the local community. For example, there is a small bakery near my home, and the owner remembers regular customers and adjusts the menu based on their feedback. Large stores are useful because they usually have more choices and lower prices. Still, for everyday purchases where service and quality matter, I enjoy supporting smaller businesses and building a relationship with the people who run them."
+  },
+  {
+    "question_id": "prop06",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think taking notes by hand is better for learning, although digital notes are more convenient for storage. When I write by hand, I have to choose the most important ideas instead of copying everything quickly. That process helps me pay attention and remember the material. For example, before an exam, I often remember the page where I wrote a diagram or a key formula. Handwritten notes also reduce distractions because I am not receiving messages or opening other websites. Digital notes are useful when I need to search, organize, or share information. However, during a lecture or study session, I understand the content better when I write the main points myself. Therefore, I usually prefer handwritten notes."
+  },
+  {
+    "question_id": "prop07",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "Yes, I think new employees should have a mentor during their first few months. Starting a new job involves many small questions that may not be covered in formal training. A mentor can explain normal procedures, introduce important coworkers, and help the new employee understand how the team communicates. For example, a new worker might know how to use the company's software but still be unsure about who approves a certain request. Asking one assigned person is faster than trying to find the answer alone. Mentoring also helps new employees feel more comfortable and connected. The mentor should not do the new employee's work, but regular guidance at the beginning can prevent mistakes and help people become independent more quickly."
+  },
+  {
+    "question_id": "prop08",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "For most routine business meetings, I think video calls are better than traveling in person. They save both time and money because employees do not need flights, hotels, or long trips to the airport. A one-hour meeting can actually take only one hour instead of an entire day. For example, project teams can hold a quick video meeting every week and solve problems before they become serious. In-person meetings are still valuable when people are building a new relationship, negotiating an important agreement, or visiting a work site. However, those situations do not happen every day. For regular updates and discussions, video calls are efficient and allow companies to communicate frequently without the cost and environmental impact of constant travel."
+  },
+  {
+    "question_id": "prop09",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think university students should complete some type of work experience before graduation, although the requirement should be flexible. An internship helps students understand how knowledge from class is used in a real workplace. It can also show them which jobs they actually enjoy. For example, a student studying marketing may discover during an internship that they prefer data analysis to advertising. Work experience also teaches practical skills such as professional communication, deadlines, and teamwork. Some students may not be able to take a traditional full-time internship, so universities should also accept part-time projects, research work, or community organizations. With several options available, a work-experience requirement could help students make better career decisions and enter the job market with more confidence."
+  },
+  {
+    "question_id": "prop10",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think growing cities should preserve enough land for parks and green spaces. New buildings are necessary, but once open land is completely developed, it can be very difficult to create large public spaces later. Parks give residents places to exercise, relax, and spend time with family without paying money. For example, a neighborhood park can be used by children in the afternoon, runners in the evening, and community events on weekends. Green areas can also provide shade and make dense neighborhoods more comfortable during hot weather. Cities still need housing and offices, so development cannot stop. However, planning should include parks from the beginning. A city with both useful buildings and accessible green spaces is healthier and more pleasant to live in."
+  },
+  {
+    "question_id": "prop11",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think extra money is usually the better reward for excellent employees because it gives people more freedom to decide what is valuable to them. One employee might use the money for travel, while another might save it or pay an important expense. A financial reward also clearly recognizes that the person's work created value for the company. For example, if an employee successfully completes a difficult project that brings in a new client, a bonus feels directly connected to that achievement. Additional time off can also be very attractive, especially for employees who are already financially comfortable. However, not everyone can use extra vacation at the same time. Because money is flexible and easy to understand, I would choose a bonus as a reward."
+  },
+  {
+    "question_id": "prop12",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think online reviews are useful, but people should not rely on them completely. Reviews can show common patterns that are difficult to see from an advertisement. For example, if many recent guests mention that a hotel is clean and close to public transportation, that information is probably helpful. However, individual reviews can be extremely positive or negative because of one unusual experience. Some reviews may also be old or may focus on things that are not important to me. I usually read several recent comments and look for repeated points instead of trusting one person's opinion. Then I compare that information with the official website, location, and price. Reviews are a good research tool, but they should be only one part of the decision."
+  },
+  {
+    "question_id": "prop13",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "Yes, I think living or studying in another country is one of the best ways to learn about a different culture because people experience daily life directly. They learn not only about famous traditions but also about ordinary habits, communication styles, transportation, food, and work or school routines. For example, a student living with local roommates may learn how people normally celebrate small holidays or solve everyday problems. Books and videos can provide useful background, and not everyone has the opportunity to travel. Still, direct experience forces people to communicate and adapt in real situations. It can also challenge assumptions they had before arriving. For those reasons, spending meaningful time in another country can create a deeper understanding than simply reading about it."
+  },
+  {
+    "question_id": "prop14",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "I think short scheduled breaks are more effective than working for several hours without stopping. Concentration naturally decreases over time, so a brief break can help people return to a task with more energy. For example, when I study for about fifty minutes and then walk around for ten minutes, I can focus much better during the next session. Breaks can also prevent small physical problems such as eye strain or stiffness from sitting too long. Of course, breaks should be controlled. If someone spends thirty minutes checking social media, it can be difficult to start working again. A simple schedule with focused work periods and short breaks creates a good balance between productivity and rest. That approach works best for me."
+  },
+  {
+    "question_id": "prop15",
+    "hint": "준비 시간에는 내 입장, 이유 1, 구체적 예시, 이유 2의 네 가지 키워드만 정하세요. 답변 첫 문장에서 입장을 분명히 밝히면 구조가 흔들리지 않습니다.",
+    "guideWords": [
+      "In my opinion…",
+      "First…",
+      "The main reason is…",
+      "For example…",
+      "In addition…",
+      "For these reasons…"
+    ],
+    "structure": [
+      "1) 입장 명확히 제시",
+      "2) 이유 1",
+      "3) 구체적 예시/경험",
+      "4) 이유 2 또는 추가 설명",
+      "5) 입장 재확인"
+    ],
+    "why": "의견을 분명히 제시한 뒤 이유·세부사항·예시로 충분히 발전시키고, 아이디어 사이의 관계를 명확하게 만드는 것이 중요합니다.",
+    "officialFocus": [
+      "명확한 choice/opinion",
+      "Reasons, details, arguments, examples",
+      "아이디어 간 연결",
+      "문법·어휘·전달력"
+    ],
+    "sampleAnswer": "Yes, I think companies should offer a limited number of paid volunteer days. Community projects can help organizations contribute to the places where their employees and customers live. They can also create a different kind of teamwork. For example, employees from several departments might spend a day preparing food at a community center or cleaning a public park. Working together outside the office can help people know coworkers they normally do not meet. The program should be optional, and companies still need to manage important deadlines. However, one or two volunteer days a year would not create a major disruption for most businesses. If the projects are organized well, both the community and the employees can benefit."
   }
 ]

@@ -1,0 +1,2402 @@
+{
+  "readAloud": [
+    {
+      "id": "pra01",
+      "text": "The Oakridge Community Center will reopen its swimming pool on Monday after two weeks of maintenance. Morning lap swimming will begin at six thirty, and family swim hours will start at four in the afternoon. Members should bring their own towels because towel service will not be available until next month. Lockers near the pool have also been replaced and now require a one-dollar coin that is returned after use. Anyone registered for swimming lessons will receive an updated schedule by email. Please contact the front desk if you do not receive your schedule by Friday.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra02",
+      "text": "Thank you for visiting Pine Street Pharmacy. Prescription pickup is available from eight in the morning until nine at night on weekdays and from nine until six on weekends. Customers who receive a text message saying their order is ready may use the express counter near the entrance. Please bring photo identification when picking up certain medications. The pharmacy also offers free blood pressure checks every Tuesday afternoon. If you have questions about a new prescription, ask to speak with a pharmacist before leaving the store. We are happy to explain dosage instructions and possible side effects.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra03",
+      "text": "The Midtown Office Building will conduct a fire safety drill next Thursday at ten thirty in the morning. When the alarm sounds, employees should stop working and use the nearest marked stairway to leave the building. Elevators must not be used during the drill. After exiting, each department should meet at its assigned location in Central Plaza. Supervisors will take attendance before anyone returns inside. The exercise is expected to last about twenty minutes. Visitors who are in the building at the time of the drill should remain with the employee or department they are visiting.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra04",
+      "text": "Beginning this month, Brookfield Library is offering free technology help sessions for adults every Wednesday evening. Volunteers can assist with basic smartphone settings, video calls, online forms, and common computer programs. Sessions are held from six to eight and do not require an appointment. Participants should bring the device they want help with, along with any necessary chargers or passwords. For privacy reasons, volunteers cannot access banking information or make purchases for participants. The library also offers longer individual computer lessons on Saturday mornings. Those appointments can be reserved at the information desk.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra05",
+      "text": "Welcome to Silver Coast Bicycle Rentals. Bicycles may be rented by the hour or for the entire day, and every rental includes a helmet and lock. Customers must present a valid identification card before receiving a bicycle. Please return equipment to this location at least fifteen minutes before closing time. If you experience a mechanical problem during your ride, call the service number printed on your rental receipt. Our staff can arrange assistance or provide directions to the nearest repair point. For safety, riders should use designated bicycle lanes whenever possible and follow all local traffic rules.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra06",
+      "text": "Employees are reminded that enrollment for next year's health insurance plan closes on Friday at five p.m. Anyone who wants to change medical, dental, or family coverage must submit the online form before the deadline. Employees who are satisfied with their current plan do not need to take action unless their family information has changed. Human Resources will hold two question-and-answer sessions this week in Meeting Room 2C. A benefits specialist will also be available by phone each afternoon from one until four. Updated plan descriptions and monthly costs are posted on the employee website.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra07",
+      "text": "The Lakeside Farmers Market will celebrate its tenth anniversary this Sunday with additional food stands and live entertainment. The market opens at eight a.m., and a cooking demonstration will begin near the main entrance at eleven. Local musicians will perform during the afternoon, and children can join free craft activities until three o'clock. Visitors are encouraged to bring reusable bags and water bottles. Parking near the market is limited, so a free shuttle will operate every twenty minutes from the community college parking lot. Most vendors accept cards, but carrying some cash is recommended.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra08",
+      "text": "Thank you for calling Weston Medical Clinic. Patients with scheduled appointments should arrive ten minutes early and check in at the reception desk on the third floor. If you have cold or flu symptoms, please wear a mask while you are in the waiting area. Same-day appointments may be available for urgent problems, but patients should call before coming to the clinic. Laboratory services are open from seven thirty until four without an appointment. Test results are normally posted in the patient portal within three business days. For emergencies, please contact your local emergency service instead of the clinic.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra09",
+      "text": "The Northpoint Hotel will begin renovating its ground-floor restaurant next Monday. During construction, breakfast will be served in the second-floor ballroom from six thirty until ten each morning. Dinner service will be available through room service and at several nearby partner restaurants. Guests may ask the front desk for a list of participating locations and discount offers. Construction work will take place only between nine a.m. and five p.m. to reduce noise during early morning and evening hours. The restaurant is expected to reopen in six weeks with additional seating and a redesigned menu.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra10",
+      "text": "City residents can now register for spring gardening classes at the Botanical Learning Center. Classes cover topics such as balcony gardening, vegetable planting, and caring for indoor plants. Most sessions last ninety minutes and include a short demonstration followed by hands-on practice. Tools and materials are provided, but participants may bring gardening gloves if they prefer. Registration costs fifteen dollars per class, and space is limited to eighteen people. A discounted package is available for anyone who registers for three or more sessions. Complete schedules and instructor information can be found on the center's website.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra11",
+      "text": "Starting on September first, Horizon Bank will extend customer service hours at its downtown branch. The branch will open at eight thirty on weekdays and remain open until seven on Thursdays. Saturday hours will continue from nine until one. Customers can meet with financial advisers by appointment for questions about savings, loans, or small-business accounts. Most routine services, including transfers and bill payments, are also available through online banking. The drive-through window will close thirty minutes before the lobby each day. Please check the bank website for holiday schedules before planning your visit.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra12",
+      "text": "The Westfield Museum has introduced a new reservation system for weekend visitors. Guests may choose an arrival time online and enter the museum within thirty minutes of that time. Reservations are recommended but are not required when space is available. The permanent galleries remain free, while special exhibitions may require a separate ticket. Large bags must be checked at the coat room near the main entrance. Photography is permitted in most galleries unless a sign says otherwise. Families can borrow free activity kits from the education desk, and guided tours are offered twice each Saturday afternoon.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra13",
+      "text": "Our company will replace the printers on the fourth and fifth floors this weekend. The new machines will support color printing, scanning, and secure document release using employee identification cards. Beginning Monday, employees must select the new printer name from their computer settings before sending a document. Instructions will be available beside each machine and on the technology support website. Old printer access will remain active for one week in case of technical problems. Employees who regularly print confidential documents should use the secure release feature and collect papers immediately after printing.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra14",
+      "text": "The Harborview Restaurant is now accepting reservations for its annual winter dinner series. Each Friday evening in January, the chef will prepare a four-course menu featuring seasonal ingredients from local farms. Dinner begins at seven, and guests should plan to arrive at least fifteen minutes early. Vegetarian meals are available when requested during booking. Because the menu changes each week, food allergies should also be reported in advance. Reservations require a small deposit that will be applied to the final bill. Cancellations made at least forty-eight hours before dinner will receive a full refund.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra15",
+      "text": "Passengers using Central Station should allow extra travel time this weekend because two platforms will be closed for repairs. Trains on the Green Line will depart from Platform 6 instead of Platform 3 from Saturday morning through Sunday evening. Station employees will be available near the ticket machines to answer questions and direct passengers. Electronic signs will display updated platform information throughout the station. Travelers with bicycles should use the north entrance, where the elevators will remain open. Normal platform assignments are expected to resume before the first train on Monday morning.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra16",
+      "text": "The university's Career Development Office will hold resume review appointments throughout the month of October. Students may bring a printed resume or upload a digital copy before their appointment. Advisers will provide feedback on organization, wording, and how clearly experience is presented. Each appointment lasts twenty-five minutes and can be held in person or by video call. Students applying for internships are encouraged to schedule early because appointments fill quickly near application deadlines. The office also offers a free online resume checklist and sample documents for students who want to make improvements before meeting with an adviser.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra17",
+      "text": "Thank you for shopping at Cedar Home Furnishings. Furniture deliveries are scheduled within a two-hour arrival window, and customers will receive a confirmation message the evening before delivery. Please make sure hallways and entry areas are clear before the delivery team arrives. Standard delivery includes bringing items into the requested room, but assembly may require an additional service fee. If no adult is present at the scheduled time, the delivery may need to be rescheduled. Customers should inspect each item before the team leaves and report visible damage immediately to the delivery supervisor.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra18",
+      "text": "The Riverside Theater is looking for volunteers for its summer outdoor performance series. Volunteers help check tickets, guide audience members to seating areas, and answer basic visitor questions. Each volunteer works one four-hour shift and receives a free ticket for a future performance. A short orientation session is required before the first shift. Volunteers must be at least sixteen years old, and anyone under eighteen needs written permission from a parent or guardian. Applications are available online until May fifteenth. Selected volunteers will receive their schedules and orientation details by email at the end of May.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra19",
+      "text": "Beginning next week, the Greenway Office Cafeteria will offer mobile ordering during the lunch period. Employees can place an order through the company app between ten thirty and one thirty and choose a pickup time. Orders will be prepared at a separate counter beside the main entrance. The regular cafeteria line will remain open for employees who prefer to order in person. Mobile orders can be changed until fifteen minutes before pickup. To reduce waste, disposable utensils will only be included when requested. The cafeteria plans to add breakfast ordering later this year if the lunch service works well.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra20",
+      "text": "The Hilltop Community College bookstore will buy back selected textbooks during final exam week. Students should bring their books and student identification to the buyback desk on the first floor. The amount offered depends on the book's condition and whether it will be used in courses next semester. Books with missing pages or serious water damage cannot be accepted. The bookstore will also accept rental-book returns at the same desk. Students are encouraged to come earlier in the week to avoid long lines. Buyback payments can be issued in cash or added to a campus payment card.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra21",
+      "text": "Visitors to Maplewood Park should note that the east parking lot will be closed this Saturday for resurfacing. The west lot and street parking near the recreation center will remain available. Because fewer parking spaces will be open, visitors are encouraged to walk, cycle, or use the city bus if possible. All playgrounds, walking paths, and sports fields will remain open during normal hours. Work is expected to finish by Sunday evening, but the schedule may change if it rains. Updated parking information will be posted at each park entrance and on the city's recreation website.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra22",
+      "text": "The Brightline Customer Support team will introduce a new online appointment option next Monday. Customers who need help with complex account issues can reserve a fifteen-minute video call with a support specialist instead of waiting on the telephone. Appointment times will be available from nine a.m. to six p.m. on weekdays. Before the call, customers will receive a secure link and a short form asking for basic information about the problem. Simple questions can still be handled through live chat. The company will review customer feedback after three months before deciding whether to expand evening appointment hours.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra23",
+      "text": "The Stonebridge Conference Center has added three small meeting rooms for groups of up to twelve people. Each room includes a large screen, video-conference equipment, and a whiteboard. Reservations can be made by the hour or for a full day. Coffee and bottled water are included with full-day reservations, while other refreshments can be ordered separately. Groups that need technical assistance should request support at least one business day in advance. The new rooms are located on the second floor near the elevators. Current rates and available dates are listed on the conference center's reservation page.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra24",
+      "text": "This month, the City Animal Shelter is offering reduced adoption fees for adult cats and dogs. Every adopted animal receives a basic health examination, required vaccinations, and a microchip before leaving the shelter. Potential adopters should bring identification and be prepared to answer questions about their home and daily schedule. Families who already have pets may speak with staff about arranging a safe introduction. The shelter is open from noon until six Tuesday through Sunday. Visitors can view available animals online, but adoption decisions must be completed in person with a staff member.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra25",
+      "text": "Employees who travel for business should use the updated expense form beginning July first. Receipts must be attached for hotel stays, transportation, and individual purchases over twenty-five dollars. Meal expenses should be entered by date rather than combined into one total. Completed reports must be submitted within ten business days after returning from a trip. Managers will receive an email when a report is ready for approval. A short video explaining the new form is available on the finance department website. Questions about unusual expenses should be discussed with Finance before the report is submitted.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra26",
+      "text": "The Downtown Arts Center will offer evening photography classes for beginners starting next month. The six-week course meets every Tuesday from seven to eight thirty and covers basic camera settings, lighting, composition, and simple photo editing. Students may use a digital camera or a smartphone. The instructor will provide weekly practice assignments and review selected photographs during class. Registration includes access to the center's computer lab on class evenings. Space is limited to sixteen students, and early registration is recommended. A complete materials list will be sent by email one week before the first class.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra27",
+      "text": "A new recycling station has been installed beside the employee entrance of the Westgate Factory. Separate containers are available for paper, plastic bottles, metal cans, batteries, and small electronic devices. Employees should remove food and liquids before placing items in the containers. Larger electronics, such as computer monitors, must still be taken to the technology department for proper disposal. Signs above the containers explain which materials are accepted. The company will monitor the program for several months and may add recycling stations in other buildings if participation is high. Thank you for helping us reduce waste.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra28",
+      "text": "The Seaside Visitor Center offers free walking maps and information about local attractions every day from nine until five. Staff can recommend restaurants, hiking routes, museums, and activities for children. Visitors who want to join the historic district walking tour should register at least thirty minutes before departure. Tours leave at ten in the morning and two in the afternoon and last about one hour. Comfortable shoes are recommended because several streets are made of stone. During severe weather, tours may be canceled, so visitors should confirm the schedule by phone before traveling to the center.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra29",
+      "text": "Next Wednesday, the company cafeteria will host a nutrition information event during lunchtime. A registered dietitian will answer questions about healthy meal choices and explain how to read nutrition labels. Employees can also receive a short printed guide with examples of balanced meals and snacks. The event will take place near the cafeteria entrance from eleven thirty until one thirty, and no registration is required. Several new lunch items will be available for tasting in small portions. Employees with food allergies should check ingredient cards before trying any samples. Everyone is welcome to stop by.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    },
+    {
+      "id": "pra30",
+      "text": "The North County Transit Office has launched a mobile ticket option for local buses. Riders can purchase single trips or day passes through the transit app and activate a ticket shortly before boarding. Once activated, the ticket must be shown to the driver on the phone screen. Paper tickets and transit cards will continue to be accepted. Riders should make sure their phones have enough battery power for the entire trip because drivers cannot accept screenshots of expired tickets. Instructions for downloading the app and setting up payment are available on buses and at major transit stations.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Original practice passage calibrated to the length and workplace/everyday register of the 2025 ETS official sample."
+    }
+  ],
+  "pictures": [
+    {
+      "id": "prpic01",
+      "imageUrl": "https://images.unsplash.com/photo-1653669487003-7d89b2020f3c?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A group of people seated around a table in an office",
+      "scene": "office meeting",
+      "concepts": [
+        "people",
+        "table",
+        "laptop",
+        "office",
+        "sitting",
+        "meeting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in an office meeting room. Several coworkers are sitting around a table, and they seem to be discussing a project. A laptop and some documents are on the table. One person appears to be speaking while the others are listening. The room looks bright and professional. Overall, it seems like a typical business meeting.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic02",
+      "imageUrl": "https://images.unsplash.com/photo-1739302750685-122e3b768b5a?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Two people shopping in a supermarket aisle",
+      "scene": "supermarket",
+      "concepts": [
+        "women",
+        "shopping cart",
+        "shelves",
+        "groceries",
+        "store"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows two people shopping in a supermarket. They are standing beside a shopping cart and looking at products on the shelves. One shopper appears to be choosing an item while the other is waiting nearby. The aisle is well stocked with groceries. Overall, the store looks clean and organized, and the shoppers seem to be doing regular household shopping.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic03",
+      "imageUrl": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Customers sitting inside a busy cafe",
+      "scene": "cafe",
+      "concepts": [
+        "customers",
+        "tables",
+        "cafe",
+        "sitting",
+        "counter",
+        "lights"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken inside a busy café. Several customers are sitting at tables, and some of them seem to be talking or having drinks. A counter is visible in the background under bright lights. The café looks comfortable and fairly crowded. Overall, it seems like a popular place where people can meet friends, work, or relax with coffee.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic04",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A presenter speaking to colleagues in a conference room",
+      "scene": "presentation",
+      "concepts": [
+        "presenter",
+        "screen",
+        "laptops",
+        "conference room",
+        "people"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a business presentation. A presenter is standing near a screen and speaking to a group of colleagues. Several people are seated at a table with laptops in front of them. They appear to be watching the presentation carefully. The conference room looks modern and well lit. Overall, the group seems to be discussing a work project.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic05",
+      "imageUrl": "https://images.unsplash.com/photo-1709127130389-cb27a59102df?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "People shopping in a large indoor market",
+      "scene": "market",
+      "concepts": [
+        "market",
+        "people",
+        "produce",
+        "shopping carts",
+        "signs"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in a large indoor market. Many shoppers are moving through the area with carts, and different products are displayed around them. Some people appear to be looking at fresh produce while others are walking between the stalls. Signs are hanging above the shopping area. Overall, the market looks lively, crowded, and full of activity.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic06",
+      "imageUrl": "https://images.unsplash.com/photo-1737592576700-1c0da20419ff?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "People relaxing on the grass in a public park",
+      "scene": "park",
+      "concepts": [
+        "park",
+        "grass",
+        "people",
+        "trees",
+        "walking",
+        "sitting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a public park on a pleasant day. Several people are sitting or relaxing on the grass, while others are walking nearby. There are many green trees around the area, so the park looks peaceful. Some people may be spending time with friends or family. Overall, it seems like a comfortable place to enjoy the outdoors.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic07",
+      "imageUrl": "https://images.unsplash.com/photo-1569527144709-89935bb8a95b?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Commuters waiting on a train platform",
+      "scene": "train station",
+      "concepts": [
+        "people",
+        "platform",
+        "train station",
+        "phones",
+        "waiting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at a train station. Several commuters are standing on a platform and waiting. Some people are looking at their phones, while others are facing the tracks. A few passengers are carrying bags. The platform appears fairly busy but orderly. Overall, it looks like a typical commuting scene during a busy part of the day.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic08",
+      "imageUrl": "https://images.unsplash.com/photo-1762419757174-31e02475fc66?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A modern lobby with a long reception desk",
+      "scene": "lobby",
+      "concepts": [
+        "reception desk",
+        "lobby",
+        "staff",
+        "lighting",
+        "counter"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a modern reception area. A long counter is in the center, and a staff member appears to be working behind it. The lobby is spacious and brightly lit, with plenty of open space in front of the desk. Overall, it seems like the entrance to a hotel or office building where visitors can check in or ask for help.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic09",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Workers at a construction site",
+      "scene": "construction",
+      "concepts": [
+        "workers",
+        "hard hats",
+        "construction",
+        "building",
+        "safety"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at a construction site. Several workers are wearing hard hats and safety equipment while working near a large building. Construction materials and equipment are visible around them. The workers appear focused on their tasks. Overall, the site looks busy and organized, and safety seems to be an important part of the work.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic10",
+      "imageUrl": "https://loremflickr.com/1200/800/airport-terminal,people?lock=710",
+      "alt": "travelers waiting near departure screens",
+      "scene": "airport terminal",
+      "concepts": [
+        "travelers",
+        "luggage",
+        "seats",
+        "departure board",
+        "airport"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows an airport terminal. Several travelers are waiting near rows of seats, and some of them have luggage beside them. A departure board is visible in the area, so people may be checking flight information. The terminal looks spacious and busy. Overall, it seems like passengers are waiting for their flights or preparing to board.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic11",
+      "imageUrl": "https://loremflickr.com/1200/800/restaurant-patio,people?lock=711",
+      "alt": "customers eating at outdoor tables",
+      "scene": "restaurant patio",
+      "concepts": [
+        "customers",
+        "tables",
+        "food",
+        "server",
+        "outdoor seating"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at an outdoor restaurant patio. Several customers are sitting at tables and eating a meal. A server appears to be moving between the tables, and plates and drinks are visible. The seating area is outside, so the atmosphere looks casual and pleasant. Overall, it seems like people are enjoying lunch or dinner together.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic12",
+      "imageUrl": "https://loremflickr.com/1200/800/city-crosswalk,people?lock=712",
+      "alt": "pedestrians crossing a busy street",
+      "scene": "city crosswalk",
+      "concepts": [
+        "pedestrians",
+        "crosswalk",
+        "cars",
+        "buildings",
+        "traffic light"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a busy city crosswalk. Several pedestrians are crossing the street while cars are waiting nearby. Tall buildings can be seen in the background, and a traffic light is controlling the intersection. Some people are carrying bags as they walk. Overall, it looks like a normal downtown scene with both pedestrians and vehicles moving through the area.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic13",
+      "imageUrl": "https://loremflickr.com/1200/800/library-study-area,people?lock=713",
+      "alt": "students studying around tables in a library",
+      "scene": "library study area",
+      "concepts": [
+        "students",
+        "books",
+        "tables",
+        "laptops",
+        "library"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in a library study area. Several students are sitting around tables with books and laptops in front of them. Some appear to be reading, while others may be working on assignments. The area looks quiet and well organized. Overall, it seems like a comfortable place for students to study individually or work on school projects.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic14",
+      "imageUrl": "https://loremflickr.com/1200/800/hotel-reception,people?lock=714",
+      "alt": "guests checking in at a hotel front desk",
+      "scene": "hotel reception",
+      "concepts": [
+        "guests",
+        "reception desk",
+        "luggage",
+        "staff",
+        "lobby"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a hotel reception desk. A few guests are standing near the counter with their luggage, and a staff member appears to be helping them. The lobby looks clean and professional. One guest may be checking in or asking a question. Overall, it seems like a typical hotel arrival scene where travelers are receiving assistance from the front desk.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic15",
+      "imageUrl": "https://loremflickr.com/1200/800/bakery-counter,people?lock=715",
+      "alt": "customers ordering baked goods at a counter",
+      "scene": "bakery counter",
+      "concepts": [
+        "customers",
+        "bread",
+        "display case",
+        "cashier",
+        "bakery"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken inside a bakery. Several customers are standing near a display counter filled with bread or other baked goods. A cashier is working behind the counter and appears to be helping someone place an order. The shop looks bright and inviting. Overall, it seems like customers are choosing food and waiting to pay for their purchases.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic16",
+      "imageUrl": "https://loremflickr.com/1200/800/warehouse,people?lock=716",
+      "alt": "workers moving boxes in a warehouse",
+      "scene": "warehouse",
+      "concepts": [
+        "workers",
+        "boxes",
+        "shelves",
+        "cart",
+        "warehouse"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a warehouse. Several workers are moving boxes near tall shelves filled with products. A cart is being used to transport some of the packages. The workers seem focused and may be preparing orders for delivery. Overall, the warehouse looks busy and organized, with employees handling inventory and moving goods from one area to another.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic17",
+      "imageUrl": "https://loremflickr.com/1200/800/bus-stop,people?lock=717",
+      "alt": "commuters waiting beside a city bus stop",
+      "scene": "bus stop",
+      "concepts": [
+        "commuters",
+        "bus stop",
+        "street",
+        "bags",
+        "bench"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at a city bus stop. Several commuters are waiting beside the street, and some are carrying bags. A bench and a bus stop sign are visible nearby. A few people appear to be looking down the road for the bus. Overall, it looks like a typical public transportation scene during a regular commuting period.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic18",
+      "imageUrl": "https://loremflickr.com/1200/800/classroom,people?lock=718",
+      "alt": "students attending a classroom lesson",
+      "scene": "classroom",
+      "concepts": [
+        "students",
+        "teacher",
+        "desks",
+        "whiteboard",
+        "classroom"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a classroom lesson. Several students are sitting at desks while a teacher stands near the front of the room. A whiteboard is visible behind the teacher. The students appear to be paying attention or taking notes. Overall, the classroom looks organized, and it seems like the teacher is explaining something to the group.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic19",
+      "imageUrl": "https://loremflickr.com/1200/800/office-break-room,people?lock=719",
+      "alt": "coworkers talking in an office kitchen",
+      "scene": "office break room",
+      "concepts": [
+        "coworkers",
+        "counter",
+        "cups",
+        "kitchen",
+        "office"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in an office break room. Several coworkers are standing near a kitchen counter with cups in their hands. They appear to be talking during a short break. Cabinets and other kitchen items are visible in the background. Overall, the atmosphere looks relaxed, and the employees seem to be spending a few minutes socializing away from their desks.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic20",
+      "imageUrl": "https://loremflickr.com/1200/800/outdoor-market,people?lock=720",
+      "alt": "vendors and shoppers at outdoor market stalls",
+      "scene": "outdoor market",
+      "concepts": [
+        "vendors",
+        "shoppers",
+        "produce",
+        "stalls",
+        "bags"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows an outdoor market. Vendors are standing behind stalls while shoppers look at fresh produce and other items. Some customers are carrying bags, and several tables are filled with products. The market looks busy and colorful. Overall, it seems like a lively place where local sellers are serving customers in an open-air shopping area.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic21",
+      "imageUrl": "https://loremflickr.com/1200/800/fitness-center,people?lock=721",
+      "alt": "people exercising in a gym",
+      "scene": "fitness center",
+      "concepts": [
+        "people",
+        "exercise equipment",
+        "weights",
+        "gym",
+        "training"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in a fitness center. Several people are exercising near different pieces of equipment. Some may be lifting weights while others are using machines. The gym looks clean and well equipped. Everyone appears focused on training. Overall, it seems like a normal workout session with people exercising independently in the same space.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic22",
+      "imageUrl": "https://loremflickr.com/1200/800/museum-gallery,people?lock=722",
+      "alt": "visitors looking at artwork in a gallery",
+      "scene": "museum gallery",
+      "concepts": [
+        "visitors",
+        "paintings",
+        "gallery",
+        "walls",
+        "museum"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a museum gallery. Several visitors are standing near paintings and looking at the artwork on the walls. The room is open and quiet, with plenty of space between the displays. Some people appear to be discussing what they see. Overall, it looks like visitors are taking their time and enjoying an art exhibition.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic23",
+      "imageUrl": "https://loremflickr.com/1200/800/conference-registration,people?lock=723",
+      "alt": "attendees checking in at an event desk",
+      "scene": "conference registration",
+      "concepts": [
+        "attendees",
+        "registration desk",
+        "badges",
+        "signs",
+        "conference"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at a conference registration area. Several attendees are standing near a desk, and staff members appear to be checking names or handing out badges. Signs are visible around the counter. Some people are waiting in line. Overall, it seems like participants are arriving for a professional event and completing the check-in process.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic24",
+      "imageUrl": "https://loremflickr.com/1200/800/train-interior,people?lock=724",
+      "alt": "passengers seated inside a commuter train",
+      "scene": "train interior",
+      "concepts": [
+        "passengers",
+        "seats",
+        "train",
+        "windows",
+        "bags"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows the inside of a commuter train. Several passengers are sitting in rows of seats, and some have bags beside them. A few people may be looking at phones or out the windows. The train looks clean and fairly quiet. Overall, it seems like a normal trip with passengers traveling to work or another destination.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic25",
+      "imageUrl": "https://loremflickr.com/1200/800/public-plaza,people?lock=725",
+      "alt": "people walking and sitting in a city plaza",
+      "scene": "public plaza",
+      "concepts": [
+        "people",
+        "benches",
+        "buildings",
+        "walking",
+        "plaza"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in a public plaza. Several people are walking through the area, while others are sitting on benches. Large buildings surround the open space, and there is plenty of room for pedestrians. The plaza looks active but not crowded. Overall, it seems like a common downtown area where people can meet, rest, or pass through.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic26",
+      "imageUrl": "https://loremflickr.com/1200/800/flower-shop,people?lock=726",
+      "alt": "customer and clerk arranging flowers",
+      "scene": "flower shop",
+      "concepts": [
+        "customer",
+        "clerk",
+        "flowers",
+        "counter",
+        "shop"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a flower shop. A customer and a clerk are standing near a counter surrounded by colorful flowers. They appear to be arranging or choosing a bouquet together. Different kinds of flowers are displayed around the shop. Overall, the scene looks bright and pleasant, and the clerk seems to be helping the customer prepare a purchase.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic27",
+      "imageUrl": "https://loremflickr.com/1200/800/bike-rental,people?lock=727",
+      "alt": "people choosing bicycles at a rental station",
+      "scene": "bike rental",
+      "concepts": [
+        "people",
+        "bicycles",
+        "helmets",
+        "rental station",
+        "street"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken at a bicycle rental station. Several people are standing near rows of bicycles, and some are holding helmets. They appear to be choosing bikes or preparing to ride. The station is located beside a street. Overall, it looks like a convenient place for visitors or residents to rent bicycles for transportation or recreation.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic28",
+      "imageUrl": "https://loremflickr.com/1200/800/clinic-waiting-room,people?lock=728",
+      "alt": "patients seated in a medical waiting area",
+      "scene": "clinic waiting room",
+      "concepts": [
+        "patients",
+        "chairs",
+        "reception",
+        "clinic",
+        "waiting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a medical waiting room. Several patients are sitting in chairs, and a reception desk is visible nearby. Some people appear to be waiting quietly, while others may be looking at their phones. The area looks clean and organized. Overall, it seems like patients are waiting for appointments at a clinic or medical office.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic29",
+      "imageUrl": "https://loremflickr.com/1200/800/food-court,people?lock=729",
+      "alt": "people ordering and eating in a food court",
+      "scene": "food court",
+      "concepts": [
+        "people",
+        "tables",
+        "food counters",
+        "trays",
+        "seating"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture was taken in a food court. Many people are sitting at tables with trays and meals, while others are ordering food at counters in the background. The seating area looks busy, and several groups seem to be eating together. Overall, it appears to be a popular place where shoppers or workers can have a quick meal.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    },
+    {
+      "id": "prpic30",
+      "imageUrl": "https://loremflickr.com/1200/800/delivery-loading-area,people?lock=730",
+      "alt": "workers loading packages into a delivery vehicle",
+      "scene": "delivery loading area",
+      "concepts": [
+        "workers",
+        "packages",
+        "van",
+        "cart",
+        "loading area"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_task_matched",
+      "sampleAnswer": "This picture shows a delivery loading area. Several workers are moving packages near a van, and one person appears to be using a cart. Boxes are stacked close to the vehicle. The workers seem busy loading or unloading items. Overall, it looks like a normal delivery operation where packages are being prepared for transportation.",
+      "assetNote": "Uses the stable curated photo asset from the existing bank; the practice item ID, set placement, coaching, and answer guide are separate."
+    }
+  ],
+  "interviewGroups": [
+    {
+      "id": "priq01",
+      "intro": "Imagine that a local library is conducting a survey about how residents use libraries. You have agreed to participate in a telephone interview.",
+      "topic": "library use",
+      "questions": [
+        {
+          "id": "priq01-q1",
+          "prompt": "How often do you visit a library, and when do you usually go?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency",
+            "time"
+          ],
+          "sampleAnswer": "I visit a library about twice a week. I usually go in the late afternoon after class because it is quiet and I can study there for a few hours."
+        },
+        {
+          "id": "priq01-q2",
+          "prompt": "What do you usually do at the library?",
+          "responseSeconds": 15,
+          "slots": [
+            "activity"
+          ],
+          "sampleAnswer": "I usually study, borrow books, and use the quiet reading area. Sometimes I also reserve a small room when I need to work on a group project."
+        },
+        {
+          "id": "priq01-q3",
+          "prompt": "What is one service you would like your local library to offer, and why?",
+          "responseSeconds": 30,
+          "slots": [
+            "service",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I would like my local library to offer more evening study rooms. Many students and office workers cannot visit until after dinner, but most reservable rooms close early. For example, during exam season I often need a quiet place after eight o'clock. Longer room hours would make the library much more useful for people with busy daytime schedules."
+        }
+      ]
+    },
+    {
+      "id": "priq02",
+      "intro": "Imagine that a food delivery company is researching customers' ordering habits. You have agreed to answer a few questions by telephone.",
+      "topic": "food delivery",
+      "questions": [
+        {
+          "id": "priq02-q1",
+          "prompt": "How often do you order food for delivery?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I order food for delivery about once a week, usually on Friday evening when I am tired and do not feel like cooking."
+        },
+        {
+          "id": "priq02-q2",
+          "prompt": "What kind of food do you most often order, and why?",
+          "responseSeconds": 15,
+          "slots": [
+            "type",
+            "reason"
+          ],
+          "sampleAnswer": "I most often order Korean food because it travels well and there are many choices near my apartment. It is also easy to share with friends."
+        },
+        {
+          "id": "priq02-q3",
+          "prompt": "What is the most important thing a food delivery service can do to keep customers satisfied?",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I think accurate delivery times are the most important. Customers plan their meals around the time shown in the app, so long unexpected delays are frustrating. For example, if an order is going to be thirty minutes late, the service should update the customer immediately. Reliable timing and clear communication would make me much more likely to use the service again."
+        }
+      ]
+    },
+    {
+      "id": "priq03",
+      "intro": "Imagine that your city government is asking residents about public parks. You are taking part in a telephone survey.",
+      "topic": "public parks",
+      "questions": [
+        {
+          "id": "priq03-q1",
+          "prompt": "How often do you visit a public park?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I visit a public park two or three times a week. I usually go after dinner to walk for about thirty minutes and get some fresh air."
+        },
+        {
+          "id": "priq03-q2",
+          "prompt": "What activity do you enjoy doing at a park?",
+          "responseSeconds": 15,
+          "slots": [
+            "activity",
+            "reason"
+          ],
+          "sampleAnswer": "I enjoy walking the most because it is simple and relaxing. I can exercise lightly while listening to music or talking with a friend."
+        },
+        {
+          "id": "priq03-q3",
+          "prompt": "What improvement would make public parks in your area more useful?",
+          "responseSeconds": 30,
+          "slots": [
+            "change",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I would add more covered seating areas. The parks near my home have many benches, but most of them are completely exposed to the sun and rain. For example, families often leave quickly when the weather changes. Small covered areas would let people rest, eat, or wait comfortably and would make the parks useful during more kinds of weather."
+        }
+      ]
+    },
+    {
+      "id": "priq04",
+      "intro": "Imagine that an education company is conducting research about online classes. You have agreed to participate in a telephone interview.",
+      "topic": "online learning",
+      "questions": [
+        {
+          "id": "priq04-q1",
+          "prompt": "How often do you take online classes or watch educational videos?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I use online learning materials several times a week. I usually watch short lessons in the evening when I want to review something from class."
+        },
+        {
+          "id": "priq04-q2",
+          "prompt": "What device do you prefer to use for online learning, and why?",
+          "responseSeconds": 15,
+          "slots": [
+            "device",
+            "reason"
+          ],
+          "sampleAnswer": "I prefer using a laptop because the screen is larger and I can take notes more easily. It is also more convenient when I need several browser windows open."
+        },
+        {
+          "id": "priq04-q3",
+          "prompt": "What makes an online class effective for you?",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "For me, an effective online class needs short lessons and frequent practice activities. If a video is too long, it is easy to lose concentration. For example, I learn vocabulary better when a ten-minute explanation is followed by a quick quiz. That format helps me check whether I understood the lesson before moving on to the next topic."
+        }
+      ]
+    },
+    {
+      "id": "priq05",
+      "intro": "Imagine that an event company is researching how people choose local festivals and community events. You have agreed to answer several questions.",
+      "topic": "local events",
+      "questions": [
+        {
+          "id": "priq05-q1",
+          "prompt": "How often do you attend local festivals or community events?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I attend a local event every couple of months, especially in spring and fall when there are outdoor festivals and the weather is comfortable."
+        },
+        {
+          "id": "priq05-q2",
+          "prompt": "Who do you usually go to these events with?",
+          "responseSeconds": 15,
+          "slots": [
+            "companion"
+          ],
+          "sampleAnswer": "I usually go with two or three friends because it is more fun to try food, watch performances, and explore different booths together."
+        },
+        {
+          "id": "priq05-q3",
+          "prompt": "What kind of activity should organizers include to make a community event more enjoyable?",
+          "responseSeconds": 30,
+          "slots": [
+            "activity",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I think organizers should include short hands-on activities. People enjoy doing something themselves instead of only watching. For example, a food festival could offer a simple cooking demonstration where visitors prepare one small dish. Activities like that give people something memorable to do and also make it easier for families or groups of friends to participate together."
+        }
+      ]
+    },
+    {
+      "id": "priq06",
+      "intro": "Imagine that a transportation company is studying bicycle use in your city. You have agreed to answer questions in a telephone interview.",
+      "topic": "bicycles",
+      "questions": [
+        {
+          "id": "priq06-q1",
+          "prompt": "How often do you ride a bicycle?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I ride a bicycle about once or twice a week. I usually use it on weekends when I have time to exercise or visit a nearby park."
+        },
+        {
+          "id": "priq06-q2",
+          "prompt": "Where do you usually ride a bicycle?",
+          "responseSeconds": 15,
+          "slots": [
+            "location"
+          ],
+          "sampleAnswer": "I usually ride along the river because there is a long bicycle path separated from cars. It feels safer and the scenery is much nicer than downtown streets."
+        },
+        {
+          "id": "priq06-q3",
+          "prompt": "What could your city do to encourage more people to ride bicycles?",
+          "responseSeconds": 30,
+          "slots": [
+            "change",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "The city should build more protected bicycle lanes. Many people are interested in cycling, but they feel uncomfortable riding next to fast traffic. For example, I avoid several shopping areas because there is no safe lane connecting them to the river path. A connected network of protected lanes would make cycling safer and more practical for everyday transportation."
+        }
+      ]
+    },
+    {
+      "id": "priq07",
+      "intro": "Imagine that a business magazine is researching workplace meetings. You are participating in a telephone survey about meetings at work or school.",
+      "topic": "meetings",
+      "questions": [
+        {
+          "id": "priq07-q1",
+          "prompt": "How often do you attend meetings or group discussions?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I attend meetings or group discussions about three times a week. Most of them are for class projects, and they usually last thirty to forty minutes."
+        },
+        {
+          "id": "priq07-q2",
+          "prompt": "Do you prefer in-person meetings or online meetings, and why?",
+          "responseSeconds": 15,
+          "slots": [
+            "preference",
+            "reason"
+          ],
+          "sampleAnswer": "I prefer in-person meetings because it is easier to see everyone's reactions and have a natural discussion. I also get distracted less than I do during online meetings."
+        },
+        {
+          "id": "priq07-q3",
+          "prompt": "What is one way to make meetings more productive?",
+          "responseSeconds": 30,
+          "slots": [
+            "method",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I think every meeting should have a short agenda shared in advance. When people know the topics and decisions that need to be made, they can prepare and stay focused. For example, my project group started listing three discussion points before each meeting, and our meetings became much shorter because we stopped spending time on unrelated issues."
+        }
+      ]
+    },
+    {
+      "id": "priq08",
+      "intro": "Imagine that a clothing retailer is researching customers' shopping preferences. You have agreed to participate in a telephone interview.",
+      "topic": "clothing shopping",
+      "questions": [
+        {
+          "id": "priq08-q1",
+          "prompt": "How often do you buy new clothes?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I buy new clothes every two or three months. I usually shop when the season changes or when I need something specific for work or school."
+        },
+        {
+          "id": "priq08-q2",
+          "prompt": "Do you prefer shopping for clothes online or in a store?",
+          "responseSeconds": 15,
+          "slots": [
+            "preference",
+            "reason"
+          ],
+          "sampleAnswer": "I prefer shopping in a store because I can try things on and check the material. That helps me avoid buying clothes that do not fit well."
+        },
+        {
+          "id": "priq08-q3",
+          "prompt": "What is the most important factor when you decide whether to buy a piece of clothing?",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "The most important factor for me is whether I can wear the item often. I would rather buy one simple jacket that works with many outfits than something fashionable that I can only wear once or twice. For example, I usually choose neutral colors because they are easy to match. That makes the purchase more useful and worth the price."
+        }
+      ]
+    },
+    {
+      "id": "priq09",
+      "intro": "Imagine that a home appliance company is researching how customers choose household products. You have agreed to answer a few questions.",
+      "topic": "household appliances",
+      "questions": [
+        {
+          "id": "priq09-q1",
+          "prompt": "What household appliance do you use most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "item"
+          ],
+          "sampleAnswer": "I use my electric kettle most often because I make coffee or tea several times a day. It is quick, simple, and easy to clean."
+        },
+        {
+          "id": "priq09-q2",
+          "prompt": "Where do you usually get information before buying an appliance?",
+          "responseSeconds": 15,
+          "slots": [
+            "method"
+          ],
+          "sampleAnswer": "I usually compare products online and read customer reviews. I also watch short review videos when I want to see how the appliance works in real use."
+        },
+        {
+          "id": "priq09-q3",
+          "prompt": "Would you pay more for an appliance that uses less energy? Why or why not?",
+          "responseSeconds": 30,
+          "slots": [
+            "opinion",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "Yes, I would pay somewhat more for an energy-efficient appliance because I would use it for several years. A higher purchase price can be reasonable if it reduces electricity costs every month. For example, when my family replaced an old air conditioner with an efficient model, our summer electricity bill became noticeably lower. The long-term savings can make the extra cost worthwhile."
+        }
+      ]
+    },
+    {
+      "id": "priq10",
+      "intro": "Imagine that a travel company is conducting research about hotel stays. You have agreed to participate in a telephone interview.",
+      "topic": "hotels",
+      "questions": [
+        {
+          "id": "priq10-q1",
+          "prompt": "How often do you stay at a hotel?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I stay at a hotel a few times a year, usually during vacations or short weekend trips to another city."
+        },
+        {
+          "id": "priq10-q2",
+          "prompt": "What hotel feature is most important to you?",
+          "responseSeconds": 15,
+          "slots": [
+            "factor",
+            "reason"
+          ],
+          "sampleAnswer": "A convenient location is most important to me because I do not want to spend a lot of time traveling between the hotel and the places I want to visit."
+        },
+        {
+          "id": "priq10-q3",
+          "prompt": "Describe one hotel service that made a trip more convenient for you.",
+          "responseSeconds": 30,
+          "slots": [
+            "experience",
+            "benefit",
+            "example"
+          ],
+          "sampleAnswer": "A hotel shuttle made one of my trips much easier. The hotel offered free transportation between the airport and the lobby every hour. I arrived late at night, so I did not have to search for a taxi or figure out public transportation with my luggage. The service saved time, reduced stress, and made the first day of the trip much smoother."
+        }
+      ]
+    },
+    {
+      "id": "priq11",
+      "intro": "Imagine that a community center is planning new adult classes. You are taking part in a telephone survey about recreational classes.",
+      "topic": "community classes",
+      "questions": [
+        {
+          "id": "priq11-q1",
+          "prompt": "Have you ever taken a class outside of school or work? What was it?",
+          "responseSeconds": 15,
+          "slots": [
+            "experience",
+            "type"
+          ],
+          "sampleAnswer": "Yes. Last year I took a beginner cooking class at a community center. It met once a week and focused on simple meals that could be prepared quickly."
+        },
+        {
+          "id": "priq11-q2",
+          "prompt": "What kind of class would you like to take in the future?",
+          "responseSeconds": 15,
+          "slots": [
+            "type",
+            "reason"
+          ],
+          "sampleAnswer": "I would like to take a photography class because I travel often and want to take better pictures. I especially want to learn about lighting and composition."
+        },
+        {
+          "id": "priq11-q3",
+          "prompt": "What makes a recreational class worth paying for?",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I think a class is worth paying for when students get personal feedback and enough time to practice. Information alone is easy to find online. For example, in a cooking class an instructor can watch how I prepare something and correct a mistake immediately. That kind of direct help is difficult to get from a video, so it makes the class more valuable."
+        }
+      ]
+    },
+    {
+      "id": "priq12",
+      "intro": "Imagine that a music website is researching people's listening and concert habits. You have agreed to answer several questions.",
+      "topic": "music",
+      "questions": [
+        {
+          "id": "priq12-q1",
+          "prompt": "How often do you listen to music?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I listen to music every day, mostly while commuting or exercising. I probably spend at least an hour a day listening to different playlists."
+        },
+        {
+          "id": "priq12-q2",
+          "prompt": "What kind of music do you listen to most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "type",
+            "reason"
+          ],
+          "sampleAnswer": "I listen to pop music most often because it is energetic and easy to listen to while I am doing other things like walking or cleaning."
+        },
+        {
+          "id": "priq12-q3",
+          "prompt": "Do you prefer listening to recorded music or attending a live concert? Why?",
+          "responseSeconds": 30,
+          "slots": [
+            "preference",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I prefer live concerts because the atmosphere makes the music feel much more exciting. Hearing a favorite song with a large audience creates an experience that headphones cannot copy. For example, I attended a small concert last year, and even songs I already knew sounded different because the musicians changed parts of the performance and interacted with the audience."
+        }
+      ]
+    },
+    {
+      "id": "priq13",
+      "intro": "Imagine that a bank is researching how customers pay for everyday purchases. You have agreed to participate in a telephone interview.",
+      "topic": "payments",
+      "questions": [
+        {
+          "id": "priq13-q1",
+          "prompt": "How do you usually pay for everyday purchases?",
+          "responseSeconds": 15,
+          "slots": [
+            "method"
+          ],
+          "sampleAnswer": "I usually pay by card or with a mobile payment app. I rarely carry much cash because electronic payment is faster and works at most stores I visit."
+        },
+        {
+          "id": "priq13-q2",
+          "prompt": "What kind of purchase are you most likely to pay for with cash?",
+          "responseSeconds": 15,
+          "slots": [
+            "item",
+            "reason"
+          ],
+          "sampleAnswer": "I am most likely to use cash at a small street market. Some vendors do not accept cards, and paying a small amount in cash is simple."
+        },
+        {
+          "id": "priq13-q3",
+          "prompt": "What feature would make a mobile payment service more useful to you?",
+          "responseSeconds": 30,
+          "slots": [
+            "feature",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I would like a mobile payment service to organize spending automatically by category. It would be useful if every purchase were labeled as food, transportation, shopping, or another category. For example, at the end of the month I could quickly see where most of my money went. That would make the payment app useful for budgeting as well as for paying."
+        }
+      ]
+    },
+    {
+      "id": "priq14",
+      "intro": "Imagine that a cooking magazine is conducting a survey about home cooking. You have agreed to answer several questions by telephone.",
+      "topic": "home cooking",
+      "questions": [
+        {
+          "id": "priq14-q1",
+          "prompt": "How often do you cook at home?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ],
+          "sampleAnswer": "I cook at home four or five times a week. I usually prepare dinner because it is cheaper than eating out and I can make enough for the next day."
+        },
+        {
+          "id": "priq14-q2",
+          "prompt": "Where do you usually find ideas for meals?",
+          "responseSeconds": 15,
+          "slots": [
+            "method"
+          ],
+          "sampleAnswer": "I usually find meal ideas on cooking websites and short videos. I like recipes that show the ingredients clearly and take less than thirty minutes."
+        },
+        {
+          "id": "priq14-q3",
+          "prompt": "What is the best way for a busy person to cook at home more often?",
+          "responseSeconds": 30,
+          "slots": [
+            "method",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "I think planning a few meals before shopping is the best method. If the ingredients are already at home, cooking feels much easier after a busy day. For example, I choose three simple dinners on Sunday and buy everything at once. I can also prepare vegetables in advance. This saves time during the week and prevents me from ordering delivery just because I am tired."
+        }
+      ]
+    },
+    {
+      "id": "priq15",
+      "intro": "Imagine that a nonprofit organization is researching people's experience with volunteering. You have agreed to take part in a telephone interview.",
+      "topic": "volunteering",
+      "questions": [
+        {
+          "id": "priq15-q1",
+          "prompt": "Have you ever done volunteer work? What kind?",
+          "responseSeconds": 15,
+          "slots": [
+            "experience",
+            "type"
+          ],
+          "sampleAnswer": "Yes. I have volunteered at a neighborhood clean-up event several times. We collected trash, separated recyclable items, and cleaned walking paths in a local park."
+        },
+        {
+          "id": "priq15-q2",
+          "prompt": "Would you rather volunteer alone or with people you know?",
+          "responseSeconds": 15,
+          "slots": [
+            "preference",
+            "reason"
+          ],
+          "sampleAnswer": "I would rather volunteer with people I know because we can encourage each other and the work feels more enjoyable when we can talk while doing it."
+        },
+        {
+          "id": "priq15-q3",
+          "prompt": "What can organizations do to encourage more young people to volunteer?",
+          "responseSeconds": 30,
+          "slots": [
+            "method",
+            "reason",
+            "example"
+          ],
+          "sampleAnswer": "Organizations should offer short, flexible volunteer opportunities that clearly explain the impact of the work. Young people may want to help but cannot commit every weekend. For example, a two-hour event with online sign-up is much easier to join than a long program. Showing photos or results afterward can also help volunteers see that their time made a real difference."
+        }
+      ]
+    }
+  ],
+  "infoGroups": [
+    {
+      "id": "prinfo01",
+      "intro": "Hello, I'm calling about the professional training day next month. Could you give me some information?",
+      "information": {
+        "title": "Professional Training Day",
+        "subtitle": "Friday, September 18 · Brighton Business Center",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Welcome and Goals — Room 201 — Dana Lee"
+          },
+          {
+            "label": "10:00 A.M.",
+            "value": "Giving Clear Feedback — Room 201 — Marcus Hill"
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Managing Priorities — Room 305 — Nia Patel"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Lunch Break — Garden Cafe"
+          },
+          {
+            "label": "2:00 P.M.",
+            "value": "Working Across Teams — Room 305 — Helen Ortiz"
+          },
+          {
+            "label": "3:30 P.M.",
+            "value": "Action Planning — Room 201 — Dana Lee"
+          }
+        ],
+        "notes": [
+          "Registration fee: $85; company partners: $65",
+          "Lunch is not included in the registration fee."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo01-q1",
+          "prompt": "What time does the training day begin, and where will it take place?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "9:00 A.M.",
+            "Brighton Business Center"
+          ],
+          "sampleAnswer": "It begins at 9:00 A.M. at the Brighton Business Center."
+        },
+        {
+          "id": "prinfo01-q2",
+          "prompt": "I'm a company partner. How much will I have to pay to attend?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$65"
+          ],
+          "sampleAnswer": "The registration fee for company partners is sixty-five dollars."
+        },
+        {
+          "id": "prinfo01-q3",
+          "prompt": "I am most interested in sessions about organizing work and collaborating with other departments. What sessions should I attend?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "11:30 A.M.",
+            "Managing Priorities",
+            "2:00 P.M.",
+            "Working Across Teams"
+          ],
+          "sampleAnswer": "You should attend Managing Priorities at 11:30 A.M. in Room 305. Then at 2:00 P.M., there is a session called Working Across Teams, also in Room 305."
+        }
+      ]
+    },
+    {
+      "id": "prinfo02",
+      "intro": "Hi, I'm flying into the city on Saturday and I saw information about your airport shuttle. I have a few questions.",
+      "information": {
+        "title": "Airport Shuttle Schedule",
+        "subtitle": "Saturday · Airport to Downtown",
+        "rows": [
+          {
+            "label": "8:00 A.M.",
+            "value": "Terminal 1 — 18 seats"
+          },
+          {
+            "label": "9:30 A.M.",
+            "value": "Terminal 2 — 20 seats"
+          },
+          {
+            "label": "11:00 A.M.",
+            "value": "Terminal 1 — 12 seats"
+          },
+          {
+            "label": "1:30 P.M.",
+            "value": "Terminal 2 — 16 seats"
+          },
+          {
+            "label": "3:00 P.M.",
+            "value": "Terminal 1 — 14 seats"
+          },
+          {
+            "label": "5:30 P.M.",
+            "value": "Terminal 2 — 20 seats"
+          }
+        ],
+        "notes": [
+          "Travel time to Central Hotel: approximately 45 minutes",
+          "One-way fare: $14; round trip: $24"
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo02-q1",
+          "prompt": "How long does the shuttle ride to the Central Hotel take?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "approximately 45 minutes"
+          ],
+          "sampleAnswer": "The ride to the Central Hotel takes approximately forty-five minutes."
+        },
+        {
+          "id": "prinfo02-q2",
+          "prompt": "I'd like a round-trip ticket. How much does that cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$24"
+          ],
+          "sampleAnswer": "A round-trip ticket costs twenty-four dollars."
+        },
+        {
+          "id": "prinfo02-q3",
+          "prompt": "My flight arrives at Terminal 1 at ten fifteen in the morning. What shuttle options do I have after I arrive?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "11:00 A.M.",
+            "Terminal 1",
+            "3:00 P.M.",
+            "Terminal 1"
+          ],
+          "sampleAnswer": "The next Terminal 1 shuttle leaves at 11:00 A.M., so that would be your best option. If you miss it, another Terminal 1 shuttle leaves at 3:00 P.M."
+        }
+      ]
+    },
+    {
+      "id": "prinfo03",
+      "intro": "Hello, I'm planning to visit the museum on Sunday. Could you tell me about the guided programs?",
+      "information": {
+        "title": "Science Museum Sunday Programs",
+        "subtitle": "Sunday, October 4 · Main Museum Building",
+        "rows": [
+          {
+            "label": "10:00 A.M.",
+            "value": "Space Gallery Tour — 45 minutes — North Lobby"
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Robotics Demonstration — 30 minutes — Innovation Hall"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Family Fossil Tour — 50 minutes — East Lobby"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Planetarium Talk — 40 minutes — Theater 2"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Space Gallery Tour — 45 minutes — North Lobby"
+          }
+        ],
+        "notes": [
+          "General admission: $18",
+          "Planetarium Talk requires an additional $5 ticket."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo03-q1",
+          "prompt": "How much is general admission to the museum?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$18"
+          ],
+          "sampleAnswer": "General admission is eighteen dollars."
+        },
+        {
+          "id": "prinfo03-q2",
+          "prompt": "I want to join the Family Fossil Tour. What time does it begin, and where should I meet the group?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "1:00 P.M.",
+            "East Lobby"
+          ],
+          "sampleAnswer": "The Family Fossil Tour begins at 1:00 P.M., and you should meet at the East Lobby."
+        },
+        {
+          "id": "prinfo03-q3",
+          "prompt": "I can only visit after two in the afternoon. What guided programs are available then?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:30 P.M.",
+            "Planetarium Talk",
+            "4:00 P.M.",
+            "Space Gallery Tour"
+          ],
+          "sampleAnswer": "After two, you can attend the Planetarium Talk at 2:30 P.M. in Theater 2. There is also a Space Gallery Tour at 4:00 P.M., which meets in the North Lobby."
+        }
+      ]
+    },
+    {
+      "id": "prinfo04",
+      "intro": "Hi, I'm organizing a small business meeting next Wednesday and I'd like to know which rooms are available.",
+      "information": {
+        "title": "Meeting Room Availability",
+        "subtitle": "Wednesday, November 11 · Parkview Conference Center",
+        "rows": [
+          {
+            "label": "Orchid Room",
+            "value": "Available 9:00 A.M.–12:00 P.M. — Capacity 8 — $35/hour"
+          },
+          {
+            "label": "Maple Room",
+            "value": "Available 10:00 A.M.–4:00 P.M. — Capacity 12 — $45/hour"
+          },
+          {
+            "label": "Harbor Room",
+            "value": "Available 1:00 P.M.–6:00 P.M. — Capacity 18 — $60/hour"
+          },
+          {
+            "label": "Sky Room",
+            "value": "Available 3:00 P.M.–7:00 P.M. — Capacity 10 — $40/hour"
+          }
+        ],
+        "notes": [
+          "All rooms include Wi-Fi and a display screen.",
+          "Video-conference equipment is available in the Maple and Harbor rooms."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo04-q1",
+          "prompt": "Which room is available at ten in the morning and can hold at least ten people?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Maple Room",
+            "Capacity 12"
+          ],
+          "sampleAnswer": "The Maple Room is available at ten in the morning and has space for twelve people."
+        },
+        {
+          "id": "prinfo04-q2",
+          "prompt": "How much does the Harbor Room cost per hour?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$60/hour"
+          ],
+          "sampleAnswer": "The Harbor Room costs sixty dollars per hour."
+        },
+        {
+          "id": "prinfo04-q3",
+          "prompt": "I need a room after one o'clock for a video meeting with about twelve people. Which rooms could work, and why?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Maple Room",
+            "Harbor Room",
+            "Video-conference equipment"
+          ],
+          "sampleAnswer": "The Maple Room could work because it is available until 4:00 P.M., holds twelve people, and has video-conference equipment. The Harbor Room is another option after 1:00 P.M.; it holds eighteen people and also has video-conference equipment."
+        }
+      ]
+    },
+    {
+      "id": "prinfo05",
+      "intro": "Hello, I'm interested in taking a class at your cooking school. Could you answer a few questions about Saturday's schedule?",
+      "information": {
+        "title": "Weekend Cooking School",
+        "subtitle": "Saturday, January 23 · Riverside Culinary School",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Quick Breakfasts — Chef Laura Kim, Kitchen A — $35"
+          },
+          {
+            "label": "11:00 A.M.",
+            "value": "Fresh Pasta Basics — Chef Marco Ruiz, Kitchen B — $45"
+          },
+          {
+            "label": "1:30 P.M.",
+            "value": "Vegetarian Lunches — Chef Asha Mehta, Kitchen A — $40"
+          },
+          {
+            "label": "3:30 P.M.",
+            "value": "Simple Desserts — Chef Laura Kim, Kitchen C — $38"
+          }
+        ],
+        "notes": [
+          "Ingredients are included in each class fee.",
+          "Students should arrive 15 minutes early."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo05-q1",
+          "prompt": "How much does the Fresh Pasta Basics class cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$45"
+          ],
+          "sampleAnswer": "The Fresh Pasta Basics class costs forty-five dollars."
+        },
+        {
+          "id": "prinfo05-q2",
+          "prompt": "Who teaches the Vegetarian Lunches class, and where is it held?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Chef Asha Mehta",
+            "Kitchen A"
+          ],
+          "sampleAnswer": "Chef Asha Mehta teaches Vegetarian Lunches, and the class is held in Kitchen A."
+        },
+        {
+          "id": "prinfo05-q3",
+          "prompt": "I want to take a class taught by Laura Kim. What choices do I have?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "9:00 A.M.",
+            "Quick Breakfasts",
+            "3:30 P.M.",
+            "Simple Desserts"
+          ],
+          "sampleAnswer": "Laura Kim teaches two classes. Quick Breakfasts starts at 9:00 A.M. in Kitchen A, and Simple Desserts starts at 3:30 P.M. in Kitchen C."
+        }
+      ]
+    },
+    {
+      "id": "prinfo06",
+      "intro": "Hi, I'm thinking about attending the city film festival on Friday. Could you give me some information?",
+      "information": {
+        "title": "Downtown Film Festival",
+        "subtitle": "Friday, March 12 · Grand Arts Center",
+        "rows": [
+          {
+            "label": "10:30 A.M.",
+            "value": "City Stories — Theater 1 — 95 minutes"
+          },
+          {
+            "label": "12:45 P.M.",
+            "value": "Short Film Collection — Theater 3 — 70 minutes"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Behind the Camera — Theater 2 — 60 minutes"
+          },
+          {
+            "label": "4:15 P.M.",
+            "value": "Ocean Road — Theater 1 — 110 minutes"
+          },
+          {
+            "label": "7:00 P.M.",
+            "value": "Opening Night Drama — Theater 1 — 125 minutes"
+          }
+        ],
+        "notes": [
+          "Day pass: $32",
+          "Behind the Camera is a director interview, not a film screening."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo06-q1",
+          "prompt": "How much is a day pass?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$32"
+          ],
+          "sampleAnswer": "A day pass costs thirty-two dollars."
+        },
+        {
+          "id": "prinfo06-q2",
+          "prompt": "I heard Behind the Camera is a movie. Is that correct?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "director interview",
+            "not a film screening"
+          ],
+          "sampleAnswer": "No. Behind the Camera is a director interview, not a film screening."
+        },
+        {
+          "id": "prinfo06-q3",
+          "prompt": "I can attend between noon and five. What programs can I see during that time?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "12:45 P.M.",
+            "Short Film Collection",
+            "2:30 P.M.",
+            "Behind the Camera",
+            "4:15 P.M.",
+            "Ocean Road"
+          ],
+          "sampleAnswer": "You can see the Short Film Collection at 12:45 P.M., Behind the Camera at 2:30 P.M., and Ocean Road at 4:15 P.M. The last one runs for 110 minutes."
+        }
+      ]
+    },
+    {
+      "id": "prinfo07",
+      "intro": "Hello, I'm planning a train trip from Lake City to Northport next Tuesday. Could you help me with the schedule?",
+      "information": {
+        "title": "Lake City–Northport Train Schedule",
+        "subtitle": "Tuesday · Lake City Central Station",
+        "rows": [
+          {
+            "label": "7:20 A.M.",
+            "value": "Express 102 — arrives 9:05 A.M. — $42"
+          },
+          {
+            "label": "9:10 A.M.",
+            "value": "Regional 214 — arrives 11:30 A.M. — $31"
+          },
+          {
+            "label": "12:40 P.M.",
+            "value": "Express 118 — arrives 2:25 P.M. — $42"
+          },
+          {
+            "label": "3:30 P.M.",
+            "value": "Regional 226 — arrives 5:50 P.M. — $31"
+          },
+          {
+            "label": "6:15 P.M.",
+            "value": "Express 130 — arrives 8:00 P.M. — $46"
+          }
+        ],
+        "notes": [
+          "Express trains include reserved seating.",
+          "Regional tickets may be changed without a fee before departure."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo07-q1",
+          "prompt": "What time does the first train leave Lake City?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "7:20 A.M."
+          ],
+          "sampleAnswer": "The first train leaves Lake City at 7:20 A.M."
+        },
+        {
+          "id": "prinfo07-q2",
+          "prompt": "How much is the 9:10 Regional train?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$31"
+          ],
+          "sampleAnswer": "The 9:10 Regional train costs thirty-one dollars."
+        },
+        {
+          "id": "prinfo07-q3",
+          "prompt": "I need to arrive in Northport before six in the evening, but I cannot leave before noon. What trains can I take?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "12:40 P.M.",
+            "Express 118",
+            "2:25 P.M.",
+            "3:30 P.M.",
+            "Regional 226",
+            "5:50 P.M."
+          ],
+          "sampleAnswer": "You have two choices. Express 118 leaves at 12:40 P.M. and arrives at 2:25 P.M. Regional 226 leaves at 3:30 P.M. and arrives at 5:50 P.M., so both arrive before six."
+        }
+      ]
+    },
+    {
+      "id": "prinfo08",
+      "intro": "Hi, I'm considering joining your fitness center and I'd like to know about the evening classes on Monday.",
+      "information": {
+        "title": "Fitness Center Monday Classes",
+        "subtitle": "Monday · Westside Fitness Center",
+        "rows": [
+          {
+            "label": "5:00 P.M.",
+            "value": "Beginner Yoga — Studio A — Nina Brooks"
+          },
+          {
+            "label": "5:30 P.M.",
+            "value": "Indoor Cycling — Studio C — Paul Grant"
+          },
+          {
+            "label": "6:30 P.M.",
+            "value": "Strength Basics — Studio B — Eric Stone"
+          },
+          {
+            "label": "7:00 P.M.",
+            "value": "Intermediate Yoga — Studio A — Nina Brooks"
+          },
+          {
+            "label": "7:30 P.M.",
+            "value": "Dance Fitness — Studio C — Maya Chen"
+          }
+        ],
+        "notes": [
+          "Members may attend at no additional charge.",
+          "Nonmembers: $12 per class."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo08-q1",
+          "prompt": "How much does a class cost for someone who is not a member?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$12 per class"
+          ],
+          "sampleAnswer": "For a nonmember, each class costs twelve dollars."
+        },
+        {
+          "id": "prinfo08-q2",
+          "prompt": "What class starts at six thirty, and who teaches it?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Strength Basics",
+            "Eric Stone"
+          ],
+          "sampleAnswer": "Strength Basics starts at 6:30 P.M., and Eric Stone teaches it."
+        },
+        {
+          "id": "prinfo08-q3",
+          "prompt": "I want to take a class taught by Nina Brooks. What options are available?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "5:00 P.M.",
+            "Beginner Yoga",
+            "7:00 P.M.",
+            "Intermediate Yoga"
+          ],
+          "sampleAnswer": "Nina Brooks teaches Beginner Yoga at 5:00 P.M. and Intermediate Yoga at 7:00 P.M. Both classes are held in Studio A."
+        }
+      ]
+    },
+    {
+      "id": "prinfo09",
+      "intro": "Hello, I'm planning to visit the farm's weekend event. Could you tell me what activities are scheduled?",
+      "information": {
+        "title": "Green Valley Farm Weekend",
+        "subtitle": "Saturday, May 8 · Green Valley Farm",
+        "rows": [
+          {
+            "label": "9:30 A.M.",
+            "value": "Farm Tour — Main Barn"
+          },
+          {
+            "label": "11:00 A.M.",
+            "value": "Bread-Making Demonstration — Farm Kitchen"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Picnic Lunch — Orchard Area"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Fruit Picking — East Field"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Animal Feeding — Main Barn"
+          }
+        ],
+        "notes": [
+          "Admission: adults $16; children $9",
+          "Fruit picking costs an additional $6 per basket."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo09-q1",
+          "prompt": "How much is admission for an adult?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$16"
+          ],
+          "sampleAnswer": "Adult admission costs sixteen dollars."
+        },
+        {
+          "id": "prinfo09-q2",
+          "prompt": "What activity is scheduled at eleven in the morning, and where will it take place?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Bread-Making Demonstration",
+            "Farm Kitchen"
+          ],
+          "sampleAnswer": "The Bread-Making Demonstration is at 11:00 A.M. in the Farm Kitchen."
+        },
+        {
+          "id": "prinfo09-q3",
+          "prompt": "I want to do activities involving plants or food after noon. What can I do?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "1:00 P.M.",
+            "Picnic Lunch",
+            "2:30 P.M.",
+            "Fruit Picking"
+          ],
+          "sampleAnswer": "After noon, there is a Picnic Lunch at 1:00 P.M. in the Orchard Area. Then Fruit Picking begins at 2:30 P.M. in the East Field, and it costs six dollars per basket."
+        }
+      ]
+    },
+    {
+      "id": "prinfo10",
+      "intro": "Hi, I'm a new employee and I'd like some information about the company shuttle from Central Station.",
+      "information": {
+        "title": "Employee Shuttle",
+        "subtitle": "Weekdays · Central Station to Meridian Office Park",
+        "rows": [
+          {
+            "label": "7:10 A.M.",
+            "value": "Route A — arrives 7:40 A.M."
+          },
+          {
+            "label": "7:40 A.M.",
+            "value": "Route B — arrives 8:15 A.M."
+          },
+          {
+            "label": "8:10 A.M.",
+            "value": "Route A — arrives 8:40 A.M."
+          },
+          {
+            "label": "8:40 A.M.",
+            "value": "Route B — arrives 9:15 A.M."
+          },
+          {
+            "label": "9:10 A.M.",
+            "value": "Route A — arrives 9:40 A.M."
+          }
+        ],
+        "notes": [
+          "Route A stops at Buildings 1 and 3.",
+          "Route B stops at Buildings 2 and 4."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo10-q1",
+          "prompt": "What time does the first shuttle leave Central Station?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "7:10 A.M."
+          ],
+          "sampleAnswer": "The first shuttle leaves Central Station at 7:10 A.M."
+        },
+        {
+          "id": "prinfo10-q2",
+          "prompt": "I work in Building 4. Which route should I take?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Route B"
+          ],
+          "sampleAnswer": "You should take Route B because it stops at Building 4."
+        },
+        {
+          "id": "prinfo10-q3",
+          "prompt": "I work in Building 3 and need to arrive before nine. What shuttle options do I have?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Route A",
+            "7:10 A.M.",
+            "7:40 A.M.",
+            "8:10 A.M.",
+            "8:40 A.M."
+          ],
+          "sampleAnswer": "Since Building 3 is on Route A, you can take the 7:10 A.M. shuttle, which arrives at 7:40, or the 8:10 A.M. shuttle, which arrives at 8:40. Both get you there before nine."
+        }
+      ]
+    },
+    {
+      "id": "prinfo11",
+      "intro": "Hello, I'm interested in your evening language program. Could you tell me about the classes offered on Thursday?",
+      "information": {
+        "title": "Evening Language Program",
+        "subtitle": "Thursday · City Learning Institute",
+        "rows": [
+          {
+            "label": "5:30 P.M.",
+            "value": "Beginner Spanish — Room 104 — Elena Cruz"
+          },
+          {
+            "label": "6:00 P.M.",
+            "value": "Business English — Room 210 — Robert Hale"
+          },
+          {
+            "label": "6:30 P.M.",
+            "value": "Beginner Japanese — Room 106 — Mika Tan"
+          },
+          {
+            "label": "7:30 P.M.",
+            "value": "Conversation Spanish — Room 104 — Elena Cruz"
+          },
+          {
+            "label": "8:00 P.M.",
+            "value": "Presentation English — Room 210 — Robert Hale"
+          }
+        ],
+        "notes": [
+          "Each eight-week course costs $120.",
+          "Students may attend one trial class for $15."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo11-q1",
+          "prompt": "How much does an eight-week course cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$120"
+          ],
+          "sampleAnswer": "An eight-week course costs one hundred twenty dollars."
+        },
+        {
+          "id": "prinfo11-q2",
+          "prompt": "Who teaches Beginner Japanese, and what time does it start?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Mika Tan",
+            "6:30 P.M."
+          ],
+          "sampleAnswer": "Mika Tan teaches Beginner Japanese, and it starts at 6:30 P.M."
+        },
+        {
+          "id": "prinfo11-q3",
+          "prompt": "I'm interested in English classes. What options are offered on Thursday?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "6:00 P.M.",
+            "Business English",
+            "8:00 P.M.",
+            "Presentation English",
+            "Robert Hale"
+          ],
+          "sampleAnswer": "There are two English classes. Business English begins at 6:00 P.M., and Presentation English begins at 8:00 P.M. Both classes are taught by Robert Hale in Room 210."
+        }
+      ]
+    },
+    {
+      "id": "prinfo12",
+      "intro": "Hi, I'm planning a company event at your hotel and would like information about the conference packages.",
+      "information": {
+        "title": "Hotel Conference Packages",
+        "subtitle": "Lakeview Hotel · Weekday Events",
+        "rows": [
+          {
+            "label": "Morning Package",
+            "value": "8:00 A.M.–12:00 P.M. — Meeting room + coffee — $420"
+          },
+          {
+            "label": "Afternoon Package",
+            "value": "1:00 P.M.–5:00 P.M. — Meeting room + snacks — $460"
+          },
+          {
+            "label": "Full-Day Package",
+            "value": "8:00 A.M.–5:00 P.M. — Meeting room + lunch — $790"
+          },
+          {
+            "label": "Evening Package",
+            "value": "6:00 P.M.–9:00 P.M. — Meeting room + beverages — $350"
+          }
+        ],
+        "notes": [
+          "Projector rental: additional $45",
+          "Parking for up to 20 cars is included in every package."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo12-q1",
+          "prompt": "How much is the Afternoon Package?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$460"
+          ],
+          "sampleAnswer": "The Afternoon Package costs four hundred sixty dollars."
+        },
+        {
+          "id": "prinfo12-q2",
+          "prompt": "Is parking included with the Evening Package?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Parking",
+            "included",
+            "up to 20 cars"
+          ],
+          "sampleAnswer": "Yes. Parking for up to twenty cars is included with every package, including the Evening Package."
+        },
+        {
+          "id": "prinfo12-q3",
+          "prompt": "We need a room from morning until late afternoon and we also need lunch. Which package should we choose, and what does it cost?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Full-Day Package",
+            "8:00 A.M.–5:00 P.M.",
+            "lunch",
+            "$790"
+          ],
+          "sampleAnswer": "You should choose the Full-Day Package. It runs from 8:00 A.M. to 5:00 P.M., includes lunch, and costs seven hundred ninety dollars."
+        }
+      ]
+    },
+    {
+      "id": "prinfo13",
+      "intro": "Hello, I saw an announcement for the public lecture series at the university. Could you give me some details?",
+      "information": {
+        "title": "University Public Lecture Series",
+        "subtitle": "April · Newton Hall",
+        "rows": [
+          {
+            "label": "April 3, 6:00 P.M.",
+            "value": "Cities of the Future — Dr. Lena Morris — Auditorium"
+          },
+          {
+            "label": "April 10, 6:00 P.M.",
+            "value": "The Science of Sleep — Dr. Omar Reed — Auditorium"
+          },
+          {
+            "label": "April 17, 7:00 P.M.",
+            "value": "Designing Better Parks — Prof. Claire Wong — Room 210"
+          },
+          {
+            "label": "April 24, 6:30 P.M.",
+            "value": "Food and Culture — Dr. Samuel Price — Auditorium"
+          }
+        ],
+        "notes": [
+          "Admission is free.",
+          "Advance registration is required for the April 17 lecture because Room 210 has limited seating."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo13-q1",
+          "prompt": "How much does it cost to attend the lectures?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "free"
+          ],
+          "sampleAnswer": "There is no admission charge. All of the lectures are free."
+        },
+        {
+          "id": "prinfo13-q2",
+          "prompt": "When is the lecture called The Science of Sleep?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "April 10",
+            "6:00 P.M."
+          ],
+          "sampleAnswer": "The Science of Sleep is on April 10 at 6:00 P.M."
+        },
+        {
+          "id": "prinfo13-q3",
+          "prompt": "Which lecture requires advance registration, and could you tell me the time, speaker, and location?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "April 17",
+            "7:00 P.M.",
+            "Designing Better Parks",
+            "Prof. Claire Wong",
+            "Room 210"
+          ],
+          "sampleAnswer": "Designing Better Parks requires advance registration. It is on April 17 at 7:00 P.M., the speaker is Professor Claire Wong, and it will be held in Room 210."
+        }
+      ]
+    },
+    {
+      "id": "prinfo14",
+      "intro": "Hi, I registered to volunteer at the city marathon and I have questions about the orientation sessions.",
+      "information": {
+        "title": "Volunteer Orientation Schedule",
+        "subtitle": "City Marathon · Community Sports Hall",
+        "rows": [
+          {
+            "label": "Tuesday 5:30 P.M.",
+            "value": "Course Support — Room A — 60 minutes"
+          },
+          {
+            "label": "Tuesday 7:00 P.M.",
+            "value": "Water Stations — Room B — 45 minutes"
+          },
+          {
+            "label": "Wednesday 5:30 P.M.",
+            "value": "Registration Desk — Room C — 60 minutes"
+          },
+          {
+            "label": "Wednesday 7:00 P.M.",
+            "value": "Finish Area Support — Room A — 45 minutes"
+          },
+          {
+            "label": "Thursday 6:00 P.M.",
+            "value": "General Make-Up Session — Main Hall — 75 minutes"
+          }
+        ],
+        "notes": [
+          "Volunteers should attend the session for their assigned role.",
+          "Anyone who cannot attend a role-specific session may attend Thursday's make-up session."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo14-q1",
+          "prompt": "How long is the Water Stations orientation?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "45 minutes"
+          ],
+          "sampleAnswer": "The Water Stations orientation lasts forty-five minutes."
+        },
+        {
+          "id": "prinfo14-q2",
+          "prompt": "I'm assigned to the Registration Desk. When and where is my orientation?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Wednesday 5:30 P.M.",
+            "Room C"
+          ],
+          "sampleAnswer": "Your orientation is Wednesday at 5:30 P.M. in Room C."
+        },
+        {
+          "id": "prinfo14-q3",
+          "prompt": "I cannot attend my assigned session. Is there another option? Please give me the details.",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Thursday 6:00 P.M.",
+            "General Make-Up Session",
+            "Main Hall",
+            "75 minutes"
+          ],
+          "sampleAnswer": "Yes. You can attend the General Make-Up Session on Thursday at 6:00 P.M. It is in the Main Hall and lasts seventy-five minutes."
+        }
+      ]
+    },
+    {
+      "id": "prinfo15",
+      "intro": "Hello, I'm planning to visit the city arts weekend and would like to know what is happening on Saturday.",
+      "information": {
+        "title": "City Arts Weekend",
+        "subtitle": "Saturday, June 20 · Downtown Arts District",
+        "rows": [
+          {
+            "label": "10:00 A.M.",
+            "value": "Outdoor Sculpture Walk — River Plaza"
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Jazz Trio — Central Stage"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Local Artist Talk — Gallery Hall"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Street Photography Workshop — Studio 4"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Dance Performance — Central Stage"
+          },
+          {
+            "label": "6:00 P.M.",
+            "value": "Evening Concert — River Plaza"
+          }
+        ],
+        "notes": [
+          "All performances are free.",
+          "Photography Workshop: $20; advance registration required."
+        ]
+      },
+      "questions": [
+        {
+          "id": "prinfo15-q1",
+          "prompt": "What time does the Local Artist Talk begin, and where is it?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "1:00 P.M.",
+            "Gallery Hall"
+          ],
+          "sampleAnswer": "The Local Artist Talk begins at 1:00 P.M. in Gallery Hall."
+        },
+        {
+          "id": "prinfo15-q2",
+          "prompt": "Do I have to pay to see the Dance Performance?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "free"
+          ],
+          "sampleAnswer": "No. The Dance Performance is free, just like the other performances."
+        },
+        {
+          "id": "prinfo15-q3",
+          "prompt": "I will be there after two o'clock. What activities are available, and which one requires advance registration?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:30 P.M.",
+            "Street Photography Workshop",
+            "$20",
+            "advance registration",
+            "4:00 P.M.",
+            "Dance Performance",
+            "6:00 P.M.",
+            "Evening Concert"
+          ],
+          "sampleAnswer": "After two, there is a Street Photography Workshop at 2:30 P.M., a Dance Performance at 4:00, and an Evening Concert at 6:00. The photography workshop costs twenty dollars and requires advance registration."
+        }
+      ]
+    }
+  ],
+  "opinions": [
+    {
+      "id": "prop01",
+      "prompt": "Some companies allow employees to choose flexible starting and ending times instead of requiring everyone to work the same schedule. Do you think flexible work hours are a good idea? Give reasons for your opinion.",
+      "sampleAnswer": "Yes, I think flexible work hours are a good idea when the job allows them. First, people have different responsibilities and commuting situations, so a flexible schedule can reduce unnecessary stress. For example, a parent may need to take a child to school before coming to work, while another employee may prefer to start early and avoid rush-hour traffic. Second, employees can often work better during the hours when they are most focused. Of course, teams still need common times for meetings and customer service. However, if a company sets clear rules about availability, flexibility can improve both productivity and employee satisfaction. For those reasons, I would support flexible working hours."
+    },
+    {
+      "id": "prop02",
+      "prompt": "Do you think companies should spend more money on training current employees or on hiring new employees with the skills they need? Give reasons or examples to support your opinion.",
+      "sampleAnswer": "I think companies should spend more money training current employees. Existing employees already understand the company, its customers, and the way the team works, so helping them develop new skills can be efficient. For example, if a company needs workers who understand a new software system, it may be faster to train experienced staff than to hire many new people who also need time to learn the organization. Training can also improve motivation because employees see that the company is willing to invest in their growth. Hiring is still necessary when a company lacks specialized knowledge. However, for skills that can reasonably be taught, developing current employees is usually the better long-term investment."
+    },
+    {
+      "id": "prop03",
+      "prompt": "Some cities are considering spending more money on public transportation instead of building additional roads for cars. Which choice do you think is better? Give reasons for your opinion.",
+      "sampleAnswer": "I think cities should invest more in public transportation. Good buses and trains can move many people efficiently without requiring every traveler to use a separate car. This can reduce traffic and make commuting more predictable. For example, when a subway line connects residential areas with major business districts, thousands of people can avoid driving during rush hour. Public transportation is also important for students, older residents, and people who cannot afford a car. Roads still need maintenance, and some areas depend on cars. However, continuously adding roads often creates more traffic over time. A reliable transportation network gives residents more choices and can make a city easier and less expensive to travel around."
+    },
+    {
+      "id": "prop04",
+      "prompt": "When completing an important project, do you prefer working as part of a team or working independently? Give reasons and examples to support your choice.",
+      "sampleAnswer": "For an important project, I prefer working as part of a small team. Different people can contribute different strengths, so the final result is often better than one person's work. For example, on a presentation project, one person may be good at research, another at visual design, and another at speaking. A team can also notice mistakes that an individual might overlook. Of course, teamwork requires communication, and too many people can make decisions slower. That is why I prefer a small group with clear responsibilities. If everyone understands what they need to do and shares progress regularly, a team can work efficiently while still benefiting from several perspectives. For me, that is the best balance."
+    },
+    {
+      "id": "prop05",
+      "prompt": "Some people prefer buying products from large national stores, while others prefer shopping at small local businesses. Which do you prefer, and why?",
+      "sampleAnswer": "I prefer shopping at small local businesses when the price and quality are reasonable. One reason is that local stores often provide more personal service. Employees may know their products well and can recommend something based on what a customer actually needs. I also like knowing that some of the money I spend stays in the local community. For example, there is a small bakery near my home, and the owner remembers regular customers and adjusts the menu based on their feedback. Large stores are useful because they usually have more choices and lower prices. Still, for everyday purchases where service and quality matter, I enjoy supporting smaller businesses and building a relationship with the people who run them."
+    },
+    {
+      "id": "prop06",
+      "prompt": "Do you think taking notes by hand is better than taking notes on a computer or tablet? Give reasons or examples to support your opinion.",
+      "sampleAnswer": "I think taking notes by hand is better for learning, although digital notes are more convenient for storage. When I write by hand, I have to choose the most important ideas instead of copying everything quickly. That process helps me pay attention and remember the material. For example, before an exam, I often remember the page where I wrote a diagram or a key formula. Handwritten notes also reduce distractions because I am not receiving messages or opening other websites. Digital notes are useful when I need to search, organize, or share information. However, during a lecture or study session, I understand the content better when I write the main points myself. Therefore, I usually prefer handwritten notes."
+    },
+    {
+      "id": "prop07",
+      "prompt": "Do you think every new employee should be assigned an experienced coworker as a mentor during the first few months? Why or why not?",
+      "sampleAnswer": "Yes, I think new employees should have a mentor during their first few months. Starting a new job involves many small questions that may not be covered in formal training. A mentor can explain normal procedures, introduce important coworkers, and help the new employee understand how the team communicates. For example, a new worker might know how to use the company's software but still be unsure about who approves a certain request. Asking one assigned person is faster than trying to find the answer alone. Mentoring also helps new employees feel more comfortable and connected. The mentor should not do the new employee's work, but regular guidance at the beginning can prevent mistakes and help people become independent more quickly."
+    },
+    {
+      "id": "prop08",
+      "prompt": "For business meetings with people in another city or country, do you think video calls are usually better than traveling in person? Give reasons for your opinion.",
+      "sampleAnswer": "For most routine business meetings, I think video calls are better than traveling in person. They save both time and money because employees do not need flights, hotels, or long trips to the airport. A one-hour meeting can actually take only one hour instead of an entire day. For example, project teams can hold a quick video meeting every week and solve problems before they become serious. In-person meetings are still valuable when people are building a new relationship, negotiating an important agreement, or visiting a work site. However, those situations do not happen every day. For regular updates and discussions, video calls are efficient and allow companies to communicate frequently without the cost and environmental impact of constant travel."
+    },
+    {
+      "id": "prop09",
+      "prompt": "Do you think university students should be required to complete an internship or other work experience before graduation? Give reasons or examples to support your opinion.",
+      "sampleAnswer": "I think university students should complete some type of work experience before graduation, although the requirement should be flexible. An internship helps students understand how knowledge from class is used in a real workplace. It can also show them which jobs they actually enjoy. For example, a student studying marketing may discover during an internship that they prefer data analysis to advertising. Work experience also teaches practical skills such as professional communication, deadlines, and teamwork. Some students may not be able to take a traditional full-time internship, so universities should also accept part-time projects, research work, or community organizations. With several options available, a work-experience requirement could help students make better career decisions and enter the job market with more confidence."
+    },
+    {
+      "id": "prop10",
+      "prompt": "Some cities use empty land for new buildings, while others preserve it as parks or green spaces. Which choice do you think is more important for a growing city?",
+      "sampleAnswer": "I think growing cities should preserve enough land for parks and green spaces. New buildings are necessary, but once open land is completely developed, it can be very difficult to create large public spaces later. Parks give residents places to exercise, relax, and spend time with family without paying money. For example, a neighborhood park can be used by children in the afternoon, runners in the evening, and community events on weekends. Green areas can also provide shade and make dense neighborhoods more comfortable during hot weather. Cities still need housing and offices, so development cannot stop. However, planning should include parks from the beginning. A city with both useful buildings and accessible green spaces is healthier and more pleasant to live in."
+    },
+    {
+      "id": "prop11",
+      "prompt": "What is a better way for a company to reward excellent employees: giving them extra money or giving them additional time off? Give reasons for your choice.",
+      "sampleAnswer": "I think extra money is usually the better reward for excellent employees because it gives people more freedom to decide what is valuable to them. One employee might use the money for travel, while another might save it or pay an important expense. A financial reward also clearly recognizes that the person's work created value for the company. For example, if an employee successfully completes a difficult project that brings in a new client, a bonus feels directly connected to that achievement. Additional time off can also be very attractive, especially for employees who are already financially comfortable. However, not everyone can use extra vacation at the same time. Because money is flexible and easy to understand, I would choose a bonus as a reward."
+    },
+    {
+      "id": "prop12",
+      "prompt": "When choosing a restaurant or hotel, how important are online customer reviews? Do you think people should rely on them? Give reasons for your opinion.",
+      "sampleAnswer": "I think online reviews are useful, but people should not rely on them completely. Reviews can show common patterns that are difficult to see from an advertisement. For example, if many recent guests mention that a hotel is clean and close to public transportation, that information is probably helpful. However, individual reviews can be extremely positive or negative because of one unusual experience. Some reviews may also be old or may focus on things that are not important to me. I usually read several recent comments and look for repeated points instead of trusting one person's opinion. Then I compare that information with the official website, location, and price. Reviews are a good research tool, but they should be only one part of the decision."
+    },
+    {
+      "id": "prop13",
+      "prompt": "Do you think living or studying in another country is one of the best ways to learn about a different culture? Why or why not?",
+      "sampleAnswer": "Yes, I think living or studying in another country is one of the best ways to learn about a different culture because people experience daily life directly. They learn not only about famous traditions but also about ordinary habits, communication styles, transportation, food, and work or school routines. For example, a student living with local roommates may learn how people normally celebrate small holidays or solve everyday problems. Books and videos can provide useful background, and not everyone has the opportunity to travel. Still, direct experience forces people to communicate and adapt in real situations. It can also challenge assumptions they had before arriving. For those reasons, spending meaningful time in another country can create a deeper understanding than simply reading about it."
+    },
+    {
+      "id": "prop14",
+      "prompt": "Some people work or study for long periods without stopping, while others take short scheduled breaks. Which approach do you think is more effective?",
+      "sampleAnswer": "I think short scheduled breaks are more effective than working for several hours without stopping. Concentration naturally decreases over time, so a brief break can help people return to a task with more energy. For example, when I study for about fifty minutes and then walk around for ten minutes, I can focus much better during the next session. Breaks can also prevent small physical problems such as eye strain or stiffness from sitting too long. Of course, breaks should be controlled. If someone spends thirty minutes checking social media, it can be difficult to start working again. A simple schedule with focused work periods and short breaks creates a good balance between productivity and rest. That approach works best for me."
+    },
+    {
+      "id": "prop15",
+      "prompt": "Do you think companies should organize paid volunteer days when employees can work on community projects instead of doing their normal jobs? Give reasons for your opinion.",
+      "sampleAnswer": "Yes, I think companies should offer a limited number of paid volunteer days. Community projects can help organizations contribute to the places where their employees and customers live. They can also create a different kind of teamwork. For example, employees from several departments might spend a day preparing food at a community center or cleaning a public park. Working together outside the office can help people know coworkers they normally do not meet. The program should be optional, and companies still need to manage important deadlines. However, one or two volunteer days a year would not create a major disruption for most businesses. If the projects are organized well, both the community and the employees can benefit."
+    }
+  ]
+}

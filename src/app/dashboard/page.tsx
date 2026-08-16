@@ -25,7 +25,7 @@ const STATUS_COPY: Record<SessionRow["evaluation_status"], { label: string; deta
 
 function sessionTitle(session: SessionRow, index: number) {
   if (session.mode === "mock") return `모의고사 ${session.mock_set_number ?? index + 1}`;
-  return `연습 기록 ${index + 1}`;
+  return `연습 세트 ${session.mock_set_number ?? index + 1}`;
 }
 
 export default function DashboardPage() {
@@ -64,7 +64,7 @@ export default function DashboardPage() {
     <header className="dashboard-header">
       <Link href="/" className="dashboard-brand">SPEAKING LAB</Link>
       <div className="dashboard-header-actions">
-        <Link href="/practice">연습하기</Link>
+        <Link href="/practice?set=1">연습하기</Link>
         <Link href="/test?set=1" className="dashboard-start">모의고사 시작</Link>
       </div>
     </header>
