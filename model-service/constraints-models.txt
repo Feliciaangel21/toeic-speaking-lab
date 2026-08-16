@@ -1,0 +1,5 @@
+# Keep Silero VAD on the CPU-only PyTorch runtime installed by the Dockerfile.
+# Without this constraint, its broad torchaudio dependency can upgrade to a
+# CUDA-oriented release that is incompatible with the CPU-only image.
+torch==2.6.0
+torchaudio==2.6.0

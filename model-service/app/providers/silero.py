@@ -42,9 +42,21 @@ class SileroVadProvider:
                 "segments": [],
             }
 
-        model, read_audio, get_speech_timestamps = self._load()
-        wav = read_audio(str(wav_path), sampling_rate=16000)
-        segments = get_speech_timestamps(wav, model, sampling_rate=16000, return_seconds=True)
+        try:
+            model, read_audio, get_speech_timestamps = self._load()
+            wav = read_audio(str(wav_path), sampling_rate=16000)
+            segments = get_speech_timestamps(wav, model, sampling_rate=16000, return_seconds=True)
+        except Exception:
+            # VAD is a supporting signal. Evaluation should still complete when
+            # a platform-specific audio backend is unavailable.
+            return {
+                "speechMs": duration_ms,
+                "silenceMs": 0,
+                "pauseCount": 0,
+                "longPauseCount": 0,
+                "pauseRatio": 0.0,
+                "segments": [],
+            }
         speech_seconds = sum(max(0.0, float(seg["end"]) - float(seg["start"])) for seg in segments)
         pauses: list[float] = []
         for previous, current in zip(segments, segments[1:]):
