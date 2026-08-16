@@ -5,7 +5,7 @@ import { buildMockTest } from "@/lib/build-test";
 import type { Question, RecordedAttempt } from "@/lib/types";
 import { saveMockSession } from "@/lib/save-attempt";
 import PracticeCoach from "@/components/PracticeCoach";
-import { Mic, Volume2, CheckCircle2, AlertCircle, ArrowRight } from "lucide-react";
+import { Mic, Volume2, CheckCircle2, AlertCircle, ArrowRight, SkipForward } from "lucide-react";
 
 type Phase = "study" | "narrating" | "prep" | "recording" | "review" | "done";
 type RunnerMode = "mock" | "practice";
@@ -90,6 +90,9 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
   const streamRef=useRef<MediaStream|null>(null);
   const chunksRef=useRef<Blob[]>([]);
   const startRef=useRef(0);
+  // Bumped whenever we move off a question. Async narration resumed after an
+  // await checks this so a skipped question cannot set phase for the new one.
+  const runRef=useRef(0);
   const [audioUrls,setAudioUrls]=useState<Record<string,string>>({});
   const current=questions[index];
 
@@ -117,9 +120,10 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
   }
 
   async function beginQuestion(q:Question){
+    const run=++runRef.current;
     if(q.studySeconds){ setPhase("study"); setRemaining(q.studySeconds); return; }
     if(q.taskType==="respond_questions" || q.taskType==="info_response" || q.taskType==="opinion"){
-      setPhase("narrating"); setRemaining(0); await speak(narrationText(q), q.repeatPrompt ?? 1); setPhase("prep"); setRemaining(q.prepSeconds); return;
+      setPhase("narrating"); setRemaining(0); await speak(narrationText(q), q.repeatPrompt ?? 1); if(runRef.current!==run) return; setPhase("prep"); setRemaining(q.prepSeconds); return;
     }
     setPhase("prep"); setRemaining(q.prepSeconds);
   }
@@ -190,13 +194,30 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     setIndex(i=>i+1);
   }
 
+  // Practice only: leave the current question without saving an attempt.
+  async function skipQuestion(){
+    runRef.current++;
+    const rec=recorderRef.current;
+    // Drop onstop first so the discarded take is not saved as an attempt.
+    if(rec && rec.state!=="inactive"){ rec.onstop=null; rec.stop(); }
+    recorderRef.current=null;
+    chunksRef.current=[];
+    if("speechSynthesis" in window) window.speechSynthesis.cancel();
+    if(index>=questions.length-1){ await saveAndFinish(attempts); return; }
+    // "narrating" is inert for the countdown effect, so the old question's
+    // timer cannot fire startRecording() before beginQuestion() takes over.
+    setPhase("narrating");
+    setRemaining(0);
+    setIndex(i=>i+1);
+  }
+
   useEffect(()=>{ if(started) beginQuestion(current); /* eslint-disable-next-line react-hooks/exhaustive-deps */ },[index,started]);
 
   useEffect(()=>{
     if(!started || phase==="narrating" || phase==="review" || phase==="done") return;
     if(remaining<=0){
       if(phase==="study"){
-        (async()=>{ setPhase("narrating"); await speak(narrationText(current), current.repeatPrompt ?? 1); setPhase("prep"); setRemaining(current.prepSeconds); })();
+        (async()=>{ const run=++runRef.current; setPhase("narrating"); await speak(narrationText(current), current.repeatPrompt ?? 1); if(runRef.current!==run) return; setPhase("prep"); setRemaining(current.prepSeconds); })();
       } else if(phase==="prep") startRecording();
       else if(phase==="recording"){
         if(isPractice && practiceCaptureMode==="no_record") finishNoRecordingResponse();
@@ -237,7 +258,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
         {isPractice && phase==="review" && practiceCaptureMode==="record" && audioUrls[current.id] && <div className="answer-playback"><span>내 답변</span><audio controls src={audioUrls[current.id]} preload="metadata"/></div>}
         {isPractice && <PracticeCoach question={current} allowSample={phase==="review"} onListen={(text)=>speak(text,1)}/>}
 
-        {phase==="review" ? <div className="review-actions"><div><b>답변 완료</b><span>해설을 확인하거나 다음 문제로 이동하세요.</span></div><button className="button primary" onClick={nextPracticeQuestion}>{index>=questions.length-1?"연습 완료":"다음 문제"}<ArrowRight size={17}/></button></div> : <div className="status-strip"><span className={`status-dot ${phase}`}/><b>{phaseText}</b></div>}
+        {phase==="review" ? <div className="review-actions"><div><b>답변 완료</b><span>해설을 확인하거나 다음 문제로 이동하세요.</span></div><button className="button primary" onClick={nextPracticeQuestion}>{index>=questions.length-1?"연습 완료":"다음 문제"}<ArrowRight size={17}/></button></div> : <div className="status-strip"><span className={`status-dot ${phase}`}/><b>{phaseText}</b>{isPractice && <button type="button" className="skip-button" onClick={skipQuestion}>{index>=questions.length-1?"건너뛰고 연습 완료":"건너뛰기"}<SkipForward size={15}/></button>}</div>}
       </section>
     </main>
   </div>;
