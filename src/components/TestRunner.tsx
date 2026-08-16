@@ -202,7 +202,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
     setSaveStatus(
       result.mode === "supabase"
         ? "답변이 저장되었습니다. 평가가 완료되면 대시보드에서 결과를 확인할 수 있어요."
-        : "연습 기록을 이 기기에 저장했습니다. 로그인하면 기록과 평가 결과를 이어서 확인할 수 있어요."
+        : "연습 기록을 이 기기에 저장했습니다."
     );
   }
 

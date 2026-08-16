@@ -42,7 +42,7 @@ export default function SessionResultPage() {
       const supabase = getSupabase();
       if (!supabase) { setError("결과 저장 기능에 연결할 수 없습니다."); setLoading(false); return; }
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) { setError("로그인이 필요합니다."); setLoading(false); return; }
+      if (!user) { setError("이 결과는 서버에 저장되어 있지 않습니다."); setLoading(false); return; }
 
       const [{ data: sessionData, error: sessionError }, { data: attemptData, error: attemptError }] = await Promise.all([
         supabase.from("mock_sessions").select("id,mode,evaluation_status,mock_set_number,score_json,created_at").eq("id", sessionId).single(),

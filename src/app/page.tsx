@@ -1,5 +1,4 @@
 import Link from "next/link";
-import AuthPanel from "@/components/AuthPanel";
 
 const mockSets = Array.from({ length: 15 }, (_, index) => index + 1);
 const practiceSets = Array.from({ length: 15 }, (_, index) => index + 1);
@@ -18,12 +17,6 @@ export default function Home() {
 
         <div className="study-nav-actions">
           <Link href="/dashboard" className="study-history-link">내 기록</Link>
-          <details className="home-auth">
-            <summary>로그인</summary>
-            <div className="home-auth-panel">
-              <AuthPanel />
-            </div>
-          </details>
         </div>
       </header>
 
