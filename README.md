@@ -91,10 +91,24 @@ Learners sign in from the 로그인 panel in the landing-page header. Every RLS 
 is `to authenticated` and scoped to `auth.uid()`, so a signed-out learner still
 gets the full practice experience but their recordings stay on the device only.
 
-Email confirmation is on by default for new Supabase projects, so `계정 만들기`
-sends a verification mail and the account cannot sign in until the link is
-clicked. Turn confirmation off under **Authentication → Sign In / Providers →
-Email** if you want instant sign-up.
+### Account creation needs the service-role key
+
+New Supabase projects require email confirmation, and the confirmation mail goes
+through the built-in SMTP, which is a testing service: a few messages an hour,
+delivered only to team addresses. Learners never receive it, so `signUp` alone
+leaves an account that can never sign in.
+
+`/api/auth/signup` sidesteps that by creating the account already confirmed with
+`SUPABASE_SERVICE_ROLE_KEY`, server-side, then letting the browser sign in
+normally. **Set that variable wherever you deploy.** `.env` is gitignored, so a
+host such as Vercel does not get it from the repo, and without it the route
+returns 503 and the modal reports that account creation is not connected. The
+route logs the missing variable name on startup of the request.
+
+Because the route creates accounts without proving the address belongs to the
+person typing it — the same position as turning confirmation off — it is
+throttled to 5 attempts per address per 10 minutes. If you need real address
+verification, configure custom SMTP in Supabase and drop this route.
 
 The repo contains:
 

@@ -33,7 +33,17 @@ function rateLimited(key: string) {
 export async function POST(request: Request) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !serviceKey) return jsonError("not_configured", 503);
+  if (!url || !serviceKey) {
+    // .env is gitignored, so a deploy host has to be given these separately.
+    // Name the missing one: the browser only ever sees a generic message, and
+    // without this the cause is invisible from the outside.
+    const missing = [
+      !url && "NEXT_PUBLIC_SUPABASE_URL",
+      !serviceKey && "SUPABASE_SERVICE_ROLE_KEY",
+    ].filter(Boolean).join(", ");
+    console.error(`[auth/signup] refusing to run; missing env: ${missing}`);
+    return jsonError("not_configured", 503);
+  }
 
   let body: { email?: unknown; password?: unknown };
   try {

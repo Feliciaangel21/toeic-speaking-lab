@@ -35,7 +35,7 @@ async function createAccount(email: string, password: string) {
   if (code === "weak_password") return "비밀번호는 6자 이상이어야 해.";
   if (code === "invalid_email") return "이메일 주소를 다시 확인해 줘.";
   if (code === "rate_limited") return "요청이 좀 많아. 잠시 후 다시 시도해 줘.";
-  if (code === "not_configured") return "계정 기능이 아직 연결이 안 됐어. 이건 내 문제야.";
+  if (code === "not_configured") return "계정 만들기가 아직 서버에 연결이 안 됐어. 이건 내 문제야. 우선 연습은 그냥 계속해도 돼.";
   return "계정을 만들지 못했어. 잠시 후 다시 시도해 줘.";
 }
 
