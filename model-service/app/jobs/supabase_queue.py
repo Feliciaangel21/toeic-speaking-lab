@@ -82,20 +82,65 @@ class SupabaseEvaluationQueue:
                 result[state] += 1
         return result
 
-    def pending_attempts(self, limit: int = 100) -> list[dict[str, Any]]:
+    def pending_sessions(self) -> list[dict[str, Any]]:
         if not self.configured:
             raise RuntimeError("Supabase queue is not configured in model-service/.env")
-        return self._rest_get(
+
+        attempts = self._rest_get(
             "question_attempts",
             {
-                "select": "id,session_id,user_id,question_id,question_number,task_type,response_duration_ms,audio_path,audio_mime_type,created_at",
+                "select": "session_id,evaluation_status,upload_status,audio_path",
                 "evaluation_status": "eq.pending",
                 "upload_status": "eq.uploaded",
                 "audio_path": "not.is.null",
                 "order": "created_at.asc",
-                "limit": str(max(1, min(limit, 500))),
+                "limit": "1000",
             },
         )
+        pending_by_session: dict[str, int] = {}
+        for attempt in attempts:
+            session_id = str(attempt.get("session_id") or "")
+            if session_id:
+                pending_by_session[session_id] = pending_by_session.get(session_id, 0) + 1
+
+        if not pending_by_session:
+            return []
+
+        session_ids = ",".join(pending_by_session.keys())
+        sessions = self._rest_get(
+            "mock_sessions",
+            {
+                "select": "id,mode,mock_set_number,evaluation_status,created_at",
+                "id": f"in.({session_ids})",
+                "order": "created_at.desc",
+                "limit": "500",
+            },
+        )
+        result: list[dict[str, Any]] = []
+        for session in sessions:
+            session_id = str(session.get("id") or "")
+            if not session_id:
+                continue
+            result.append({
+                **session,
+                "pending_count": pending_by_session.get(session_id, 0),
+            })
+        return result
+
+    def pending_attempts(self, limit: int = 100, session_id: str | None = None) -> list[dict[str, Any]]:
+        if not self.configured:
+            raise RuntimeError("Supabase queue is not configured in model-service/.env")
+        params = {
+            "select": "id,session_id,user_id,question_id,question_number,task_type,response_duration_ms,audio_path,audio_mime_type,created_at",
+            "evaluation_status": "eq.pending",
+            "upload_status": "eq.uploaded",
+            "audio_path": "not.is.null",
+            "order": "question_number.asc,created_at.asc" if session_id else "created_at.asc",
+            "limit": str(max(1, min(limit, 500))),
+        }
+        if session_id:
+            params["session_id"] = f"eq.{session_id}"
+        return self._rest_get("question_attempts", params)
 
     def _download_audio(self, audio_path: str, destination: Path) -> None:
         encoded = quote(audio_path, safe="/")

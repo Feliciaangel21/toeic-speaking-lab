@@ -126,3 +126,7 @@ For each `question_attempts` row:
 - `evaluation_model_version`
 
 When every recorded item in a session is complete, the corresponding `mock_sessions.evaluation_status` becomes `evaluated`. `/dashboard` then enables **결과 보기**.
+
+## Session-selectable local runner
+
+For the exact owner workflow, see `../docs/LOCAL_INFERENCE_EXACT.md`. The runner at `http://127.0.0.1:8100/runner` lists pending sessions and evaluates only the session you select.
