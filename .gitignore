@@ -19,3 +19,7 @@ model-service/.venv/
 __pycache__/
 *.pyc
 package-lock.json
+
+# Vercel CLI link metadata
+.vercel
+.env*
