@@ -44,28 +44,54 @@ export default function Home() {
           <article className="study-mode-card mock-card">
             <div className="study-mode-topline">
               <span>MOCK TEST</span>
-              <span>약 20분</span>
+              <span>세트 {mockSets.length}개 · 약 20분</span>
             </div>
             <div>
               <h2>실전 모의고사</h2>
               <p>11문항을 실제 시험 흐름과 시간에 맞춰 한 번에 연습해요.</p>
             </div>
+            <div className="set-block">
+              <div className="set-block-head">
+                <b>세트 선택</b>
+                <span>{mockSets.length}개 중 하나를 눌러 바로 시작</span>
+              </div>
+              <div className="set-grid">
+                {mockSets.map((set) => (
+                  <Link key={set} href={`/test?set=${set}`} aria-label={`모의고사 ${set}번 세트 시작`}>
+                    {String(set).padStart(2, "0")}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <Link className="study-card-action primary" href="/test?set=1">
-              모의고사 시작 <span aria-hidden="true">→</span>
+              1번 세트로 시작 <span aria-hidden="true">→</span>
             </Link>
           </article>
 
           <article className="study-mode-card practice-card">
             <div className="study-mode-topline">
               <span>PRACTICE</span>
-              <span>내 페이스대로</span>
+              <span>세트 {practiceSets.length}개 · 내 페이스대로</span>
             </div>
             <div>
               <h2>연습 세트</h2>
-              <p>15개 연습 세트에서 답변 후 힌트, 표현, 해설과 모범 답변을 확인하며 천천히 연습해요.</p>
+              <p>답변 후 힌트, 표현, 해설과 모범 답변을 확인하며 천천히 연습해요. 같은 문제를 다시 풀거나 건너뛸 수 있어요.</p>
+            </div>
+            <div className="set-block">
+              <div className="set-block-head">
+                <b>세트 선택</b>
+                <span>{practiceSets.length}개 중 하나를 눌러 바로 시작</span>
+              </div>
+              <div className="set-grid">
+                {practiceSets.map((set) => (
+                  <Link key={set} href={`/practice?set=${set}`} aria-label={`연습 ${set}번 세트 시작`}>
+                    {String(set).padStart(2, "0")}
+                  </Link>
+                ))}
+              </div>
             </div>
             <Link className="study-card-action secondary" href="/practice?set=1">
-              연습 세트 선택 <span aria-hidden="true">→</span>
+              1번 세트로 시작 <span aria-hidden="true">→</span>
             </Link>
           </article>
         </div>
@@ -78,27 +104,6 @@ export default function Home() {
           <span>5개 유형</span>
         </div>
 
-        <details className="mock-picker">
-          <summary>다른 모의고사 세트 선택</summary>
-          <div className="mock-picker-grid">
-            {mockSets.map((set) => (
-              <Link key={set} href={`/test?set=${set}`}>
-                {String(set).padStart(2, "0")}
-              </Link>
-            ))}
-          </div>
-        </details>
-
-        <details className="mock-picker practice-home-picker">
-          <summary>연습 세트 선택</summary>
-          <div className="mock-picker-grid">
-            {practiceSets.map((set) => (
-              <Link key={set} href={`/practice?set=${set}`}>
-                {String(set).padStart(2, "0")}
-              </Link>
-            ))}
-          </div>
-        </details>
       </section>
 
       <footer className="study-footer">
