@@ -65,9 +65,7 @@ export default function DashboardPage() {
   const evaluated = useMemo(() => sessions.filter((session) => session.evaluation_status === "evaluated"), [sessions]);
   const latestScore = useMemo(() => {
     for (const session of evaluated) {
-      const score = session.score_json?.rawTotal;
-      const max = session.score_json?.maxTotal;
-      if (typeof score === "number" && typeof max === "number" && max > 0) return Math.round((score / max) * 100);
+      if (typeof session.estimated_score === "number") return session.estimated_score;
     }
     return null;
   }, [evaluated]);
@@ -91,7 +89,7 @@ export default function DashboardPage() {
 
     <section className="dashboard-summary-grid">
       <article><Target size={19}/><span>평가 완료</span><strong>{evaluated.length}<small>개</small></strong></article>
-      <article><BarChart3 size={19}/><span>최근 상대 점수</span><strong>{latestScore ?? "–"}<small>{latestScore === null ? "" : "%"}</small></strong></article>
+      <article><BarChart3 size={19}/><span>최근 예상 점수</span><strong>{latestScore ?? "–"}<small>{latestScore === null ? "" : "점"}</small></strong></article>
       <article><Flame size={19}/><span>모의고사</span><strong>{mockCount}<small>회</small></strong></article>
       <article><Clock3 size={19}/><span>연습 세트</span><strong>{practiceCount}<small>회</small></strong></article>
     </section>
@@ -118,7 +116,7 @@ export default function DashboardPage() {
             <h2>{sessionTitle(session, index)}</h2>
             <p>{state.detail}</p>
           </div>
-          <div className="session-score-mini">{ratio === null ? "–" : `${ratio}%`}<small>raw ratio</small></div>
+          <div className="session-score-mini">{typeof session.estimated_score === "number" ? session.estimated_score : (ratio === null ? "–" : `${ratio}%`)}<small>{typeof session.estimated_score === "number" ? "experimental" : "raw ratio"}</small></div>
           <div className={`session-state state-${session.evaluation_status}`}>{state.label}</div>
           <div className="session-action">
             {session.evaluation_status === "evaluated"

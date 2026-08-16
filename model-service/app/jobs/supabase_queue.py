@@ -10,6 +10,7 @@ import httpx
 
 from app.audio import convert_to_wav
 from app.config import settings
+from app.scorers.session_calibrator import estimate_session_score
 from app.schemas import QuestionPayload
 
 
@@ -269,10 +270,18 @@ class SupabaseEvaluationQueue:
         payload = {**raw, "number": int(attempt.get("question_number") or 0) or None}
         return QuestionPayload.model_validate(payload)
 
-    def _set_session_state(self, session_id: str, state: str, score_json: dict[str, Any] | None = None) -> None:
+    def _set_session_state(
+        self,
+        session_id: str,
+        state: str,
+        score_json: dict[str, Any] | None = None,
+        estimated_score: int | None = None,
+    ) -> None:
         payload: dict[str, Any] = {"evaluation_status": state}
         if score_json is not None:
             payload["score_json"] = score_json
+        if estimated_score is not None:
+            payload["estimated_score"] = estimated_score
         self._rest_patch("mock_sessions", {"id": f"eq.{session_id}"}, payload)
 
     @staticmethod
@@ -366,28 +375,6 @@ class SupabaseEvaluationQueue:
             if isinstance(raw_confidence, (int, float)):
                 confidence_values.append(max(0.0, min(1.0, float(raw_confidence))))
 
-        summary = {
-            "status": "experimental",
-            "rawTotal": raw_total,
-            "maxTotal": max_total,
-            "rawRatio": round(raw_total / max_total, 4) if max_total else None,
-            "completedItems": len(completed),
-            "totalEvaluableItems": len(evaluable),
-            "dimensions": self._dimension_summary(completed),
-            "taskBreakdown": self._task_breakdown(completed),
-            "meanItemConfidence": (
-                round(sum(confidence_values) / len(confidence_values), 4)
-                if confidence_values
-                else None
-            ),
-            # Keep this explicit: no 0-200 estimate is produced until a
-            # speaker-independent human-rated calibration set exists.
-            "estimatedToeicScore": None,
-            "calibrationStatus": "unvalidated-no-scaled-score",
-            "pipeline": self.pipeline.pipeline_version,
-            "updatedAt": utc_now(),
-        }
-
         if not evaluable:
             state = "not_requested"
         elif any(s in {"pending", "processing", "waiting_for_audio"} for s in states):
@@ -398,7 +385,38 @@ class SupabaseEvaluationQueue:
             state = "evaluated"
         else:
             state = "pending"
-        self._set_session_state(session_id, state, summary)
+
+        dimensions = self._dimension_summary(completed)
+        estimate = estimate_session_score(
+            raw_total=raw_total,
+            max_total=max_total,
+            dimensions=dimensions,
+            completed_items=len(completed),
+            total_items=len(evaluable),
+        )
+        summary = {
+            "status": "experimental",
+            "rawTotal": raw_total,
+            "maxTotal": max_total,
+            "rawRatio": round(raw_total / max_total, 4) if max_total else None,
+            "completedItems": len(completed),
+            "totalEvaluableItems": len(evaluable),
+            "dimensions": dimensions,
+            "taskBreakdown": self._task_breakdown(completed),
+            "meanItemConfidence": (
+                round(sum(confidence_values) / len(confidence_values), 4)
+                if confidence_values
+                else None
+            ),
+            "estimatedToeicScore": estimate["score"] if estimate else None,
+            "estimatedToeicScoreRange": estimate["range"] if estimate else None,
+            "estimation": estimate,
+            "calibrationStatus": estimate["calibrationStatus"] if estimate else "awaiting-complete-session",
+            "pipeline": self.pipeline.pipeline_version,
+            "updatedAt": utc_now(),
+        }
+
+        self._set_session_state(session_id, state, summary, estimate["score"] if estimate else None)
 
     def reconcile_incomplete_sessions(self) -> int:
         rows = self._rest_get(

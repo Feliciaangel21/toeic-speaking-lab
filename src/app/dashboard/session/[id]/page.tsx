@@ -11,6 +11,7 @@ type SessionRow = {
   mode: "mock" | "practice";
   evaluation_status: string;
   mock_set_number: number | null;
+  estimated_score: number | null;
   score_json: Record<string, unknown> | null;
   created_at: string;
 };
@@ -110,7 +111,7 @@ export default function SessionResultPage() {
       if (!user) { setError("결과 보려면 로그인부터 해야지."); setLoading(false); return; }
 
       const [{ data: sessionData, error: sessionError }, { data: attemptData, error: attemptError }] = await Promise.all([
-        supabase.from("mock_sessions").select("id,mode,evaluation_status,mock_set_number,score_json,created_at").eq("id", sessionId).single(),
+        supabase.from("mock_sessions").select("id,mode,evaluation_status,mock_set_number,estimated_score,score_json,created_at").eq("id", sessionId).single(),
         supabase.from("question_attempts").select("id,question_number,task_type,transcript,feature_json,score_json,evaluation_status,evaluation_error").eq("session_id", sessionId).order("question_number", { ascending: true }),
       ]);
       if (!active) return;
@@ -125,6 +126,13 @@ export default function SessionResultPage() {
   const maxTotal = useMemo(() => attempts.reduce((sum, attempt) => sum + (getNumber(attempt.score_json?.maxItemScore) ?? (attempt.question_number === 11 ? 5 : 3)), 0), [attempts]);
   const ratio = maxTotal > 0 ? Math.round((total / maxTotal) * 100) : 0;
   const dimensions = useMemo(() => sessionDimensions(session?.score_json ?? null), [session]);
+  const estimatedScore = getNumber(session?.estimated_score);
+  const estimatedRange = useMemo(() => {
+    const value = session?.score_json?.estimatedToeicScoreRange;
+    return Array.isArray(value) && value.length === 2 && getNumber(value[0]) !== null && getNumber(value[1]) !== null
+      ? `${getNumber(value[0])}–${getNumber(value[1])}`
+      : null;
+  }, [session]);
 
   if (loading) return <main className="result-page"><div className="dashboard-empty">결과 가져오는 중…</div></main>;
   if (error || !session) return <main className="result-page"><div className="dashboard-empty"><b>{error || "그런 기록이 없는데?"}</b><Link href="/dashboard">내 기록으로</Link></div></main>;
@@ -140,9 +148,11 @@ export default function SessionResultPage() {
         <p>{new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric" }).format(new Date(session.created_at))}</p>
       </div>
       <div className="result-summary-center">
-        <span>현재 raw ratio</span>
-        <strong>{ratio}%</strong>
-        <p>공식 TOEIC 환산 점수는 아니야. 현재 실험 평가기의 문항 점수 비율이야.</p>
+        <span>{estimatedScore === null ? "현재 raw ratio" : "예상 TOEIC Speaking 점수"}</span>
+        <strong>{estimatedScore === null ? `${ratio}%` : estimatedScore}</strong>
+        <p>{estimatedScore === null
+          ? "아직 전체 답변 평가가 끝나지 않아 문항 점수 비율만 보여 줘."
+          : `예상 범위 ${estimatedRange ?? "–"}점 · 공식 점수나 ETS 환산이 아닌 실험적 추정값이야.`}</p>
       </div>
     </section>
 

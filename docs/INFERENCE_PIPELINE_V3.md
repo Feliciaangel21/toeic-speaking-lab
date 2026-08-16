@@ -107,12 +107,13 @@ When a session reconciles, `mock_sessions.score_json` now also stores:
     "describe_picture": { "ratio": 0.67, "items": 2 }
   },
   "meanItemConfidence": 0.61,
-  "estimatedToeicScore": null,
-  "calibrationStatus": "unvalidated-no-scaled-score"
+  "estimatedToeicScore": 160,
+  "estimatedToeicScoreRange": [150, 170],
+  "calibrationStatus": "experimental-heuristic-not-human-calibrated"
 }
 ```
 
-No fake 0–200 score is generated. A scaled TOEIC-like estimate should only be added after human-rated calibration.
+For complete sessions, the evaluator now emits a coarse 0–200 **experimental estimate** in ten-point bands. It is derived from the item-score ratio, lightly adjusted by available delivery/language/content diagnostics. It is not an ETS score or an official conversion, and its displayed ±10 range must remain until the mapping is replaced with human-rated calibration.
 
 ## Dashboard additions
 
