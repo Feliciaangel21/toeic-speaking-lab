@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed:supabase": "node --env-file=.env.local scripts/seed-supabase.mjs",
-    "check:supabase": "node --env-file=.env.local scripts/check-supabase.mjs",
-    "seed:guides": "node --env-file=.env.local scripts/seed-guides-supabase.mjs",
+    "seed:supabase": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/seed-supabase.mjs",
+    "check:supabase": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/check-supabase.mjs",
+    "seed:guides": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/seed-guides-supabase.mjs",
     "typecheck": "tsc --noEmit",
     "check:practice": "node scripts/check-practice-bank.mjs"
   },
