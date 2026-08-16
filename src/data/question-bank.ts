@@ -1,0 +1,2336 @@
+import type { InterviewGroup, InfoGroup } from "@/lib/types";
+
+export const QUESTION_BANK = {
+  "readAloud": [
+    {
+      "id": "ra01",
+      "text": "Good morning, everyone. The Riverside Community Center will be closed this Saturday while new lighting is installed in the main hall. Fitness classes scheduled for Saturday morning will instead take place at the Eastside Gym. Regular programs will return on Monday at their usual times. Members who have questions may call the front desk between nine in the morning and six in the evening. During the work, signs will be posted near each entrance to direct visitors to temporary classrooms. Please check the center website before leaving home because a few evening programs may also be moved to different rooms.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra02",
+      "text": "Thank you for choosing Harbor City Tours. Our afternoon walking tour begins at two o'clock in front of the Central Library and lasts approximately ninety minutes. Please arrive ten minutes early so that your guide can check your reservation. Comfortable shoes are strongly recommended because the route includes several hills. In case of heavy rain, the tour will be moved to the City History Museum. Tickets purchased online do not need to be printed; simply show the confirmation code on your phone to the guide. Children under twelve may join the tour at half price when accompanied by an adult.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra03",
+      "text": "Attention passengers on Flight 614 to Singapore. Boarding will begin at Gate 18 in approximately twenty minutes. Passengers traveling with small children or needing additional assistance may board first. Please have your passport and boarding pass ready before entering the line. We also remind passengers that large carry-on items must be placed in the overhead compartment during the flight. Passengers who have not yet checked a large bag should visit the service counter immediately. Once boarding begins, please listen for your group number and wait until it is called before approaching the gate.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra04",
+      "text": "The Green Market is pleased to announce extended hours for the summer season. Beginning next week, the market will remain open until nine p.m. on Fridays and Saturdays. Shoppers can find fresh produce, baked goods, handmade gifts, and prepared meals from local vendors. Free parking is available behind the market after six p.m. We hope the new hours make your weekend shopping more convenient. Several vendors will offer free samples during the evening hours, and a small information desk will help visitors locate specific products. Pets are welcome outdoors, but they must remain on a leash.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra05",
+      "text": "Welcome to the Lakeview Hotel. Breakfast is served in the second-floor restaurant from six thirty until ten each morning. Guests may use the fitness center at any time with their room key. If you need transportation to the airport, please make a reservation with the front desk at least two hours before departure. We hope you enjoy a comfortable and relaxing stay with us. Check-out time is eleven a.m., although later departure may be available for an additional charge. Luggage can be stored securely with the concierge after check-out.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra06",
+      "text": "Employees are invited to attend a short workshop on effective presentation skills next Wednesday. The session will begin at three p.m. in Conference Room B and will be led by communication specialist Maria Evans. Participants will practice organizing ideas, designing simple visual materials, and answering audience questions. Space is limited to twenty employees, so please register through the company website by Monday afternoon. The workshop is especially recommended for employees who regularly present project updates or proposals to clients. Participants who complete the session will receive a digital workbook containing presentation templates and a checklist for future use.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra07",
+      "text": "This is a reminder that the Westbrook Public Library will begin its annual book sale tomorrow morning. Thousands of used books, magazines, and children's titles will be available at low prices. The sale starts at nine and continues until four. All proceeds will support free educational programs for local residents. Shoppers are encouraged to bring reusable bags for their purchases. A special half-price period will begin at two p.m. on Sunday, when all remaining books will be discounted further. Cash and cards are accepted, and volunteers can help with large purchases.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra08",
+      "text": "Thank you for calling Bright Dental Clinic. Our office is open Monday through Friday from eight thirty a.m. to five thirty p.m. New patients should arrive fifteen minutes before their appointment to complete registration forms. If you need to change an appointment, please contact us at least twenty-four hours in advance. For urgent dental problems outside business hours, follow the emergency instructions on our website. Parking is available behind the clinic, and patients may enter through the rear door when the front lot is full. Please bring a current medication list for your dentist to review.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra09",
+      "text": "The City Arts Festival returns this weekend with live music, outdoor performances, and craft exhibitions. Events will take place in several locations around downtown, and most activities are free to the public. A complete schedule is available at the information booth near City Hall. Visitors are encouraged to use public transportation because several streets will be closed to traffic during the festival. Food trucks will be located near the river entrance, and seating areas will be available throughout the festival grounds. Visitors should note that some evening performances require free advance tickets even though there is no admission charge.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra10",
+      "text": "Starting next month, employees who work in the North Tower will use a new electronic visitor system. Guests must check in at the first-floor reception desk and present a valid photo identification card. The receptionist will then issue a temporary badge that must remain visible at all times. Employees are responsible for meeting their visitors in the lobby and returning visitor badges before leaving the building. Delivery drivers and contractors must use the separate service entrance on Pine Street unless a host has arranged otherwise. Visitors should allow extra time for security checks during busy periods.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra11",
+      "text": "Welcome to Sunrise Fitness Club. Members can join more than thirty group classes each week, including yoga, cycling, swimming, and strength training. Most classes do not require advance registration, but popular evening sessions may fill quickly. Towels are available at the reception desk at no additional charge. Please remember to return all equipment to its proper place after completing your workout. New members can schedule a free twenty-minute orientation with a trainer to learn how to use the equipment safely. The club also offers personal training sessions for an additional fee, with discounts available when several sessions are purchased together.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra12",
+      "text": "The university career office will host an international job fair on Thursday, October seventeenth. Representatives from more than forty companies will be available to discuss internships and full-time positions. Students should bring several copies of their résumé and wear professional clothing. The fair is open from ten a.m. until four p.m. in the Student Union Ballroom, and no advance registration is required. A photographer will be available from noon until two p.m. to take professional profile pictures at a reduced student rate. Students should research participating companies before speaking with employers.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra13",
+      "text": "Beginning Monday, the Oakridge Pharmacy will offer a free prescription delivery service to customers who live within five kilometers of the store. Orders received before noon can usually be delivered the same day, while later requests will arrive the following business day. Customers must be at home to receive medications that require a signature. To arrange delivery, call the pharmacy or select the delivery option when ordering through our website. There is no charge for the service, although regular prescription costs still apply. The service is designed for busy customers and those with limited transportation.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra14",
+      "text": "The Lakeside Museum will open a new exhibition on modern architecture this Friday. The exhibition features photographs, scale models, and original drawings from more than twenty internationally recognized designers. Guided tours will be offered at eleven in the morning and three in the afternoon, and each tour will last about forty minutes. Because space is limited, visitors who want to join a tour should reserve a place online before arriving. General admission to the museum is fifteen dollars, but students and senior citizens receive a discount. The exhibition remains open through November, with an early preview for members.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra15",
+      "text": "Residents are reminded that construction on Pine Street will begin next Tuesday and continue for approximately three weeks. During this period, one lane of traffic will remain open in each direction, but drivers should expect delays during the morning and evening rush hours. Bus stops located between Fifth Avenue and Eighth Avenue will be temporarily moved to nearby streets. Pedestrians will still be able to access local shops and restaurants throughout the project. City officials recommend using alternate routes whenever possible. The project will also improve drainage, pavement, and street lighting.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra16",
+      "text": "Thank you for registering for the Regional Sales Conference at the Grandview Convention Center. Check-in begins at eight fifteen Tuesday morning in the first-floor lobby. The opening session starts at nine, followed by workshops on customer service, digital marketing, and account management. Lunch will be provided, with vegetarian meals available upon request. Please bring the name badge from your registration packet because it is required for all sessions. If you need to change your workshop selection, visit the information desk before ten a.m. Conference staff will be available throughout the day to answer questions.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra17",
+      "text": "The Downtown Farmers' Market is looking for volunteers to assist with weekend programs this fall. Volunteers may help vendors set up tables, give directions, organize children's activities, or collect recyclable materials after the market closes. Most shifts last two to three hours, and volunteers can choose Saturday or Sunday. No previous experience is required, but new volunteers must attend a short orientation before their first shift. Anyone who completes at least twelve volunteer hours will receive a market gift card and certificate of appreciation. Applications are available online and should be submitted by September tenth.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra18",
+      "text": "Our customer support department will introduce a new appointment system next month. Instead of waiting on hold, customers will be able to select a convenient time for a representative to call them back. Appointments can be scheduled through the company website from seven a.m. until nine p.m., Monday through Saturday. Customers should briefly describe the reason for the call so that the correct specialist can be assigned. If an appointment must be canceled, please do so at least thirty minutes in advance. For nonurgent questions, the new system should provide faster, more predictable service.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra19",
+      "text": "Attention residents of Maplewood Apartments. The building's main elevators will undergo routine safety inspections this Wednesday between ten a.m. and two p.m. During the inspection, one elevator may be unavailable at a time, so residents should allow extra time when entering or leaving the building. The service elevator near the parking garage will remain available for deliveries and residents who need assistance. No work is expected inside individual apartments. If the inspection takes longer than planned, an updated notice will be posted in the lobby and sent by e-mail. We appreciate your cooperation while this necessary maintenance is completed.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra20",
+      "text": "The Westfield College Career Center is offering free interview practice sessions for students preparing for internships and full-time employment. Each thirty-minute appointment includes a simulated interview followed by personalized feedback from a career adviser. Students may choose an in-person appointment or participate online by video conference. Before the session, participants should upload a copy of their résumé and a description of the position they are interested in. Appointments are available Tuesday through Friday from ten a.m. to five p.m. Students are encouraged to reserve appointments at least one week in advance.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra21",
+      "text": "Starting this Saturday, the Riverfront Shuttle will operate on a revised weekend schedule. Buses will depart from Central Station every thirty minutes between eight in the morning and ten at night. The route serves the museum district, Riverside Park, Harbor Market, and the convention center before returning downtown. Passengers may pay with cash, a transit card, or the mobile transportation app. Children under six ride free with an adult. Because of road construction near Harbor Market, the shuttle will use a temporary stop on King Street for two weekends. Updated route maps are available at major stations and online.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra22",
+      "text": "Welcome to Northstar Electronics. Most unused products may be returned within thirty days with the original receipt. Computers, cameras, and other electronic devices must be returned with all accessories and packaging. Refunds are normally issued through the same payment method used for the purchase. Clearance items may have different return conditions, so please check your receipt carefully. If a product is damaged or not working properly, contact our service desk before returning it. Staff will help determine whether a replacement, repair, or refund is appropriate. We want every customer to be satisfied with purchases from our stores or website.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra23",
+      "text": "The City Recreation Department is accepting registrations for its spring adult sports programs. This season, residents can join basketball, volleyball, tennis, and beginner-level swimming classes at several community centers. Most programs begin during the first week of April and continue for eight weeks. Participants should register online and select the location and schedule that work best for them. Equipment is provided for swimming and basketball, but tennis players must bring their own rackets. Reduced fees are available for residents over sixty-five and for university students with valid identification. Early registration is recommended because popular evening programs fill quickly.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra24",
+      "text": "To improve service during the holiday season, Greenway Department Store will extend its opening hours beginning December first. The store will open at eight a.m. Monday through Saturday and remain open until ten in the evening. On Sundays, shopping hours will be from ten a.m. to eight p.m. The customer service desk on the first floor can assist with returns, gift receipts, and package pickup. Free gift wrapping will be available for purchases over fifty dollars, although customers should expect longer waiting times on weekends. Parking is free for two hours after ticket validation at a store register.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra25",
+      "text": "Employees who use the company parking garage should be aware of several changes next month. Beginning on the first Monday, entrance will require a newly issued identification card. Old parking permits will no longer open the gate. Employees who have not received a new card should contact Human Resources before Friday. Visitor parking will remain on the first level, and guests must obtain a temporary pass from security. Bicycle parking is also moving to a covered area beside the south entrance. These changes are part of a broader security upgrade for the office complex.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra26",
+      "text": "Thank you for visiting the Hillcrest Animal Clinic. To reduce waiting times, routine appointments such as vaccinations and annual checkups should be scheduled in advance whenever possible. The clinic is open from eight a.m. to seven p.m. on weekdays and from nine until two on Saturdays. If your pet requires urgent care outside these hours, call the emergency number listed on our website. When bringing a new pet to the clinic, please provide any available vaccination or treatment records from a previous veterinarian. Reception staff can also provide documents needed for pet-insurance claims.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra27",
+      "text": "This weekend, the Harbor Theater will present three performances of the award-winning comedy City Lights. Shows begin at seven thirty on Friday and Saturday evenings, with a Sunday performance at two in the afternoon. Tickets may be purchased online or at the box office, which opens one hour before each show. Audience members should arrive at least fifteen minutes early because late seating may be delayed until a break in the performance. Discounted tickets are available for students and groups of ten or more. After Friday's show, the theater cafe will host a discussion with cast members.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra28",
+      "text": "The Human Resources department will offer voluntary health screenings for employees next Thursday and Friday. Nurses from Green Medical Center will conduct basic checks including blood pressure, cholesterol, and blood sugar levels in Meeting Room 4A. Each appointment takes approximately fifteen minutes and all individual results will remain confidential. Employees who participate will receive a brief explanation of their results and information about local health resources. Appointments are available between nine a.m. and four p.m. and can be reserved through the employee portal. Participants should bring their employee identification card to the appointment.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra29",
+      "text": "The Willow Creek Hotel has introduced mobile check-in for guests who want to save time when they arrive. On the morning of your reservation, you will receive a secure link to confirm your contact information and expected arrival time. Once your room is ready, a digital key can be activated through the hotel app. Guests who prefer traditional check-in may still visit the front desk. First-time guests may be asked to show identification before a digital key is issued. Bell service, restaurant reservations, and transportation assistance remain available through the lobby concierge.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    },
+    {
+      "id": "ra30",
+      "text": "The Eastwood Business Association will sponsor a small-business networking breakfast on Wednesday, November twelfth, at the Park Avenue Hotel. Doors open at seven thirty, and the program begins at eight. Local business owners can introduce their companies, exchange contact information, and hear a short presentation on attracting customers through community partnerships. A continental breakfast is included in the registration fee. Participants should bring business cards or other contact materials to share. Because seating is limited to seventy-five guests, advance registration is required. Reservations can be made online until Monday afternoon or until the event reaches capacity.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched",
+      "targetWordRange": "90-100",
+      "benchmarkNote": "Calibrated to the 2025 ETS official sample Read a Text Aloud passage (~96 words)."
+    }
+  ],
+  "pictures": [
+    {
+      "id": "pic01",
+      "imageUrl": "https://images.unsplash.com/photo-1653669487003-7d89b2020f3c?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A group of people seated around a table in an office",
+      "scene": "office meeting",
+      "concepts": [
+        "people",
+        "table",
+        "laptop",
+        "office",
+        "sitting",
+        "meeting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic02",
+      "imageUrl": "https://images.unsplash.com/photo-1739302750685-122e3b768b5a?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Two people shopping in a supermarket aisle",
+      "scene": "supermarket",
+      "concepts": [
+        "women",
+        "shopping cart",
+        "shelves",
+        "groceries",
+        "store"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic03",
+      "imageUrl": "https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Customers sitting inside a busy cafe",
+      "scene": "cafe",
+      "concepts": [
+        "customers",
+        "tables",
+        "cafe",
+        "sitting",
+        "counter",
+        "lights"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic04",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A presenter speaking to colleagues in a conference room",
+      "scene": "presentation",
+      "concepts": [
+        "presenter",
+        "screen",
+        "laptops",
+        "conference room",
+        "people"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic05",
+      "imageUrl": "https://images.unsplash.com/photo-1709127130389-cb27a59102df?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "People shopping in a large indoor market",
+      "scene": "market",
+      "concepts": [
+        "market",
+        "people",
+        "produce",
+        "shopping carts",
+        "signs"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic06",
+      "imageUrl": "https://images.unsplash.com/photo-1737592576700-1c0da20419ff?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "People relaxing on the grass in a public park",
+      "scene": "park",
+      "concepts": [
+        "park",
+        "grass",
+        "people",
+        "trees",
+        "walking",
+        "sitting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic07",
+      "imageUrl": "https://images.unsplash.com/photo-1569527144709-89935bb8a95b?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Commuters waiting on a train platform",
+      "scene": "train station",
+      "concepts": [
+        "people",
+        "platform",
+        "train station",
+        "phones",
+        "waiting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic08",
+      "imageUrl": "https://images.unsplash.com/photo-1762419757174-31e02475fc66?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "A modern lobby with a long reception desk",
+      "scene": "lobby",
+      "concepts": [
+        "reception desk",
+        "lobby",
+        "staff",
+        "lighting",
+        "counter"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic09",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+      "alt": "Workers at a construction site",
+      "scene": "construction",
+      "concepts": [
+        "workers",
+        "hard hats",
+        "construction",
+        "building",
+        "safety"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic10",
+      "imageUrl": "https://loremflickr.com/1200/800/airport-terminal,people?lock=710",
+      "alt": "travelers waiting near departure screens",
+      "scene": "airport terminal",
+      "concepts": [
+        "travelers",
+        "luggage",
+        "seats",
+        "departure board",
+        "airport"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic11",
+      "imageUrl": "https://loremflickr.com/1200/800/restaurant-patio,people?lock=711",
+      "alt": "customers eating at outdoor tables",
+      "scene": "restaurant patio",
+      "concepts": [
+        "customers",
+        "tables",
+        "food",
+        "server",
+        "outdoor seating"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic12",
+      "imageUrl": "https://loremflickr.com/1200/800/city-crosswalk,people?lock=712",
+      "alt": "pedestrians crossing a busy street",
+      "scene": "city crosswalk",
+      "concepts": [
+        "pedestrians",
+        "crosswalk",
+        "cars",
+        "buildings",
+        "traffic light"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic13",
+      "imageUrl": "https://loremflickr.com/1200/800/library-study-area,people?lock=713",
+      "alt": "students studying around tables in a library",
+      "scene": "library study area",
+      "concepts": [
+        "students",
+        "books",
+        "tables",
+        "laptops",
+        "library"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic14",
+      "imageUrl": "https://loremflickr.com/1200/800/hotel-reception,people?lock=714",
+      "alt": "guests checking in at a hotel front desk",
+      "scene": "hotel reception",
+      "concepts": [
+        "guests",
+        "reception desk",
+        "luggage",
+        "staff",
+        "lobby"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic15",
+      "imageUrl": "https://loremflickr.com/1200/800/bakery-counter,people?lock=715",
+      "alt": "customers ordering baked goods at a counter",
+      "scene": "bakery counter",
+      "concepts": [
+        "customers",
+        "bread",
+        "display case",
+        "cashier",
+        "bakery"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic16",
+      "imageUrl": "https://loremflickr.com/1200/800/warehouse,people?lock=716",
+      "alt": "workers moving boxes in a warehouse",
+      "scene": "warehouse",
+      "concepts": [
+        "workers",
+        "boxes",
+        "shelves",
+        "cart",
+        "warehouse"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic17",
+      "imageUrl": "https://loremflickr.com/1200/800/bus-stop,people?lock=717",
+      "alt": "commuters waiting beside a city bus stop",
+      "scene": "bus stop",
+      "concepts": [
+        "commuters",
+        "bus stop",
+        "street",
+        "bags",
+        "bench"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic18",
+      "imageUrl": "https://loremflickr.com/1200/800/classroom,people?lock=718",
+      "alt": "students attending a classroom lesson",
+      "scene": "classroom",
+      "concepts": [
+        "students",
+        "teacher",
+        "desks",
+        "whiteboard",
+        "classroom"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic19",
+      "imageUrl": "https://loremflickr.com/1200/800/office-break-room,people?lock=719",
+      "alt": "coworkers talking in an office kitchen",
+      "scene": "office break room",
+      "concepts": [
+        "coworkers",
+        "counter",
+        "cups",
+        "kitchen",
+        "office"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic20",
+      "imageUrl": "https://loremflickr.com/1200/800/outdoor-market,people?lock=720",
+      "alt": "vendors and shoppers at outdoor market stalls",
+      "scene": "outdoor market",
+      "concepts": [
+        "vendors",
+        "shoppers",
+        "produce",
+        "stalls",
+        "bags"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic21",
+      "imageUrl": "https://loremflickr.com/1200/800/fitness-center,people?lock=721",
+      "alt": "people exercising in a gym",
+      "scene": "fitness center",
+      "concepts": [
+        "people",
+        "exercise equipment",
+        "weights",
+        "gym",
+        "training"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic22",
+      "imageUrl": "https://loremflickr.com/1200/800/museum-gallery,people?lock=722",
+      "alt": "visitors looking at artwork in a gallery",
+      "scene": "museum gallery",
+      "concepts": [
+        "visitors",
+        "paintings",
+        "gallery",
+        "walls",
+        "museum"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic23",
+      "imageUrl": "https://loremflickr.com/1200/800/conference-registration,people?lock=723",
+      "alt": "attendees checking in at an event desk",
+      "scene": "conference registration",
+      "concepts": [
+        "attendees",
+        "registration desk",
+        "badges",
+        "signs",
+        "conference"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic24",
+      "imageUrl": "https://loremflickr.com/1200/800/train-interior,people?lock=724",
+      "alt": "passengers seated inside a commuter train",
+      "scene": "train interior",
+      "concepts": [
+        "passengers",
+        "seats",
+        "train",
+        "windows",
+        "bags"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic25",
+      "imageUrl": "https://loremflickr.com/1200/800/public-plaza,people?lock=725",
+      "alt": "people walking and sitting in a city plaza",
+      "scene": "public plaza",
+      "concepts": [
+        "people",
+        "benches",
+        "buildings",
+        "walking",
+        "plaza"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic26",
+      "imageUrl": "https://loremflickr.com/1200/800/flower-shop,people?lock=726",
+      "alt": "customer and clerk arranging flowers",
+      "scene": "flower shop",
+      "concepts": [
+        "customer",
+        "clerk",
+        "flowers",
+        "counter",
+        "shop"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic27",
+      "imageUrl": "https://loremflickr.com/1200/800/bike-rental,people?lock=727",
+      "alt": "people choosing bicycles at a rental station",
+      "scene": "bike rental",
+      "concepts": [
+        "people",
+        "bicycles",
+        "helmets",
+        "rental station",
+        "street"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic28",
+      "imageUrl": "https://loremflickr.com/1200/800/clinic-waiting-room,people?lock=728",
+      "alt": "patients seated in a medical waiting area",
+      "scene": "clinic waiting room",
+      "concepts": [
+        "patients",
+        "chairs",
+        "reception",
+        "clinic",
+        "waiting"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic29",
+      "imageUrl": "https://loremflickr.com/1200/800/food-court,people?lock=729",
+      "alt": "people ordering and eating in a food court",
+      "scene": "food court",
+      "concepts": [
+        "people",
+        "tables",
+        "food counters",
+        "trays",
+        "seating"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "pic30",
+      "imageUrl": "https://loremflickr.com/1200/800/delivery-loading-area,people?lock=730",
+      "alt": "workers loading packages into a delivery vehicle",
+      "scene": "delivery loading area",
+      "concepts": [
+        "workers",
+        "packages",
+        "van",
+        "cart",
+        "loading area"
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    }
+  ],
+  "interviewGroups": [
+    {
+      "id": "iq01",
+      "intro": "Imagine that a consumer research company is conducting a survey about how people use coffee shops.",
+      "topic": "coffee shops",
+      "questions": [
+        {
+          "id": "iq01-q1",
+          "prompt": "How often do you visit a coffee shop, and when do you usually go?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency",
+            "time"
+          ]
+        },
+        {
+          "id": "iq01-q2",
+          "prompt": "What do you usually order at a coffee shop?",
+          "responseSeconds": 15,
+          "slots": [
+            "item"
+          ]
+        },
+        {
+          "id": "iq01-q3",
+          "prompt": "What is most important to you when choosing a coffee shop? Give a reason.",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq02",
+      "intro": "Imagine that a local transportation office is asking residents about public transportation.",
+      "topic": "transportation",
+      "questions": [
+        {
+          "id": "iq02-q1",
+          "prompt": "How often do you use public transportation?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq02-q2",
+          "prompt": "Which type of public transportation do you use most often, and why?",
+          "responseSeconds": 15,
+          "slots": [
+            "type",
+            "reason"
+          ]
+        },
+        {
+          "id": "iq02-q3",
+          "prompt": "What change would make public transportation more convenient in your area?",
+          "responseSeconds": 30,
+          "slots": [
+            "change",
+            "explanation"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq03",
+      "intro": "Imagine that a travel website is interviewing people about weekend trips.",
+      "topic": "weekend travel",
+      "questions": [
+        {
+          "id": "iq03-q1",
+          "prompt": "How often do you take a short trip on the weekend?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq03-q2",
+          "prompt": "Who do you usually travel with?",
+          "responseSeconds": 15,
+          "slots": [
+            "companion"
+          ]
+        },
+        {
+          "id": "iq03-q3",
+          "prompt": "Describe a place near your city that you would recommend for a weekend trip.",
+          "responseSeconds": 30,
+          "slots": [
+            "place",
+            "description",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq04",
+      "intro": "Imagine that a company is researching people's online shopping habits.",
+      "topic": "online shopping",
+      "questions": [
+        {
+          "id": "iq04-q1",
+          "prompt": "How often do you shop online?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq04-q2",
+          "prompt": "What kinds of products do you usually buy online?",
+          "responseSeconds": 15,
+          "slots": [
+            "products"
+          ]
+        },
+        {
+          "id": "iq04-q3",
+          "prompt": "What is one advantage and one disadvantage of shopping online?",
+          "responseSeconds": 30,
+          "slots": [
+            "advantage",
+            "disadvantage"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq05",
+      "intro": "Imagine that your city is surveying residents about exercise and fitness.",
+      "topic": "exercise",
+      "questions": [
+        {
+          "id": "iq05-q1",
+          "prompt": "How many days a week do you usually exercise?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq05-q2",
+          "prompt": "Where do you prefer to exercise?",
+          "responseSeconds": 15,
+          "slots": [
+            "location"
+          ]
+        },
+        {
+          "id": "iq05-q3",
+          "prompt": "What helps people continue exercising regularly? Explain your answer.",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "explanation"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq06",
+      "intro": "Imagine that a media company is interviewing people about movies.",
+      "topic": "movies",
+      "questions": [
+        {
+          "id": "iq06-q1",
+          "prompt": "How often do you watch movies?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq06-q2",
+          "prompt": "Do you prefer watching movies at home or at a theater?",
+          "responseSeconds": 15,
+          "slots": [
+            "preference"
+          ]
+        },
+        {
+          "id": "iq06-q3",
+          "prompt": "Tell me about a movie you enjoyed recently and explain why you liked it.",
+          "responseSeconds": 30,
+          "slots": [
+            "movie",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq07",
+      "intro": "Imagine that a university is collecting information about students' study habits.",
+      "topic": "study habits",
+      "questions": [
+        {
+          "id": "iq07-q1",
+          "prompt": "Where do you usually study?",
+          "responseSeconds": 15,
+          "slots": [
+            "location"
+          ]
+        },
+        {
+          "id": "iq07-q2",
+          "prompt": "What time of day are you most productive when studying?",
+          "responseSeconds": 15,
+          "slots": [
+            "time"
+          ]
+        },
+        {
+          "id": "iq07-q3",
+          "prompt": "What is the best way to stay focused while studying for an important test?",
+          "responseSeconds": 30,
+          "slots": [
+            "method",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq08",
+      "intro": "Imagine that a city newspaper is asking residents about eating at restaurants.",
+      "topic": "restaurants",
+      "questions": [
+        {
+          "id": "iq08-q1",
+          "prompt": "How often do you eat at a restaurant?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency"
+          ]
+        },
+        {
+          "id": "iq08-q2",
+          "prompt": "What type of restaurant do you visit most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "type"
+          ]
+        },
+        {
+          "id": "iq08-q3",
+          "prompt": "What makes you return to the same restaurant? Give specific reasons.",
+          "responseSeconds": 30,
+          "slots": [
+            "factors",
+            "reasons"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq09",
+      "intro": "Imagine that a technology company is researching how people use smartphones.",
+      "topic": "smartphones",
+      "questions": [
+        {
+          "id": "iq09-q1",
+          "prompt": "About how many hours a day do you use your smartphone?",
+          "responseSeconds": 15,
+          "slots": [
+            "duration"
+          ]
+        },
+        {
+          "id": "iq09-q2",
+          "prompt": "Which smartphone application do you use most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "application"
+          ]
+        },
+        {
+          "id": "iq09-q3",
+          "prompt": "In what way have smartphones made daily life easier? Give an example.",
+          "responseSeconds": 30,
+          "slots": [
+            "benefit",
+            "example"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq10",
+      "intro": "Imagine that a community organization is asking people about volunteering.",
+      "topic": "volunteering",
+      "questions": [
+        {
+          "id": "iq10-q1",
+          "prompt": "Have you ever done volunteer work? If so, what kind?",
+          "responseSeconds": 15,
+          "slots": [
+            "experience"
+          ]
+        },
+        {
+          "id": "iq10-q2",
+          "prompt": "How much time would you be willing to volunteer each month?",
+          "responseSeconds": 15,
+          "slots": [
+            "time"
+          ]
+        },
+        {
+          "id": "iq10-q3",
+          "prompt": "Why do you think people decide to volunteer in their communities?",
+          "responseSeconds": 30,
+          "slots": [
+            "reasons"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq11",
+      "intro": "Imagine that a local transportation agency is conducting a telephone survey about commuting habits.",
+      "topic": "commuting",
+      "questions": [
+        {
+          "id": "iq11-q1",
+          "prompt": "How do you usually travel to work or school, and how long does the trip take?",
+          "responseSeconds": 15,
+          "slots": [
+            "transportation",
+            "duration"
+          ]
+        },
+        {
+          "id": "iq11-q2",
+          "prompt": "What time of day is transportation in your area the most crowded?",
+          "responseSeconds": 15,
+          "slots": [
+            "time"
+          ]
+        },
+        {
+          "id": "iq11-q3",
+          "prompt": "What is one improvement that would make commuting in your area easier? Why?",
+          "responseSeconds": 30,
+          "slots": [
+            "improvement",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq12",
+      "intro": "Imagine that a research company is interviewing people about using public libraries.",
+      "topic": "public libraries",
+      "questions": [
+        {
+          "id": "iq12-q1",
+          "prompt": "When was the last time you visited a library, and why did you go?",
+          "responseSeconds": 15,
+          "slots": [
+            "time",
+            "purpose"
+          ]
+        },
+        {
+          "id": "iq12-q2",
+          "prompt": "What library service do you use most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "service"
+          ]
+        },
+        {
+          "id": "iq12-q3",
+          "prompt": "Do you think libraries should offer more digital services? Why or why not?",
+          "responseSeconds": 30,
+          "slots": [
+            "opinion",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq13",
+      "intro": "Imagine that a hotel company is conducting a survey about travelers’ accommodation preferences.",
+      "topic": "hotels",
+      "questions": [
+        {
+          "id": "iq13-q1",
+          "prompt": "How often do you stay at a hotel, and what is usually the purpose of your trip?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency",
+            "purpose"
+          ]
+        },
+        {
+          "id": "iq13-q2",
+          "prompt": "What hotel facility or service do you use most often?",
+          "responseSeconds": 15,
+          "slots": [
+            "facility_or_service"
+          ]
+        },
+        {
+          "id": "iq13-q3",
+          "prompt": "When choosing a hotel, which is more important to you, location or price? Why?",
+          "responseSeconds": 30,
+          "slots": [
+            "choice",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq14",
+      "intro": "Imagine that a shopping center is asking customers about how they buy clothing.",
+      "topic": "clothing shopping",
+      "questions": [
+        {
+          "id": "iq14-q1",
+          "prompt": "How often do you buy new clothes, and where do you usually shop?",
+          "responseSeconds": 15,
+          "slots": [
+            "frequency",
+            "place"
+          ]
+        },
+        {
+          "id": "iq14-q2",
+          "prompt": "Do you usually shop for clothes alone or with someone else?",
+          "responseSeconds": 15,
+          "slots": [
+            "preference"
+          ]
+        },
+        {
+          "id": "iq14-q3",
+          "prompt": "What is the most important thing you consider before buying an item of clothing? Explain why.",
+          "responseSeconds": 30,
+          "slots": [
+            "factor",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "iq15",
+      "intro": "Imagine that a community organization is conducting a survey about weekend activities.",
+      "topic": "weekend activities",
+      "questions": [
+        {
+          "id": "iq15-q1",
+          "prompt": "What do you usually do on Saturday mornings?",
+          "responseSeconds": 15,
+          "slots": [
+            "activity"
+          ]
+        },
+        {
+          "id": "iq15-q2",
+          "prompt": "Who do you usually spend your weekends with?",
+          "responseSeconds": 15,
+          "slots": [
+            "person_or_group"
+          ]
+        },
+        {
+          "id": "iq15-q3",
+          "prompt": "Would you rather plan your weekend in advance or decide what to do at the last minute? Why?",
+          "responseSeconds": 30,
+          "slots": [
+            "preference",
+            "reason"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    }
+  ],
+  "infoGroups": [
+    {
+      "id": "ig01",
+      "intro": "Hello, I'm calling about the professional development seminar next Friday. Could you give me some information?",
+      "information": {
+        "title": "Professional Development Day",
+        "subtitle": "Friday, September 18 · Carlton Business Center",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Registration — Main Lobby"
+          },
+          {
+            "label": "9:30 A.M.",
+            "value": "Opening Talk: Building Better Teams — Hall A"
+          },
+          {
+            "label": "11:00 A.M.",
+            "value": "Managing Your Time — Room 204"
+          },
+          {
+            "label": "12:30 P.M.",
+            "value": "Lunch — Garden Cafe"
+          },
+          {
+            "label": "2:00 P.M.",
+            "value": "Customer Communication Workshop — Room 310"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Networking Reception — Main Lobby"
+          }
+        ],
+        "notes": [
+          "Registration fee: $60; students: $40"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig01-q1",
+          "prompt": "What time does the first presentation begin, and where will it be held?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "9:30 A.M.",
+            "Hall A"
+          ]
+        },
+        {
+          "id": "ig01-q2",
+          "prompt": "I am especially interested in time management. Is there a session about that?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "11:00 A.M.",
+            "Managing Your Time",
+            "Room 204"
+          ]
+        },
+        {
+          "id": "ig01-q3",
+          "prompt": "Could you tell me about all of the activities scheduled after lunch?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:00 P.M. Customer Communication Workshop",
+            "4:00 P.M. Networking Reception"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig02",
+      "intro": "Hi, I'm interested in taking classes at the Westside Fitness Center. I have a few questions about Saturday's schedule.",
+      "information": {
+        "title": "Westside Fitness Center — Saturday Classes",
+        "rows": [
+          {
+            "label": "8:00 A.M.",
+            "value": "Yoga — Studio 2 — Maya Chen"
+          },
+          {
+            "label": "9:30 A.M.",
+            "value": "Beginner Swimming — Pool — Daniel Ortiz"
+          },
+          {
+            "label": "11:00 A.M.",
+            "value": "Strength Basics — Gym A — Priya Shah"
+          },
+          {
+            "label": "1:30 P.M.",
+            "value": "Indoor Cycling — Studio 1 — Leo Martin"
+          },
+          {
+            "label": "3:00 P.M.",
+            "value": "Pilates — Studio 2 — Maya Chen"
+          }
+        ],
+        "notes": [
+          "Members: free; visitors: $12 per class"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig02-q1",
+          "prompt": "What is the earliest class, and who teaches it?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "8:00 A.M.",
+            "Yoga",
+            "Maya Chen"
+          ]
+        },
+        {
+          "id": "ig02-q2",
+          "prompt": "I don't have a membership. How much would one class cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$12"
+          ]
+        },
+        {
+          "id": "ig02-q3",
+          "prompt": "I'd like a class taught by Maya Chen. What options do I have?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "8:00 A.M. Yoga",
+            "3:00 P.M. Pilates"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig03",
+      "intro": "Hello, I'm planning to attend the Harbor Film Festival on Saturday. Can you help me with the program?",
+      "information": {
+        "title": "Harbor Film Festival — Saturday",
+        "subtitle": "Orion Arts Center",
+        "rows": [
+          {
+            "label": "10:00 A.M.",
+            "value": "Short Film Showcase — Theater 1"
+          },
+          {
+            "label": "12:00 P.M.",
+            "value": "Director Q&A — Theater 2"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Lunch Break"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Documentary: Changing Cities — Theater 1"
+          },
+          {
+            "label": "5:00 P.M.",
+            "value": "International Feature — Theater 1"
+          },
+          {
+            "label": "7:30 P.M.",
+            "value": "Awards Ceremony — Grand Hall"
+          }
+        ],
+        "notes": [
+          "Day pass: $35"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig03-q1",
+          "prompt": "Where is the festival taking place, and what time does the first event start?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Orion Arts Center",
+            "10:00 A.M."
+          ]
+        },
+        {
+          "id": "ig03-q2",
+          "prompt": "I heard the director question-and-answer session begins at one o'clock. Is that correct?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "No",
+            "12:00 P.M."
+          ]
+        },
+        {
+          "id": "ig03-q3",
+          "prompt": "What events can I attend from two o'clock onward before the awards ceremony?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:30 P.M. Documentary",
+            "5:00 P.M. International Feature"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig04",
+      "intro": "Hi, I'm calling about the Lakeside Hotel airport shuttle. Could you explain tomorrow morning's schedule?",
+      "information": {
+        "title": "Lakeside Hotel Airport Shuttle",
+        "subtitle": "Hotel → International Airport",
+        "rows": [
+          {
+            "label": "5:30 A.M.",
+            "value": "Terminal 1 — 12 seats"
+          },
+          {
+            "label": "7:00 A.M.",
+            "value": "Terminal 2 — 8 seats"
+          },
+          {
+            "label": "8:30 A.M.",
+            "value": "Terminal 1 — 15 seats"
+          },
+          {
+            "label": "10:00 A.M.",
+            "value": "Terminal 2 — 10 seats"
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Terminal 1 — 6 seats"
+          }
+        ],
+        "notes": [
+          "Travel time: approximately 45 minutes",
+          "Reservation required"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig04-q1",
+          "prompt": "How long does the trip to the airport usually take?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "45 minutes"
+          ]
+        },
+        {
+          "id": "ig04-q2",
+          "prompt": "What time is the first shuttle to Terminal 2?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "7:00 A.M."
+          ]
+        },
+        {
+          "id": "ig04-q3",
+          "prompt": "I need to go to Terminal 1 after eight in the morning. Which shuttles could I take?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "8:30 A.M.",
+            "11:30 A.M."
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig05",
+      "intro": "Hello, I'm thinking about joining the Downtown Cooking School. Can you tell me about next week's evening classes?",
+      "information": {
+        "title": "Downtown Cooking School — Evening Program",
+        "rows": [
+          {
+            "label": "Monday 6:30 P.M.",
+            "value": "Fresh Pasta — Chef Rossi — $45"
+          },
+          {
+            "label": "Tuesday 7:00 P.M.",
+            "value": "Korean Home Cooking — Chef Kim — $40"
+          },
+          {
+            "label": "Wednesday 6:00 P.M.",
+            "value": "Bread Basics — Chef Patel — $35"
+          },
+          {
+            "label": "Thursday 7:30 P.M.",
+            "value": "Thai Street Food — Chef Anan — $45"
+          },
+          {
+            "label": "Friday 6:30 P.M.",
+            "value": "Desserts for Beginners — Chef Lee — $40"
+          }
+        ],
+        "notes": [
+          "Ingredients included in all class fees"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig05-q1",
+          "prompt": "Which class is the least expensive?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Bread Basics",
+            "$35"
+          ]
+        },
+        {
+          "id": "ig05-q2",
+          "prompt": "When is the Korean Home Cooking class, and who teaches it?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Tuesday 7:00 P.M.",
+            "Chef Kim"
+          ]
+        },
+        {
+          "id": "ig05-q3",
+          "prompt": "I'm only free after seven p.m. Which classes start later than seven?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Thursday 7:30 P.M. Thai Street Food"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig06",
+      "intro": "Hi, I'm organizing a visit to the City Science Museum this Sunday. I have questions about the guided tours.",
+      "information": {
+        "title": "City Science Museum — Sunday Tours",
+        "rows": [
+          {
+            "label": "10:15 A.M.",
+            "value": "Space Exploration — 45 min — Level 3"
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Robotics Lab — 60 min — Level 2"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Energy of the Future — 45 min — Level 1"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Space Exploration — 45 min — Level 3"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Robotics Lab — 60 min — Level 2"
+          }
+        ],
+        "notes": [
+          "Tours are included with museum admission"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig06-q1",
+          "prompt": "How long is the Robotics Lab tour?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "60 minutes"
+          ]
+        },
+        {
+          "id": "ig06-q2",
+          "prompt": "Is there a Space Exploration tour in the afternoon?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Yes",
+            "2:30 P.M."
+          ]
+        },
+        {
+          "id": "ig06-q3",
+          "prompt": "Could you tell me about all tours that begin after two p.m.?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:30 P.M. Space Exploration",
+            "4:00 P.M. Robotics Lab"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig07",
+      "intro": "Hello, I'm interested in the business networking event next month. Could I ask about the schedule?",
+      "information": {
+        "title": "Regional Business Networking Evening",
+        "subtitle": "March 12 · Grandview Hotel",
+        "rows": [
+          {
+            "label": "5:30 P.M.",
+            "value": "Check-in and refreshments — Lobby"
+          },
+          {
+            "label": "6:00 P.M.",
+            "value": "Keynote: Growing Across Markets — Ballroom"
+          },
+          {
+            "label": "6:45 P.M.",
+            "value": "Industry Roundtables — Rooms A–D"
+          },
+          {
+            "label": "7:45 P.M.",
+            "value": "Dinner — Ballroom"
+          },
+          {
+            "label": "9:00 P.M.",
+            "value": "Open Networking — Terrace"
+          }
+        ],
+        "notes": [
+          "Advance ticket: $75; at the door: $90"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig07-q1",
+          "prompt": "What time does check-in start?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "5:30 P.M."
+          ]
+        },
+        {
+          "id": "ig07-q2",
+          "prompt": "How much is a ticket if I buy it at the door?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "$90"
+          ]
+        },
+        {
+          "id": "ig07-q3",
+          "prompt": "What activities are scheduled before dinner?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "5:30 check-in",
+            "6:00 keynote",
+            "6:45 roundtables"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig08",
+      "intro": "Hi, I'm calling about the summer language program. I want to know about Wednesday's activities.",
+      "information": {
+        "title": "Summer Language Program — Wednesday",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Conversation Skills — Room 105"
+          },
+          {
+            "label": "10:30 A.M.",
+            "value": "Pronunciation Workshop — Language Lab"
+          },
+          {
+            "label": "12:00 P.M.",
+            "value": "Lunch"
+          },
+          {
+            "label": "1:30 P.M.",
+            "value": "City Culture Project — Room 208"
+          },
+          {
+            "label": "3:30 P.M.",
+            "value": "Student Presentations — Auditorium"
+          }
+        ],
+        "notes": [
+          "All activities are required except Student Presentations"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig08-q1",
+          "prompt": "Where will the pronunciation workshop be held?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Language Lab"
+          ]
+        },
+        {
+          "id": "ig08-q2",
+          "prompt": "Are the student presentations required?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "No",
+            "optional"
+          ]
+        },
+        {
+          "id": "ig08-q3",
+          "prompt": "What activities take place before lunch?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "9:00 Conversation Skills",
+            "10:30 Pronunciation Workshop"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig09",
+      "intro": "Hello, I'm planning to use the coworking center tomorrow. Can you tell me about the meeting rooms?",
+      "information": {
+        "title": "Metro Coworking — Meeting Room Availability",
+        "rows": [
+          {
+            "label": "Room A",
+            "value": "8:00–10:00 A.M. available · 4 people"
+          },
+          {
+            "label": "Room B",
+            "value": "10:30 A.M.–1:00 P.M. available · 8 people"
+          },
+          {
+            "label": "Room C",
+            "value": "1:00–3:30 P.M. available · 6 people"
+          },
+          {
+            "label": "Room D",
+            "value": "3:00–6:00 P.M. available · 12 people"
+          }
+        ],
+        "notes": [
+          "Hourly rate: Room A $15, B $25, C $20, D $35"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig09-q1",
+          "prompt": "Which room can hold the largest group?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Room D",
+            "12 people"
+          ]
+        },
+        {
+          "id": "ig09-q2",
+          "prompt": "I need a room at eleven in the morning for six people. Which room should I reserve?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Room B"
+          ]
+        },
+        {
+          "id": "ig09-q3",
+          "prompt": "Could you compare the rooms available in the afternoon, including their capacity and hourly price?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Room C 6 people $20",
+            "Room D 12 people $35"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig10",
+      "intro": "Hi, I'm looking at the Green Valley Farm weekend tour. Could you give me some information?",
+      "information": {
+        "title": "Green Valley Farm — Saturday Tour",
+        "rows": [
+          {
+            "label": "9:30 A.M.",
+            "value": "Welcome and farm introduction"
+          },
+          {
+            "label": "10:00 A.M.",
+            "value": "Greenhouse tour"
+          },
+          {
+            "label": "11:15 A.M.",
+            "value": "Fruit-picking activity"
+          },
+          {
+            "label": "12:30 P.M.",
+            "value": "Farm lunch"
+          },
+          {
+            "label": "2:00 P.M.",
+            "value": "Cooking demonstration"
+          },
+          {
+            "label": "3:30 P.M.",
+            "value": "Farm shop visit"
+          }
+        ],
+        "notes": [
+          "Adult ticket: $48",
+          "Child ticket: $30",
+          "Lunch included"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig10-q1",
+          "prompt": "What time does the greenhouse tour begin?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "10:00 A.M."
+          ]
+        },
+        {
+          "id": "ig10-q2",
+          "prompt": "Does the ticket price include lunch?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Yes"
+          ]
+        },
+        {
+          "id": "ig10-q3",
+          "prompt": "What activities are scheduled after lunch?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "2:00 Cooking demonstration",
+            "3:30 Farm shop visit"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig11",
+      "intro": "Hello, I'm calling about the customer-service training day next month. Could you give me some details?",
+      "information": {
+        "title": "Customer Service Training Day",
+        "subtitle": "Tuesday, October 13 · Harbor Office Center",
+        "rows": [
+          {
+            "label": "8:30 A.M.",
+            "value": "Registration — Lobby"
+          },
+          {
+            "label": "9:00 A.M.",
+            "value": "Understanding Customer Needs — Room 201 — Elena Park"
+          },
+          {
+            "label": "10:30 A.M.",
+            "value": "Handling Difficult Situations — Room 305 — Marcus Hill"
+          },
+          {
+            "label": "12:00 P.M.",
+            "value": "Lunch — Terrace Cafe"
+          },
+          {
+            "label": "1:30 P.M.",
+            "value": "Writing Effective E-mails — Room 201 — Susan Bell"
+          },
+          {
+            "label": "3:00 P.M.",
+            "value": "Telephone Communication Practice — Room 305 — Daniel Cho"
+          },
+          {
+            "label": "4:30 P.M.",
+            "value": "Closing Discussion — Auditorium"
+          }
+        ],
+        "notes": [
+          "Fee: $85; company groups of 5 or more: $70 per person",
+          "Lunch is included."
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig11-q1",
+          "prompt": "What time does the first training session begin, and where will it be held?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "9:00 A.M.",
+            "Understanding Customer Needs",
+            "Room 201"
+          ]
+        },
+        {
+          "id": "ig11-q2",
+          "prompt": "I am interested in improving my business e-mails. Is there a session for that?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "1:30 P.M.",
+            "Writing Effective E-mails",
+            "Room 201"
+          ]
+        },
+        {
+          "id": "ig11-q3",
+          "prompt": "Could you tell me about all the sessions scheduled after lunch?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "1:30 P.M. Writing Effective E-mails",
+            "3:00 P.M. Telephone Communication Practice",
+            "4:30 P.M. Closing Discussion"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig12",
+      "intro": "Hi, I'm planning to visit the River City Museum on Saturday. I have a few questions about the visitor schedule.",
+      "information": {
+        "title": "River City Museum — Saturday Programs",
+        "subtitle": "Saturday, November 7",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Museum Opens"
+          },
+          {
+            "label": "10:00 A.M.",
+            "value": "Architecture Tour — Main Lobby — 45 min."
+          },
+          {
+            "label": "11:30 A.M.",
+            "value": "Photography Talk — Gallery 2 — 60 min."
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Family Art Workshop — Studio B — 90 min."
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "History Tour — Main Lobby — 45 min."
+          },
+          {
+            "label": "4:30 P.M.",
+            "value": "Museum Closes"
+          }
+        ],
+        "notes": [
+          "General admission: $18; students: $12",
+          "Family Art Workshop: additional $5 materials fee"
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig12-q1",
+          "prompt": "What time does the museum open, and when does it close?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "9:00 A.M.",
+            "4:30 P.M."
+          ]
+        },
+        {
+          "id": "ig12-q2",
+          "prompt": "I would like to attend the photography program. What time and where is it?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "11:30 A.M.",
+            "Photography Talk",
+            "Gallery 2"
+          ]
+        },
+        {
+          "id": "ig12-q3",
+          "prompt": "Could you give me information about the tours offered during the day?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "10:00 A.M. Architecture Tour",
+            "2:30 P.M. History Tour",
+            "Main Lobby"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig13",
+      "intro": "Hello, I'm calling about the Greenfield Business Hotel meeting rooms. Could you tell me what is available next Thursday?",
+      "information": {
+        "title": "Greenfield Business Hotel — Meeting Room Schedule",
+        "subtitle": "Thursday, August 20",
+        "rows": [
+          {
+            "label": "Room A",
+            "value": "Available 9:00 A.M.–12:00 P.M. · Capacity 12 · $80/hour"
+          },
+          {
+            "label": "Room B",
+            "value": "Available 1:00 P.M.–5:00 P.M. · Capacity 24 · $120/hour"
+          },
+          {
+            "label": "Room C",
+            "value": "Available 9:00 A.M.–5:00 P.M. · Capacity 8 · $60/hour"
+          },
+          {
+            "label": "Auditorium",
+            "value": "Available 2:00 P.M.–6:00 P.M. · Capacity 80 · $250/hour"
+          }
+        ],
+        "notes": [
+          "Projector included in Rooms A and B",
+          "Catering must be ordered 48 hours in advance."
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig13-q1",
+          "prompt": "Which room is available all day, and how many people can it hold?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Room C",
+            "9:00 A.M.–5:00 P.M.",
+            "Capacity 8"
+          ]
+        },
+        {
+          "id": "ig13-q2",
+          "prompt": "We need a room for about twenty people in the afternoon. Which room would you recommend, and what does it cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "Room B",
+            "Capacity 24",
+            "$120/hour"
+          ]
+        },
+        {
+          "id": "ig13-q3",
+          "prompt": "Could you tell me about the rooms that include a projector?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "Room A",
+            "Room B",
+            "Projector included"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig14",
+      "intro": "Hi, I'm interested in the Saturday cooking classes advertised by Central Culinary School. Could you give me some information?",
+      "information": {
+        "title": "Central Culinary School — Saturday Classes",
+        "subtitle": "Saturday, September 5",
+        "rows": [
+          {
+            "label": "9:00 A.M.",
+            "value": "Fresh Bread Basics — Kitchen 1 — $45"
+          },
+          {
+            "label": "10:30 A.M.",
+            "value": "Quick Vegetarian Meals — Kitchen 3 — $50"
+          },
+          {
+            "label": "1:00 P.M.",
+            "value": "Pasta From Scratch — Kitchen 2 — $55"
+          },
+          {
+            "label": "2:30 P.M.",
+            "value": "Everyday Desserts — Kitchen 1 — $50"
+          },
+          {
+            "label": "4:00 P.M.",
+            "value": "Knife Skills — Kitchen 3 — $40"
+          }
+        ],
+        "notes": [
+          "All classes last 90 minutes.",
+          "Ingredients and equipment are included."
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig14-q1",
+          "prompt": "What is the first class of the day, and how much does it cost?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "9:00 A.M.",
+            "Fresh Bread Basics",
+            "$45"
+          ]
+        },
+        {
+          "id": "ig14-q2",
+          "prompt": "I cannot arrive before noon. Is there a pasta class I can take?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "1:00 P.M.",
+            "Pasta From Scratch",
+            "Kitchen 2",
+            "$55"
+          ]
+        },
+        {
+          "id": "ig14-q3",
+          "prompt": "Could you tell me about all of the afternoon classes?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "1:00 P.M. Pasta From Scratch",
+            "2:30 P.M. Everyday Desserts",
+            "4:00 P.M. Knife Skills"
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "ig15",
+      "intro": "Hello, I'm calling about the Lakeshore Company shuttle schedule. I start work next week and need some transportation information.",
+      "information": {
+        "title": "Lakeshore Company Employee Shuttle",
+        "subtitle": "Weekday Schedule",
+        "rows": [
+          {
+            "label": "7:00 A.M.",
+            "value": "Central Station → Lakeshore Office — arrives 7:35"
+          },
+          {
+            "label": "7:45 A.M.",
+            "value": "Central Station → Lakeshore Office — arrives 8:20"
+          },
+          {
+            "label": "8:30 A.M.",
+            "value": "Central Station → Lakeshore Office — arrives 9:05"
+          },
+          {
+            "label": "5:15 P.M.",
+            "value": "Lakeshore Office → Central Station — arrives 5:50"
+          },
+          {
+            "label": "6:00 P.M.",
+            "value": "Lakeshore Office → Central Station — arrives 6:35"
+          },
+          {
+            "label": "7:00 P.M.",
+            "value": "Lakeshore Office → Central Station — arrives 7:35"
+          }
+        ],
+        "notes": [
+          "Employee ID required",
+          "No shuttle service on public holidays."
+        ]
+      },
+      "questions": [
+        {
+          "id": "ig15-q1",
+          "prompt": "If I take the 7:45 morning shuttle, what time will I arrive at the office?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "7:45 A.M.",
+            "8:20 A.M."
+          ]
+        },
+        {
+          "id": "ig15-q2",
+          "prompt": "I sometimes finish work at six thirty. Is there a shuttle I can take after that?",
+          "responseSeconds": 15,
+          "expectedFacts": [
+            "7:00 P.M.",
+            "arrives 7:35 P.M."
+          ]
+        },
+        {
+          "id": "ig15-q3",
+          "prompt": "Could you tell me about all of the morning shuttles from Central Station?",
+          "responseSeconds": 30,
+          "expectedFacts": [
+            "7:00 A.M.",
+            "7:45 A.M.",
+            "8:30 A.M."
+          ]
+        }
+      ],
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    }
+  ],
+  "opinions": [
+    {
+      "id": "op01",
+      "prompt": "Some companies allow employees to choose whether they work at home or in the office. Which arrangement do you think is better for most employees? Give reasons and examples.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op02",
+      "prompt": "Do you agree or disagree that university students should be required to complete an internship before graduating? Support your opinion with reasons or examples.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op03",
+      "prompt": "Which is more important when choosing a job: a high salary or opportunities to learn new skills? Explain your choice.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op04",
+      "prompt": "Some cities spend money improving public parks, while others spend it improving roads. Which should receive more funding? Give reasons for your opinion.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op05",
+      "prompt": "Do you think companies should give employees more flexible starting and finishing times? Why or why not?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op06",
+      "prompt": "Is it better to plan a vacation carefully in advance or make decisions after arriving at the destination? Explain your preference.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op07",
+      "prompt": "Some people prefer to buy products from small local businesses even when prices are higher. Do you think this is a good choice? Why or why not?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op08",
+      "prompt": "What is the most important quality a manager should have: strong communication skills, technical knowledge, or fairness? Give reasons and examples.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op09",
+      "prompt": "Do you agree or disagree that students learn more effectively when they study with other people rather than alone? Support your opinion.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op10",
+      "prompt": "Which is a better way for a company to improve employee performance: offering financial rewards or providing additional training? Explain your choice.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op11",
+      "prompt": "Some people prefer living close to their workplace even if housing is more expensive. Others prefer cheaper housing farther away. Which do you prefer and why?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op12",
+      "prompt": "Do you think people should limit how much time they spend using social media each day? Give reasons for your opinion.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op13",
+      "prompt": "What is the best way for a city to encourage more people to use public transportation? Explain your answer with examples.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op14",
+      "prompt": "Do you agree or disagree that restaurants should provide more information about the ingredients in their food? Why or why not?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op15",
+      "prompt": "Which is more valuable for learning a foreign language: speaking with other people or studying grammar and vocabulary independently? Explain your choice.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op16",
+      "prompt": "Some employers prefer workers who have specialized expertise, while others prefer workers who can do many different kinds of tasks. Which type of employee is more valuable?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op17",
+      "prompt": "Do you think museums and cultural attractions should offer free admission to local residents? Support your opinion.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op18",
+      "prompt": "What is the most effective way for people to maintain a healthy lifestyle when they have a busy schedule? Give reasons and examples.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op19",
+      "prompt": "Should companies spend more money improving products or improving customer service? Which is more important and why?",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    },
+    {
+      "id": "op20",
+      "prompt": "Some people enjoy attending large events such as concerts and festivals, while others prefer smaller gatherings. Which do you prefer? Explain your reasons.",
+      "difficulty": "exam_standard",
+      "styleProfile": "ETS_2025_sample_matched"
+    }
+  ]
+} as const;
+
+export const readAloudPool = QUESTION_BANK.readAloud;
+export const picturePool = QUESTION_BANK.pictures;
+export const interviewPool = QUESTION_BANK.interviewGroups as unknown as InterviewGroup[];
+export const infoPool = QUESTION_BANK.infoGroups as unknown as InfoGroup[];
+export const opinionPool = QUESTION_BANK.opinions;
