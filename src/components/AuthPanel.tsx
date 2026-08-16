@@ -46,6 +46,7 @@ export default function AuthPanel() {
   const [message, setMessage] = useState("");
   const [failed, setFailed] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [mode, setMode] = useState<"signin" | "signup">("signin");
   const dialogRef = useRef<HTMLDialogElement>(null);
   const configured = hasSupabase();
 
@@ -62,7 +63,14 @@ export default function AuthPanel() {
   function open() {
     setMessage("");
     setFailed(false);
+    setMode("signin");
     dialogRef.current?.showModal();
+  }
+
+  function switchMode(next: "signin" | "signup") {
+    setMode(next);
+    setMessage("");
+    setFailed(false);
   }
 
   function close() {
@@ -72,8 +80,8 @@ export default function AuthPanel() {
   async function submit(kind: "signin" | "signup") {
     const sb = getSupabase();
     if (!sb || busy) return;
-    // "계정 만들기" is type="button" so the browser's required-field check never
-    // runs for it. Without this the click was a silent no-op on an empty form.
+    // Belt and braces: the form's required/minLength attributes cover the normal
+    // path, but never let a click fall through to a silent no-op.
     if (!email || !password) {
       setFailed(true);
       setMessage("이메일이랑 비밀번호를 먼저 채워 줘.");
@@ -114,20 +122,39 @@ export default function AuthPanel() {
       <div className="auth-dialog-body">
         <button type="button" className="auth-dialog-close" onClick={close} aria-label="닫기">×</button>
         <h2>내 기록 저장</h2>
-        <p className="auth-dialog-intro">로그인하면 모의고사 기록과 평가 결과를 이어서 확인할 수 있어요.</p>
+        <p className="auth-dialog-intro">로그인하면 모의고사 기록이랑 평가 결과를 이어서 볼 수 있어.</p>
 
-        <form onSubmit={(e) => { e.preventDefault(); submit("signin"); }}>
+        {/* An explicit mode switch. "계정 만들기" used to be a small text link
+            under the login button, so it read as a footnote rather than a choice. */}
+        <div className="auth-tabs" role="tablist">
+          <button type="button" role="tab" aria-selected={mode === "signin"} className={mode === "signin" ? "active" : ""}
+            onClick={() => switchMode("signin")}>로그인</button>
+          <button type="button" role="tab" aria-selected={mode === "signup"} className={mode === "signup" ? "active" : ""}
+            onClick={() => switchMode("signup")}>회원가입</button>
+        </div>
+
+        <form onSubmit={(e) => { e.preventDefault(); submit(mode); }}>
           <label className="auth-field">
             <span>이메일</span>
             <input type="email" autoComplete="email" required value={email} onChange={e=>setEmail(e.target.value)} />
           </label>
           <label className="auth-field">
             <span>비밀번호</span>
-            <input type="password" autoComplete="current-password" required value={password} onChange={e=>setPassword(e.target.value)} />
+            <input type="password" minLength={6}
+              autoComplete={mode === "signin" ? "current-password" : "new-password"}
+              required value={password} onChange={e=>setPassword(e.target.value)} />
+            {mode === "signup" && <small className="auth-field-hint">6자 이상으로 정해 줘.</small>}
           </label>
-          <button type="submit" className="button primary full" disabled={busy}>{busy ? "처리 중…" : "로그인"}</button>
-          <button type="button" className="text-button center" disabled={busy} onClick={()=>submit("signup")}>계정 만들기</button>
+          <button type="submit" className="button primary full" disabled={busy}>
+            {busy ? "처리 중…" : mode === "signin" ? "로그인" : "계정 만들고 시작하기"}
+          </button>
         </form>
+
+        <p className="auth-dialog-switch">
+          {mode === "signin"
+            ? <>계정이 없어? <button type="button" className="text-button" onClick={() => switchMode("signup")}>회원가입</button></>
+            : <>이미 계정이 있어? <button type="button" className="text-button" onClick={() => switchMode("signin")}>로그인</button></>}
+        </p>
 
         {message && <p className={`auth-dialog-message ${failed ? "error" : ""}`}>{message}</p>}
       </div>
