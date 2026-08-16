@@ -1,0 +1,212 @@
+[
+  {
+    "id": "mock-01",
+    "readAloud": [
+      "ra01",
+      "ra02"
+    ],
+    "pictures": [
+      "pic01",
+      "pic02"
+    ],
+    "interviewGroup": "iq01",
+    "infoGroup": "ig01",
+    "opinion": "op01"
+  },
+  {
+    "id": "mock-02",
+    "readAloud": [
+      "ra03",
+      "ra04"
+    ],
+    "pictures": [
+      "pic03",
+      "pic04"
+    ],
+    "interviewGroup": "iq02",
+    "infoGroup": "ig02",
+    "opinion": "op02"
+  },
+  {
+    "id": "mock-03",
+    "readAloud": [
+      "ra05",
+      "ra06"
+    ],
+    "pictures": [
+      "pic05",
+      "pic06"
+    ],
+    "interviewGroup": "iq03",
+    "infoGroup": "ig03",
+    "opinion": "op03"
+  },
+  {
+    "id": "mock-04",
+    "readAloud": [
+      "ra07",
+      "ra08"
+    ],
+    "pictures": [
+      "pic07",
+      "pic08"
+    ],
+    "interviewGroup": "iq04",
+    "infoGroup": "ig04",
+    "opinion": "op04"
+  },
+  {
+    "id": "mock-05",
+    "readAloud": [
+      "ra09",
+      "ra10"
+    ],
+    "pictures": [
+      "pic09",
+      "pic10"
+    ],
+    "interviewGroup": "iq05",
+    "infoGroup": "ig05",
+    "opinion": "op05"
+  },
+  {
+    "id": "mock-06",
+    "readAloud": [
+      "ra11",
+      "ra12"
+    ],
+    "pictures": [
+      "pic11",
+      "pic12"
+    ],
+    "interviewGroup": "iq06",
+    "infoGroup": "ig06",
+    "opinion": "op06"
+  },
+  {
+    "id": "mock-07",
+    "readAloud": [
+      "ra13",
+      "ra14"
+    ],
+    "pictures": [
+      "pic13",
+      "pic14"
+    ],
+    "interviewGroup": "iq07",
+    "infoGroup": "ig07",
+    "opinion": "op07"
+  },
+  {
+    "id": "mock-08",
+    "readAloud": [
+      "ra15",
+      "ra16"
+    ],
+    "pictures": [
+      "pic15",
+      "pic16"
+    ],
+    "interviewGroup": "iq08",
+    "infoGroup": "ig08",
+    "opinion": "op08"
+  },
+  {
+    "id": "mock-09",
+    "readAloud": [
+      "ra17",
+      "ra18"
+    ],
+    "pictures": [
+      "pic17",
+      "pic18"
+    ],
+    "interviewGroup": "iq09",
+    "infoGroup": "ig09",
+    "opinion": "op09"
+  },
+  {
+    "id": "mock-10",
+    "readAloud": [
+      "ra19",
+      "ra20"
+    ],
+    "pictures": [
+      "pic19",
+      "pic20"
+    ],
+    "interviewGroup": "iq10",
+    "infoGroup": "ig10",
+    "opinion": "op10"
+  },
+  {
+    "id": "mock-11",
+    "readAloud": [
+      "ra21",
+      "ra22"
+    ],
+    "pictures": [
+      "pic21",
+      "pic22"
+    ],
+    "interviewGroup": "iq11",
+    "infoGroup": "ig11",
+    "opinion": "op11"
+  },
+  {
+    "id": "mock-12",
+    "readAloud": [
+      "ra23",
+      "ra24"
+    ],
+    "pictures": [
+      "pic23",
+      "pic24"
+    ],
+    "interviewGroup": "iq12",
+    "infoGroup": "ig12",
+    "opinion": "op12"
+  },
+  {
+    "id": "mock-13",
+    "readAloud": [
+      "ra25",
+      "ra26"
+    ],
+    "pictures": [
+      "pic25",
+      "pic26"
+    ],
+    "interviewGroup": "iq13",
+    "infoGroup": "ig13",
+    "opinion": "op13"
+  },
+  {
+    "id": "mock-14",
+    "readAloud": [
+      "ra27",
+      "ra28"
+    ],
+    "pictures": [
+      "pic27",
+      "pic28"
+    ],
+    "interviewGroup": "iq14",
+    "infoGroup": "ig14",
+    "opinion": "op14"
+  },
+  {
+    "id": "mock-15",
+    "readAloud": [
+      "ra29",
+      "ra30"
+    ],
+    "pictures": [
+      "pic29",
+      "pic30"
+    ],
+    "interviewGroup": "iq15",
+    "infoGroup": "ig15",
+    "opinion": "op15"
+  }
+]
