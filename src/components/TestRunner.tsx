@@ -346,7 +346,14 @@ export default function TestRunner({mode="mock", setNumber=1, questions, guides}
         </div>}
         {(!isPractice || practiceCaptureMode==="record") && <div className="check-line"><Mic/><div><b>마이크</b><span>{micReady?"준비 완료":"사용 권한이 필요합니다"}</span></div><button className="button secondary" onClick={prepareMic}>{micReady?"완료":"마이크 확인"}</button></div>}
         {(!isPractice || practiceCaptureMode==="record") && hasSupabase() && !signedIn && <div className="notice"><span>로그인하지 않으면 녹음이 이 기기에만 남고 평가를 받을 수 없어요. <Link href="/" className="text-button">홈에서 로그인하기</Link></span></div>}
-        <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>setStarted(true)}>{isPractice?`세트 ${setNumber} 연습 시작`:"시험 시작"}</button>
+        <button disabled={(!isPractice || practiceCaptureMode==="record")&&!micReady} className="button primary large full" onClick={()=>{
+          // Prevent the timer effect from seeing the initial prep state at
+          // 00:00 and starting Q1's recorder before its 45-second prep period
+          // has been initialized by beginQuestion.
+          setPhase("narrating");
+          setRemaining(0);
+          setStarted(true);
+        }}>{isPractice?`세트 ${setNumber} 연습 시작`:"시험 시작"}</button>
         <Link href="/" className="text-button center">돌아가기</Link>
       </div>
     </main>
