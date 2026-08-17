@@ -15,56 +15,12 @@ type PracticeCaptureMode = "record" | "no_record";
 function formatTime(sec:number){ return `00:${String(Math.max(0,sec)).padStart(2,"0")}`; }
 function taskLabel(q:Question){ return ({read_aloud:"Read a text aloud",describe_picture:"Describe a picture",respond_questions:"Respond to questions",info_response:"Use information provided",opinion:"Express an opinion"} as const)[q.taskType]; }
 
-function splitInfoValue(value:string){
-  return value.split(/\s+(?:—|·)\s+/).map(x=>x.trim()).filter(Boolean);
-}
-
-function infoTableSpec(title:string){
-  const t=title.toLowerCase();
-  if(t.includes("meeting room")) return ["Room", "Availability", "Capacity", "Rate"];
-  if(t.includes("cooking school") || t.includes("culinary school")) return ["Time", "Class", "Instructor / Kitchen", "Fee"];
-  if(t.includes("fitness")) return ["Time", "Class", "Location", "Instructor"];
-  if(t.includes("science museum")) return ["Time", "Program", "Duration", "Location"];
-  if(t.includes("museum")) return ["Time", "Program", "Location", "Duration"];
-  if(t.includes("airport shuttle")) return ["Departure", "Terminal", "Seats"];
-  if(t.includes("employee shuttle")) return ["Departure", "Route", "Arrival"];
-  if(t.includes("training day")) return ["Time", "Program", "Location", "Speaker"];
-  if(t.includes("development day")) return ["Time", "Program", "Location"];
-  if(t.includes("networking")) return ["Time", "Program", "Location"];
-  if(t.includes("language program")) return ["Time", "Class", "Room", "Instructor"];
-  if(t.includes("film festival")) return ["Time", "Program", "Location", "Duration"];
-  if(t.includes("train schedule")) return ["Departure", "Service", "Arrival", "Fare"];
-  if(t.includes("farm")) return ["Time", "Activity", "Location"];
-  if(t.includes("conference packages")) return ["Package", "Time", "Includes", "Price"];
-  if(t.includes("lecture series")) return ["Date / Time", "Lecture", "Speaker", "Location"];
-  if(t.includes("orientation schedule")) return ["Time", "Role", "Location", "Duration"];
-  if(t.includes("arts weekend")) return ["Time", "Program", "Location"];
-  return ["Time / Item", "Details"];
-}
-
-function normalizeInfoCells(title:string,label:string,value:string){
-  const headers=infoTableSpec(title);
-  const parts=splitInfoValue(value);
-  if(headers[0]==="Room") {
-    const availability=parts[0]?.replace(/^Available\s+/i,"") ?? "";
-    const capacity=(parts[1]??"").replace(/^Capacity\s+/i,"");
-    return [label, availability, capacity, parts[2]??""];
-  }
-  if(title.toLowerCase().includes("employee shuttle")){
-    return [label, parts[0]??value, (parts[1]??"").replace(/^arrives\s+/i,"")];
-  }
-  const cells=[label,...parts];
-  while(cells.length<headers.length) cells.push("");
-  if(cells.length>headers.length){
-    const keep=cells.slice(0,headers.length-1);
-    keep.push(cells.slice(headers.length-1).join(" — "));
-    return keep;
-  }
-  return cells;
-}
-
 function InfoSheetView({info}:{info:NonNullable<Question["information"]>}){
-  const headers=infoTableSpec(info.title);
+  const hasStructuredRows=
+    Array.isArray(info.columns) &&
+    info.columns.length>=2 &&
+    info.rows.every(row=>Array.isArray(row.cells) && row.cells.length===info.columns!.length);
+  const headers=hasStructuredRows ? info.columns! : ["Time / Item", "Details"];
   const subtitleParts=(info.subtitle??"").split("·").map(x=>x.trim()).filter(Boolean);
   return <div className="exam-handout-wrap">
     <div className="exam-handout">
@@ -73,7 +29,10 @@ function InfoSheetView({info}:{info:NonNullable<Question["information"]>}){
       <div className="handout-table-scroll">
         <table className="handout-table">
           <thead><tr>{headers.map(h=><th key={h}>{h}</th>)}</tr></thead>
-          <tbody>{info.rows.map((r,i)=>{const cells=normalizeInfoCells(info.title,r.label,r.value);return <tr key={i}>{cells.map((c,j)=><td key={j} className={j===0?"primary-cell":""}>{c}</td>)}</tr>})}</tbody>
+          <tbody>{info.rows.map((r,i)=>{
+            const cells=hasStructuredRows ? r.cells! : [r.label,r.value];
+            return <tr key={i}>{cells.map((c,j)=><td key={j} className={j===0?"primary-cell":""}>{c}</td>)}</tr>;
+          })}</tbody>
         </table>
       </div>
       {info.notes && info.notes.length>0 && <div className="handout-notes">{info.notes.map((n,i)=>{const label=/fee|ticket|rate|cost|admission/i.test(n)?"Fee":i===0?"Note":"";return <div key={i}><b>{label}</b><span>{n}</span></div>})}</div>}

@@ -26,7 +26,10 @@ export type Question = {
 export type InfoSheet = {
   title: string;
   subtitle?: string;
-  rows: Array<{ label: string; value: string }>;
+  // columns/cells are the current Supabase shape (explicit table structure);
+  // rows always keeps label/value too, as a fallback for older content.
+  columns?: string[];
+  rows: Array<{ label: string; value: string; cells?: string[] }>;
   notes?: string[];
 };
 
