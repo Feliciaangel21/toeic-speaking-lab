@@ -201,3 +201,6 @@ body{font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
 .auth-dialog-switch{margin:14px 0 0;text-align:center;font-size:12px;color:var(--sl-muted)}
 .auth-dialog-switch .text-button{background:none;border:0;font:inherit;font-weight:800;color:var(--sl-blue);cursor:pointer;padding:0 2px}
 .auth-dialog-message.error{background:#fdf0f1;color:#a8323c}
+
+.coach-unavailable{padding:16px 18px;font-size:13px;color:var(--sl-muted, #6d7d96)}
+.coach-unavailable p{margin:0}

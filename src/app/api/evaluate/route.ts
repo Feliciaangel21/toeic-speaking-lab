@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
-import { findMockQuestionById } from "@/lib/build-test";
-import { findPracticeQuestionById } from "@/lib/build-practice";
+import { findQuestionById } from "@/lib/question-bank-db";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -21,7 +20,7 @@ export async function POST(request: Request) {
   if (!questionId) return jsonError("questionId is required.", 400);
   if (!(audio instanceof File) || audio.size === 0) return jsonError("audio is required.", 400);
 
-  const question = findMockQuestionById(questionId) ?? findPracticeQuestionById(questionId);
+  const question = await findQuestionById(questionId);
   if (!question) return jsonError("Unknown questionId.", 404);
 
   const upstream = new FormData();

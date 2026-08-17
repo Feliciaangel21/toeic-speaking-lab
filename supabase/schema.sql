@@ -30,7 +30,11 @@ create table if not exists public.question_attempts (
   created_at timestamptz not null default now()
 );
 
--- Optional admin copy of the static bank. The app does NOT require this table to run.
+-- The website reads question content from this table at request time (see
+-- src/lib/question-bank-db.ts) — it is the source of truth, not a copy.
+-- model-service's local evaluator intentionally does NOT read this table by
+-- default; it prefers its own git-tracked bank so scoring stays pinned to
+-- reviewed content even if this table drifts (see jobs/supabase_queue.py).
 create table if not exists public.question_bank (
   id text primary key,
   kind text not null,
@@ -88,7 +92,9 @@ create index if not exists question_attempts_eval_queue_idx
 create index if not exists question_attempts_session_id_idx
   on public.question_attempts(session_id);
 
--- Practice set registry. Question content stays bundled/versioned in Git; Supabase mirrors set membership.
+-- Set registries: each payload.question_ids is the ordered list of 11 question
+-- ids (Q1-Q11) that make up that set. The website resolves each id against
+-- question_bank at request time.
 create table if not exists public.practice_sets (
   id text primary key,
   set_number integer not null unique check (set_number >= 1 and set_number <= 15),
@@ -99,6 +105,17 @@ create table if not exists public.practice_sets (
 alter table public.practice_sets enable row level security;
 drop policy if exists "public read active practice sets" on public.practice_sets;
 create policy "public read active practice sets" on public.practice_sets for select using (active = true);
+
+create table if not exists public.mock_sets (
+  id text primary key,
+  set_number integer not null unique check (set_number >= 1 and set_number <= 15),
+  payload jsonb not null,
+  active boolean not null default true,
+  created_at timestamptz not null default now()
+);
+alter table public.mock_sets enable row level security;
+drop policy if exists "public read active mock sets" on public.mock_sets;
+create policy "public read active mock sets" on public.mock_sets for select using (active = true);
 
 -- Private recording bucket (also available as migrations/20260816_recording_storage_bucket.sql).
 -- Upload paths are `{user_id}/{session_id}/qNN-{attempt_id}.{ext}`, so policies scope by first segment.

@@ -1,10 +1,20 @@
 "use client";
 import { BookOpen, ChevronDown, Lightbulb, Target, Volume2 } from "lucide-react";
 import type { Question } from "@/lib/types";
-import { getPracticeHelp } from "@/lib/practice-help";
 
-export default function PracticeCoach({question, allowSample, onListen}:{question:Question; allowSample:boolean; onListen?:(text:string)=>void}) {
-  const h=getPracticeHelp(question);
+export type PracticeHelp = {
+  hint: string;
+  guideWords: string[];
+  structure: string[];
+  sampleAnswer: string;
+  why: string;
+  officialFocus: string[];
+  coachNote?: string;
+};
+
+export default function PracticeCoach({question, help, allowSample, onListen}:{question:Question; help?:PracticeHelp; allowSample:boolean; onListen?:(text:string)=>void}) {
+  if (!help) return <div className="coach-panel coach-collapsed redesigned-coach coach-unavailable"><p>이 문항의 학습 가이드를 아직 불러올 수 없어. 답변은 정상적으로 진행할 수 있어.</p></div>;
+  const h=help;
   const sampleWords=h.sampleAnswer.trim().split(/\s+/).filter(Boolean).length;
   const estimatedSeconds=Math.max(1, Math.round((sampleWords/125)*60));
 

@@ -1,9 +1,8 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { buildMockTest } from "@/lib/build-test";
-import { buildPracticeTest } from "@/lib/build-practice";
 import type { Question, RecordedAttempt } from "@/lib/types";
+import type { PracticeHelp } from "@/components/PracticeCoach";
 import { saveMockSession } from "@/lib/save-attempt";
 import { getSupabase, hasSupabase } from "@/lib/supabase";
 import PracticeCoach from "@/components/PracticeCoach";
@@ -82,9 +81,8 @@ function InfoSheetView({info}:{info:NonNullable<Question["information"]>}){
   </div>;
 }
 
-export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode; setNumber?:number}){
+export default function TestRunner({mode="mock", setNumber=1, questions, guides}:{mode?:RunnerMode; setNumber?:number; questions:Question[]; guides?:Record<string,PracticeHelp>}){
   const isPractice=mode==="practice";
-  const questions = useMemo(()=>isPractice ? buildPracticeTest(setNumber) : buildMockTest(setNumber),[isPractice,setNumber]);
   const [index,setIndex]=useState(0);
   const [phase,setPhase]=useState<Phase>("prep");
   const [remaining,setRemaining]=useState(0);
@@ -388,7 +386,7 @@ export default function TestRunner({mode="mock", setNumber=1}:{mode?:RunnerMode;
         </details>}
 
         {isPractice && phase==="review" && practiceCaptureMode==="record" && audioUrls[current.id] && <div className="answer-playback"><span>내 답변</span><audio controls src={audioUrls[current.id]} preload="metadata"/></div>}
-        {isPractice && <PracticeCoach question={current} allowSample={phase==="review"} onListen={(text)=>speak(text,1)}/>}
+        {isPractice && <PracticeCoach question={current} help={guides?.[current.id]} allowSample={phase==="review"} onListen={(text)=>speak(text,1)}/>}
 
         {phase==="review" ? <div className="review-actions practice-review-actions"><div><b>답변 완료</b><span>해설을 확인한 뒤 다시 풀거나 다음 문제로 이동하세요.</span></div><div className="review-button-row"><button className="button secondary" onClick={redoPracticeQuestion}><RotateCcw size={17}/> 다시 풀기</button><button className="button primary" onClick={nextPracticeQuestion}>{index>=questions.length-1?"연습 완료":"다음 문제"}<ArrowRight size={17}/></button></div></div> : <div className="status-strip"><span className={`status-dot ${phase}`}/><b>{phaseText}</b>{isPractice && <div className="practice-live-actions"><button type="button" className="practice-restart-button" onClick={redoPracticeQuestion}><RotateCcw size={15}/> 다시 시작</button><button type="button" className="practice-skip-button" onClick={skipPracticeQuestion}><SkipForward size={15}/> 건너뛰기</button></div>}</div>}
       </section>
