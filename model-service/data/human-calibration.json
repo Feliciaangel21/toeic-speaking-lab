@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "status": "provisional-live-session-estimation",
+  "liveEstimatePolicy": "Apply only aggregate task corrections for describe_picture, respond_questions, info_response, and opinion. Do not modify item scores or use the read_aloud correction until a pronunciation assessor is available.",
+  "sessions": [
+    {
+      "id": "youtube-140-ih-reference",
+      "publishedScore": 140,
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 2, "humanScore": 2, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 1, "humanScore": 2, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 0, "humanScore": 1.5, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 1, "humanScore": 1, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 4, "humanScore": 2, "maxScore": 5 }
+      ]
+    },
+    {
+      "id": "youtube-160-al-reference",
+      "publishedScore": 160,
+      "ratingNote": "Q10=3 is inferred from the supplied 31/35 total; the final supplied 4 is treated as Q11 (out of 5). Confirm or correct this when the original score sheet is available.",
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 5, "humanScore": 4, "maxScore": 5 }
+      ]
+    },
+    {
+      "id": "youtube-160-al-holdout",
+      "publishedScore": 160,
+      "ratingNote": "Human item ratings supplied after the holdout evaluation. Q1 lost credit for 'nineteenth' and 'security'; Q3 lost credit for 'pony hair'.",
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 0, "humanScore": 3, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 3, "humanScore": 3, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 1, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 4, "humanScore": 3, "maxScore": 5 }
+      ]
+    },
+    {
+      "id": "local-sample-140-ih-movie",
+      "sourceFile": "sample/이정도면 토익스피킹 140점(IH) 나옵니다 - 토익트레이너어학원 (128k).mp3",
+      "publishedScore": 140,
+      "ratingNote": "Human evaluation supplied for the local MP3. Q6 did not answer why; this is an important short-response calibration example.",
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 1.5, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 2, "humanScore": 2, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 1, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 2, "humanScore": 2, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 0, "humanScore": 2, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 4, "humanScore": 3, "maxScore": 5 }
+      ]
+    },
+    {
+      "id": "local-sample-140-ih-home",
+      "sourceFile": "sample/Y2Mate.is -    140 .mp3",
+      "publishedScore": 140,
+      "ratingNote": "Human evaluation supplied for the local MP3. It includes grammar, development, and pronunciation deductions that the current local ASR pipeline under-detects.",
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 1.5, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 3, "humanScore": 1, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 0, "humanScore": 2, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 0, "humanScore": 3, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 1, "humanScore": 2, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 5, "humanScore": 3, "maxScore": 5 }
+      ]
+    },
+    {
+      "id": "youtube-150-ih-provisional",
+      "sourceFile": "sample/이정도면 토익스피킹 150점(IH) 나옵니다 - 토익트레이너어학원 (360p).mp4",
+      "publishedScore": 150,
+      "ratingNote": "Provisional human rubric transcription. Q1–Q7 and Q11 were supplied as approximate 2/3 or 3/5 ratings; Q10 was supplied as 2–3 and is recorded as 2.5. Do not use this session for live learned corrections until the original score sheet confirms the item ratings. Q8 and Q9 confirm that the standalone test harness used incorrect or overly strict reference facts.",
+      "items": [
+        { "number": 1, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 2, "taskType": "read_aloud", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 3, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 4, "taskType": "describe_picture", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 5, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 6, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 7, "taskType": "respond_questions", "modelScore": 3, "humanScore": 2, "maxScore": 3 },
+        { "number": 8, "taskType": "info_response", "modelScore": 0, "humanScore": 3, "maxScore": 3 },
+        { "number": 9, "taskType": "info_response", "modelScore": 0, "humanScore": 3, "maxScore": 3 },
+        { "number": 10, "taskType": "info_response", "modelScore": 3, "humanScore": 2.5, "maxScore": 3 },
+        { "number": 11, "taskType": "opinion", "modelScore": 4, "humanScore": 3, "maxScore": 5 }
+      ]
+    }
+  ]
+}

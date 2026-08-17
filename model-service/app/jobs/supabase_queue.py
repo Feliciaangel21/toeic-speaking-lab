@@ -364,6 +364,7 @@ class SupabaseEvaluationQueue:
 
         raw_total = 0
         max_total = 0
+        task_totals: dict[str, dict[str, float | int]] = {}
         confidence_values: list[float] = []
         for row in completed:
             score = row.get("score_json") or {}
@@ -371,6 +372,14 @@ class SupabaseEvaluationQueue:
                 continue
             raw_total += int(score.get("rawItemScore") or 0)
             max_total += int(score.get("maxItemScore") or (5 if row.get("question_number") == 11 else 3))
+            task = score.get("taskType")
+            item_raw = score.get("rawItemScore")
+            item_max = score.get("maxItemScore") or (5 if row.get("question_number") == 11 else 3)
+            if isinstance(task, str) and isinstance(item_raw, (int, float)) and isinstance(item_max, (int, float)):
+                current = task_totals.setdefault(task, {"rawTotal": 0.0, "maxTotal": 0.0, "items": 0})
+                current["rawTotal"] = float(current["rawTotal"]) + float(item_raw)
+                current["maxTotal"] = float(current["maxTotal"]) + float(item_max)
+                current["items"] = int(current["items"]) + 1
             raw_confidence = score.get("confidence")
             if isinstance(raw_confidence, (int, float)):
                 confidence_values.append(max(0.0, min(1.0, float(raw_confidence))))
@@ -393,6 +402,7 @@ class SupabaseEvaluationQueue:
             dimensions=dimensions,
             completed_items=len(completed),
             total_items=len(evaluable),
+            task_totals=task_totals,
         )
         summary = {
             "status": "experimental",

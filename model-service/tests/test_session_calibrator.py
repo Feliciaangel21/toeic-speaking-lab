@@ -29,3 +29,24 @@ def test_estimate_uses_item_scores_and_diagnostics():
     assert result["score"] == 160
     assert result["range"] == [150, 170]
     assert result["calibrationStatus"] == "experimental-heuristic-not-human-calibrated"
+
+
+def test_provisional_human_task_adjustment_aligns_the_labeled_150_sample():
+    result = estimate_session_score(
+        raw_total=28,
+        max_total=35,
+        dimensions={},
+        completed_items=11,
+        total_items=11,
+        task_totals={
+            "read_aloud": {"rawTotal": 6, "maxTotal": 6, "items": 2},
+            "describe_picture": {"rawTotal": 6, "maxTotal": 6, "items": 2},
+            "respond_questions": {"rawTotal": 9, "maxTotal": 9, "items": 3},
+            "info_response": {"rawTotal": 3, "maxTotal": 9, "items": 3},
+            "opinion": {"rawTotal": 4, "maxTotal": 5, "items": 1},
+        },
+    )
+    assert result is not None
+    assert result["score"] == 150
+    assert result["calibratedItemRatio"] == 0.75
+    assert result["calibrationStatus"] == "provisional-human-adjusted-6-sessions"
